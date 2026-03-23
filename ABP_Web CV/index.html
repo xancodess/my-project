@@ -1,0 +1,2525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Axandio — Creative Video Editor</title>
+  <meta name="description"
+    content="Creative Video Editor & Telkom University Student. Transforming raw footage into cinematic stories for brands, content creators, and digital campaigns." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+  <style>
+    /* ===== CSS VARIABLES ===== */
+    :root {
+      --bg-primary: #1C1C1E;
+      --bg-secondary: #242426;
+      --bg-card: #2C2C2E;
+      --text-primary: #E5E5E7;
+      --text-muted: #8E8E93;
+      --accent: #F59E0B;
+      --accent-dark: #D97706;
+      --accent-light: #FCD34D;
+      --stroke: #3A3A3C;
+      --font-heading: 'Space Grotesk', sans-serif;
+      --font-body: 'Inter', sans-serif;
+    }
+
+    /* ===== RESET & BASE ===== */
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+      font-family: var(--font-body);
+      font-size: 16px;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: var(--font-heading);
+    }
+
+    /* ===== CURSOR GLOW ===== */
+    #cursor-glow {
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(245, 158, 11, 0.08) 0%, transparent 70%);
+      position: fixed;
+      pointer-events: none;
+      z-index: 9999;
+      transform: translate(-50%, -50%);
+      transition: opacity 0.3s ease;
+    }
+
+    /* ===== OPENING PAGE ===== */
+    #opening-page {
+      position: fixed;
+      inset: 0;
+      background: var(--bg-primary);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      z-index: 10000;
+      transition: opacity 0.8s ease, visibility 0.8s ease;
+    }
+
+    #opening-page.fade-out {
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    .opening-icons {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .opening-icon {
+      width: 52px;
+      height: 52px;
+      background: rgba(245, 158, 11, 0.1);
+      border: 1px solid rgba(245, 158, 11, 0.2);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.3rem;
+      color: var(--accent);
+      opacity: 0;
+      animation: iconPop 0.4s ease forwards;
+    }
+
+    .opening-icon:nth-child(1) {
+      animation-delay: 0.1s;
+    }
+
+    .opening-icon:nth-child(2) {
+      animation-delay: 0.3s;
+    }
+
+    .opening-icon:nth-child(3) {
+      animation-delay: 0.5s;
+    }
+
+    @keyframes iconPop {
+      from {
+        opacity: 0;
+        transform: scale(0.5) translateY(10px);
+      }
+
+      to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+      }
+    }
+
+    .opening-title {
+      font-family: var(--font-heading);
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      font-weight: 600;
+      text-align: center;
+      opacity: 0;
+      animation: fadeUp 0.6s ease 0.7s forwards;
+    }
+
+    .opening-title span {
+      color: var(--accent);
+    }
+
+    .opening-bar {
+      width: 0;
+      height: 2px;
+      background: linear-gradient(90deg, var(--accent), var(--accent-light));
+      margin-top: 2rem;
+      animation: barGrow 1.5s ease 1s forwards;
+      border-radius: 2px;
+    }
+
+    @keyframes barGrow {
+      from {
+        width: 0;
+        opacity: 0;
+      }
+
+      to {
+        width: 120px;
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* ===== GRAIN TEXTURE OVERLAY ===== */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 1;
+      opacity: 0.4;
+    }
+
+    /* ===== NAVBAR ===== */
+    #main-navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background: rgba(28, 28, 30, 0.85);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--stroke);
+      padding: 0.75rem 0;
+      transform: translateY(-100%);
+      transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    #main-navbar.visible {
+      transform: translateY(0);
+    }
+
+    .nav-brand {
+      font-family: var(--font-heading);
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--text-primary) !important;
+      text-decoration: none;
+      letter-spacing: -0.02em;
+    }
+
+    .nav-link-custom {
+      color: var(--text-muted) !important;
+      font-family: var(--font-body);
+      font-size: 0.9rem;
+      font-weight: 500;
+      text-decoration: none;
+      padding: 0.4rem 1rem;
+      border-radius: 999px;
+      transition: all 0.2s ease;
+    }
+
+    .nav-link-custom:hover,
+    .nav-link-custom.active {
+      color: var(--text-primary) !important;
+      background: var(--accent);
+    }
+
+    .navbar-toggler-custom {
+      background: none;
+      border: 1px solid var(--stroke);
+      border-radius: 8px;
+      padding: 0.4rem 0.6rem;
+      color: var(--text-primary);
+      cursor: pointer;
+    }
+
+    /* ===== MAIN CONTENT ===== */
+    #main-content {
+      opacity: 0;
+      transition: opacity 0.6s ease;
+    }
+
+    #main-content.visible {
+      opacity: 1;
+    }
+
+    /* ===== SECTION BASE ===== */
+    section {
+      padding: 100px 0;
+      position: relative;
+    }
+
+    .section-label {
+      font-family: var(--font-heading);
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      margin-bottom: 0.5rem;
+    }
+
+    .section-title {
+      font-family: var(--font-heading);
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 700;
+      color: var(--text-primary);
+      line-height: 1.15;
+      letter-spacing: -0.03em;
+    }
+
+    .section-subtitle {
+      color: var(--text-muted);
+      font-size: 1rem;
+      margin-top: 0.5rem;
+    }
+
+    /* ===== SCROLL REVEAL ===== */
+    .reveal {
+      opacity: 0;
+      transform: translateY(32px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+
+    .reveal.revealed {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ===== SECTION: HOME ===== */
+    #home {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      padding-top: 120px;
+    }
+
+    .available-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(245, 158, 11, 0.15);
+      border: 1px solid rgba(245, 158, 11, 0.3);
+      color: var(--accent);
+      font-size: 0.82rem;
+      font-weight: 600;
+      padding: 0.35rem 1rem;
+      border-radius: 999px;
+      margin-bottom: 1.5rem;
+    }
+
+    .available-dot {
+      width: 7px;
+      height: 7px;
+      background: #22c55e;
+      border-radius: 50%;
+      animation: pulse-dot 2s infinite;
+    }
+
+    @keyframes pulse-dot {
+
+      0%,
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+
+      50% {
+        opacity: 0.5;
+        transform: scale(0.8);
+      }
+    }
+
+    .home-headline {
+      font-size: clamp(2.5rem, 6vw, 4.5rem);
+      font-weight: 700;
+      line-height: 1.05;
+      letter-spacing: -0.04em;
+      margin-bottom: 0.3rem;
+    }
+
+    .home-headline .accent {
+      color: var(--accent);
+    }
+
+    .home-subtitle {
+      font-size: 1rem;
+      color: var(--text-muted);
+      margin-bottom: 0.75rem;
+    }
+
+    .home-desc {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      max-width: 420px;
+      line-height: 1.7;
+      margin-bottom: 1.5rem;
+    }
+
+    .skill-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .skill-tag {
+      background: transparent;
+      border: 1px solid var(--stroke);
+      color: var(--text-muted);
+      font-size: 0.8rem;
+      font-weight: 500;
+      padding: 0.3rem 0.85rem;
+      border-radius: 999px;
+      transition: all 0.2s ease;
+    }
+
+    .skill-tag:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    .btn-primary-custom {
+      background: var(--accent);
+      color: #1C1C1E;
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 0.9rem;
+      padding: 0.7rem 1.8rem;
+      border-radius: 999px;
+      border: none;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: all 0.25s ease;
+      cursor: pointer;
+    }
+
+    .btn-primary-custom:hover {
+      background: var(--accent-light);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(245, 158, 11, 0.3);
+      color: #1C1C1E;
+    }
+
+    .btn-outline-custom {
+      background: transparent;
+      color: var(--accent);
+      font-family: var(--font-heading);
+      font-weight: 600;
+      font-size: 0.9rem;
+      padding: 0.65rem 1.8rem;
+      border-radius: 999px;
+      border: 1.5px solid var(--accent);
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: all 0.25s ease;
+      cursor: pointer;
+    }
+
+    .btn-outline-custom:hover {
+      background: rgba(245, 158, 11, 0.1);
+      transform: translateY(-2px);
+      color: var(--accent);
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 0.75rem;
+      margin-top: 1.5rem;
+    }
+
+    .social-icon {
+      width: 42px;
+      height: 42px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--stroke);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 1.1rem;
+      transition: all 0.25s ease;
+    }
+
+    .social-icon:hover {
+      background: rgba(245, 158, 11, 0.15);
+      border-color: var(--accent);
+      color: var(--accent);
+      transform: translateY(-3px);
+    }
+
+    /* Photo wrapper */
+    .photo-wrapper {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      perspective: 1000px;
+    }
+
+    .photo-bg {
+      width: min(400px, 85vw);
+      height: min(460px, 90vw);
+      background: transparent;
+      border-radius: 24px;
+      position: relative;
+      overflow: visible;
+      animation: float 4s ease-in-out infinite;
+      box-shadow: 0 0 60px rgba(245, 158, 11, 0.25);
+      transform-style: preserve-3d;
+    }
+
+    .photo-bg::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+      background: var(--accent);
+      z-index: 0;
+    }
+
+    @keyframes float {
+
+      0%,
+      100% {
+        transform: translateY(0) rotateY(-10deg) rotateX(4deg);
+      }
+
+      50% {
+        transform: translateY(-12px) rotateY(-10deg) rotateX(4deg);
+      }
+    }
+
+    .photo-placeholder {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      background: transparent;
+      padding-bottom: 0;
+    }
+
+    .photo-placeholder img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: contain;
+      object-position: center bottom;
+      transform: translateY(-333px) translateZ(40px) scale(2.45);
+      filter: drop-shadow(0 8px 24px rgba(0, 0, 0, 0.3));
+    }
+
+    .photo-placeholder i {
+      font-size: 8rem;
+      color: rgba(0, 0, 0, 0.2);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -55%);
+    }
+
+    .photo-floating-tag {
+      position: absolute;
+      background: var(--bg-card);
+      border: 1px solid var(--stroke);
+      border-radius: 12px;
+      padding: 0.6rem 1rem;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      white-space: nowrap;
+    }
+
+    .photo-tag-1 {
+      bottom: 10%;
+      left: -18%;
+      animation: float2 3.5s ease-in-out infinite;
+    }
+
+    .photo-tag-2 {
+      top: 15%;
+      right: -15%;
+      animation: float2 4s ease-in-out 0.5s infinite;
+    }
+
+    @keyframes float2 {
+
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-8px);
+      }
+    }
+
+    /* Quote banner */
+    #quote-banner {
+      background: linear-gradient(135deg, rgba(245, 158, 11, 0.08), rgba(245, 158, 11, 0.03));
+      border: 1px solid rgba(245, 158, 11, 0.15);
+      border-radius: 16px;
+      padding: 1.25rem 1.75rem;
+      margin-top: 3rem;
+      max-width: 640px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .quote-text {
+      font-style: italic;
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      line-height: 1.7;
+    }
+
+    .quote-author {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--accent);
+      margin-top: 0.5rem;
+    }
+
+    /* ===== SECTION: ABOUT ===== */
+    #about {
+      background: var(--bg-secondary);
+    }
+
+    .stat-card {
+      background: var(--bg-card);
+      border: 1px solid var(--stroke);
+      border-radius: 16px;
+      padding: 1.5rem;
+      box-shadow: 0 0 5.8px -2px rgba(255, 255, 255, 0.04);
+      transition: all 0.3s ease;
+      height: 100%;
+    }
+
+    .stat-card:hover {
+      border-color: rgba(245, 158, 11, 0.4);
+      transform: translateY(-4px);
+      box-shadow: 0 16px 32px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(245, 158, 11, 0.1);
+    }
+
+    .stat-icon-wrap {
+      width: 52px;
+      height: 52px;
+      background: rgba(245, 158, 11, 0.1);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.4rem;
+      color: var(--accent);
+      margin-bottom: 1rem;
+    }
+
+    .stat-number {
+      font-family: var(--font-heading);
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--accent);
+      line-height: 1;
+      margin-bottom: 0.25rem;
+    }
+
+    .stat-label {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--text-primary);
+      margin-bottom: 0.2rem;
+    }
+
+    .stat-desc {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    .counter {
+      display: inline-block;
+    }
+
+    /* ===== SECTION: EDUCATION ===== */
+    #education {
+      background: var(--bg-primary);
+    }
+
+    .timeline {
+      position: relative;
+      padding-left: 2rem;
+    }
+
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 8px;
+      bottom: 0;
+      width: 2px;
+      background: linear-gradient(to bottom, var(--accent), transparent);
+    }
+
+    .timeline-item {
+      position: relative;
+      margin-bottom: 2.5rem;
+    }
+
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -2.45rem;
+      top: 8px;
+      width: 12px;
+      height: 12px;
+      background: var(--accent);
+      border-radius: 50%;
+      border: 2px solid var(--bg-primary);
+      box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.2);
+    }
+
+    .timeline-card {
+      background: var(--bg-card);
+      border: 1px solid var(--stroke);
+      border-radius: 16px;
+      padding: 1.5rem;
+      box-shadow: 0 0 5.8px -2px rgba(255, 255, 255, 0.04);
+      transition: all 0.3s ease;
+    }
+
+    .timeline-card:hover {
+      border-color: rgba(245, 158, 11, 0.35);
+      transform: translateX(4px);
+    }
+
+    .timeline-year {
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 0.35rem;
+    }
+
+    .timeline-title {
+      font-family: var(--font-heading);
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 0.15rem;
+    }
+
+    .timeline-sub {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-bottom: 0.75rem;
+    }
+
+    .timeline-desc {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      line-height: 1.65;
+    }
+
+    .cert-badge {
+      display: inline-block;
+      background: rgba(245, 158, 11, 0.1);
+      border: 1px solid rgba(245, 158, 11, 0.2);
+      color: var(--accent);
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 0.2rem 0.7rem;
+      border-radius: 999px;
+      margin: 0.2rem;
+    }
+
+    /* ===== SECTION: PROJECT ===== */
+    #project {
+      background: var(--bg-secondary);
+    }
+
+    .tabs-wrapper {
+      background: var(--bg-card);
+      border: 1px solid var(--stroke);
+      border-radius: 16px;
+      padding: 1rem 1.5rem;
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-bottom: 2.5rem;
+    }
+
+    .tab-icon-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.25rem;
+    }
+
+    .tab-icon-wrap i {
+      font-size: 1.3rem;
+      color: var(--text-muted);
+      transition: color 0.2s;
+    }
+
+    .tab-btn {
+      flex: 1;
+      background: none;
+      border: none;
+      color: var(--text-muted);
+      font-family: var(--font-heading);
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding: 0.65rem 1rem;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: all 0.25s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.3rem;
+      min-width: 120px;
+    }
+
+    .tab-btn:hover {
+      color: var(--text-primary);
+      background: rgba(255, 255, 255, 0.04);
+    }
+
+    .tab-btn.active {
+      color: var(--accent);
+      background: rgba(245, 158, 11, 0.1);
+    }
+
+    .tab-btn.active i {
+      color: var(--accent);
+    }
+
+    .tab-pane-custom {
+      display: none;
+    }
+
+    .tab-pane-custom.active {
+      display: block;
+    }
+
+    /* Project cards */
+    .project-card {
+      background: var(--bg-card);
+      border: 1px solid var(--stroke);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 0 5.8px -2px rgba(255, 255, 255, 0.04);
+      transition: all 0.3s ease;
+      height: 100%;
+      cursor: pointer;
+    }
+
+    .project-card:hover {
+      border-color: rgba(245, 158, 11, 0.4);
+      transform: translateY(-6px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    }
+
+    .project-thumb {
+      position: relative;
+      overflow: hidden;
+      aspect-ratio: 16/9;
+    }
+
+    .project-thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+
+    .project-card:hover .project-thumb img {
+      transform: scale(1.06);
+    }
+
+    .project-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .project-card:hover .project-overlay {
+      opacity: 1;
+    }
+
+    .project-play {
+      width: 54px;
+      height: 54px;
+      background: var(--accent);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.4rem;
+      color: #1C1C1E;
+      transform: scale(0.7);
+      transition: transform 0.3s ease;
+    }
+
+    .project-card:hover .project-play {
+      transform: scale(1);
+    }
+
+    .project-cat {
+      position: absolute;
+      top: 0.75rem;
+      left: 0.75rem;
+      background: rgba(28, 28, 30, 0.85);
+      backdrop-filter: blur(8px);
+      border: 1px solid var(--stroke);
+      color: var(--accent);
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding: 0.2rem 0.65rem;
+      border-radius: 999px;
+    }
+
+    .project-body {
+      padding: 1.25rem;
+    }
+
+    .project-title {
+      font-family: var(--font-heading);
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 0.4rem;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+    }
+
+    .project-desc {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+
+    .project-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 1px solid var(--stroke);
+      padding-top: 0.75rem;
+    }
+
+    .project-tools {
+      display: flex;
+      gap: 0.3rem;
+      flex-wrap: wrap;
+    }
+
+    .tool-chip {
+      font-size: 0.68rem;
+      font-weight: 500;
+      background: rgba(245, 158, 11, 0.08);
+      border: 1px solid rgba(245, 158, 11, 0.15);
+      color: var(--accent);
+      padding: 0.15rem 0.55rem;
+      border-radius: 999px;
+    }
+
+    .btn-details {
+      background: var(--accent);
+      color: #1C1C1E;
+      font-size: 0.78rem;
+      font-weight: 700;
+      padding: 0.35rem 0.9rem;
+      border-radius: 999px;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+      transition: all 0.2s ease;
+      white-space: nowrap;
+    }
+
+    .btn-details:hover {
+      background: var(--accent-light);
+      transform: scale(1.05);
+      color: #1C1C1E;
+    }
+
+    /* Brand cards */
+    .brand-card {
+      background: var(--bg-card);
+      border: 1px solid var(--stroke);
+      border-radius: 16px;
+      padding: 1.5rem;
+      text-align: center;
+      transition: all 0.3s ease;
+      height: 100%;
+      box-shadow: 0 0 5.8px -2px rgba(255, 255, 255, 0.04);
+    }
+
+    .brand-card:hover {
+      border-color: rgba(245, 158, 11, 0.35);
+      transform: translateY(-4px);
+    }
+
+    .brand-icon {
+      font-size: 2.5rem;
+      color: var(--accent);
+      margin-bottom: 0.75rem;
+    }
+
+    .brand-name {
+      font-family: var(--font-heading);
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 0.35rem;
+    }
+
+    .brand-type {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    /* Toolkit cards */
+    .tool-card {
+      background: var(--bg-card);
+      border: 1px solid var(--stroke);
+      border-radius: 16px;
+      padding: 1.75rem;
+      text-align: center;
+      transition: all 0.3s ease;
+      height: 100%;
+      box-shadow: 0 0 5.8px -2px rgba(255, 255, 255, 0.04);
+    }
+
+    .tool-card:hover {
+      border-color: rgba(245, 158, 11, 0.35);
+      transform: translateY(-4px);
+      box-shadow: 0 16px 32px rgba(0, 0, 0, 0.3);
+    }
+
+    .tool-logo {
+      font-size: 3rem;
+      color: var(--accent);
+      margin-bottom: 1rem;
+    }
+
+    .tool-name {
+      font-family: var(--font-heading);
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 0.35rem;
+    }
+
+    .tool-desc {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+    }
+
+    .tool-level {
+      display: flex;
+      justify-content: center;
+      gap: 0.25rem;
+      margin-top: 0.75rem;
+    }
+
+    .level-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--stroke);
+    }
+
+    .level-dot.filled {
+      background: var(--accent);
+    }
+
+    /* Show more */
+    .btn-show-more {
+      background: none;
+      border: 1px solid var(--stroke);
+      color: var(--accent);
+      font-family: var(--font-heading);
+      font-weight: 600;
+      font-size: 0.88rem;
+      padding: 0.6rem 2rem;
+      border-radius: 999px;
+      cursor: pointer;
+      transition: all 0.25s ease;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .btn-show-more:hover {
+      background: rgba(245, 158, 11, 0.1);
+      border-color: var(--accent);
+    }
+
+    /* ===== MODAL ===== */
+    .modal-custom {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.75);
+      backdrop-filter: blur(8px);
+      z-index: 9998;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+    }
+
+    .modal-custom.open {
+      display: flex;
+    }
+
+    .modal-box {
+      background: var(--bg-card);
+      border: 1px solid var(--stroke);
+      border-radius: 20px;
+      max-width: 680px;
+      width: 100%;
+      max-height: 90vh;
+      overflow-y: auto;
+      animation: modalIn 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    @keyframes modalIn {
+      from {
+        opacity: 0;
+        transform: scale(0.92) translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+      }
+    }
+
+    .modal-header-custom {
+      position: relative;
+      overflow: hidden;
+      border-radius: 20px 20px 0 0;
+      aspect-ratio: 16/7;
+    }
+
+    .modal-header-custom img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      width: 36px;
+      height: 36px;
+      background: rgba(28, 28, 30, 0.85);
+      border: 1px solid var(--stroke);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-primary);
+      cursor: pointer;
+      font-size: 1.1rem;
+      transition: all 0.2s;
+    }
+
+    .modal-close:hover {
+      background: var(--accent);
+      color: #1C1C1E;
+    }
+
+    .modal-body-custom {
+      padding: 1.75rem;
+    }
+
+    .modal-cat {
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 0.5rem;
+    }
+
+    .modal-title {
+      font-family: var(--font-heading);
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 1rem;
+    }
+
+    .modal-desc {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      line-height: 1.75;
+      margin-bottom: 1.5rem;
+    }
+
+    .modal-meta {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-bottom: 1.5rem;
+    }
+
+    .modal-meta-item {
+      display: flex;
+      flex-direction: column;
+      gap: 0.15rem;
+    }
+
+    .modal-meta-label {
+      font-size: 0.72rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .modal-meta-val {
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--text-primary);
+    }
+
+    .modal-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--accent);
+      color: #1C1C1E;
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 0.9rem;
+      padding: 0.7rem 1.8rem;
+      border-radius: 999px;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+
+    .modal-link:hover {
+      background: var(--accent-light);
+      color: #1C1C1E;
+      transform: translateY(-2px);
+    }
+
+    /* ===== SECTION: CONTACT ===== */
+    #contact {
+      background: var(--bg-primary);
+    }
+
+    .contact-photo-grid {
+      display: flex;
+      gap: 0.75rem;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: nowrap;
+    }
+
+    .contact-photo-item {
+      border-radius: 12px;
+      overflow: hidden;
+      flex-shrink: 0;
+      transition: transform 0.3s ease;
+    }
+
+    .contact-photo-item:hover {
+      transform: translateY(-6px) rotate(1deg);
+    }
+
+    .contact-photo-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .contact-photo-item.main-photo {
+      width: min(220px, 30vw);
+      height: min(280px, 36vw);
+    }
+
+    .contact-photo-item.side-photo {
+      width: min(130px, 18vw);
+      height: min(180px, 23vw);
+      opacity: 0.8;
+    }
+
+    .contact-photo-item.far-photo {
+      width: min(100px, 14vw);
+      height: min(140px, 18vw);
+      opacity: 0.55;
+    }
+
+    .contact-photo-placeholder {
+      background: var(--bg-card);
+      border: 1px solid var(--stroke);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      color: var(--text-muted);
+      width: 100%;
+      height: 100%;
+    }
+
+    .contact-social-row {
+      display: flex;
+      gap: 0.75rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 2rem 0;
+    }
+
+    .contact-social-btn {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      background: var(--bg-card);
+      border: 1px solid var(--stroke);
+      border-radius: 999px;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      font-weight: 500;
+      padding: 0.55rem 1.25rem;
+      text-decoration: none;
+      transition: all 0.25s ease;
+    }
+
+    .contact-social-btn:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+      transform: translateY(-2px);
+    }
+
+    .contact-social-btn i {
+      font-size: 1.1rem;
+    }
+
+    .response-note {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      justify-content: center;
+      margin-top: 1rem;
+    }
+
+    .response-note i {
+      color: #22c55e;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: #141416;
+      border-top: 1px solid var(--stroke);
+      padding: 2rem 0;
+    }
+
+    .footer-text {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      text-align: center;
+    }
+
+    .footer-text a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    /* ===== FLOATING HIRE BTN ===== */
+    #floating-hire {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      z-index: 999;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--accent);
+      color: #1C1C1E;
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 0.85rem;
+      padding: 0.7rem 1.4rem;
+      border-radius: 999px;
+      text-decoration: none;
+      box-shadow: 0 8px 24px rgba(245, 158, 11, 0.35);
+      transition: all 0.25s ease;
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(20px);
+    }
+
+    #floating-hire.show {
+      opacity: 1;
+      pointer-events: all;
+      transform: translateY(0);
+    }
+
+    #floating-hire:hover {
+      background: var(--accent-light);
+      transform: translateY(-3px);
+      box-shadow: 0 12px 32px rgba(245, 158, 11, 0.45);
+      color: #1C1C1E;
+    }
+
+    /* ===== DIVIDER ===== */
+    .section-divider {
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--stroke), transparent);
+      margin: 0;
+    }
+
+    /* ===== HIDDEN CARDS ===== */
+    .project-col.hidden {
+      display: none;
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 768px) {
+      section {
+        padding: 70px 0;
+      }
+
+      #home {
+        padding-top: 100px;
+      }
+
+      .photo-bg {
+        width: min(300px, 80vw);
+        height: min(340px, 90vw);
+      }
+
+      .photo-tag-1,
+      .photo-tag-2 {
+        display: none;
+      }
+
+      .tabs-wrapper {
+        padding: 0.75rem;
+      }
+
+      .tab-btn {
+        min-width: 80px;
+        font-size: 0.75rem;
+      }
+
+      .contact-photo-grid {
+        gap: 0.5rem;
+      }
+
+      .contact-photo-item.main-photo {
+        width: 38vw;
+        height: 46vw;
+      }
+
+      .contact-photo-item.side-photo {
+        width: 22vw;
+        height: 28vw;
+      }
+
+      .contact-photo-item.far-photo {
+        width: 16vw;
+        height: 22vw;
+      }
+
+      .contact-social-btn span {
+        display: none;
+      }
+
+      .contact-social-btn {
+        padding: 0.65rem;
+        border-radius: 50%;
+        width: 48px;
+        height: 48px;
+        justify-content: center;
+      }
+
+      .contact-social-btn i {
+        font-size: 1.2rem;
+      }
+
+      #floating-hire span {
+        display: none;
+      }
+
+      #floating-hire {
+        padding: 0.9rem;
+        border-radius: 50%;
+      }
+
+      .modal-box {
+        margin: 0.5rem;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .home-headline {
+        font-size: clamp(2rem, 10vw, 3rem);
+      }
+
+      .opening-title {
+        font-size: clamp(1.4rem, 7vw, 2rem);
+      }
+
+      .stat-number {
+        font-size: 2rem;
+      }
+    }
+
+    /* Scrollbar */
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: var(--bg-primary);
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: var(--stroke);
+      border-radius: 3px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: var(--accent);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- CURSOR GLOW -->
+  <div id="cursor-glow"></div>
+
+  <!-- FLOATING HIRE BUTTON -->
+  <a href="https://api.whatsapp.com/send/?phone=%2B6282331581933&text&type=phone_number&app_absent=0" id="floating-hire"
+    target="_blank" rel="noopener">
+    <i class="bi bi-whatsapp"></i>
+    <span>Hire Me</span>
+  </a>
+
+  <!-- ===== OPENING PAGE ===== -->
+  <div id="opening-page">
+    <div class="opening-icons">
+      <div class="opening-icon"><i class="bi bi-camera-video-fill"></i></div>
+      <div class="opening-icon"><i class="bi bi-film"></i></div>
+      <div class="opening-icon"><i class="bi bi-play-circle-fill"></i></div>
+    </div>
+    <div class="opening-title">
+      Welcome to My<br><span>Portfolio Highlights</span>
+    </div>
+    <div class="opening-bar"></div>
+  </div>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav id="main-navbar">
+    <div class="container">
+      <div class="d-flex align-items-center justify-content-between">
+        <a href="#home" class="nav-brand">Axandio - 2311102179</a>
+
+        <!-- Desktop Nav -->
+        <div class="d-none d-md-flex align-items-center gap-1">
+          <a href="#home" class="nav-link-custom active" data-nav="home">Home</a>
+          <a href="#about" class="nav-link-custom" data-nav="about">About</a>
+          <a href="#education" class="nav-link-custom" data-nav="education">Education</a>
+          <a href="#project" class="nav-link-custom" data-nav="project">Project</a>
+          <a href="#contact" class="nav-link-custom" data-nav="contact">Contact</a>
+        </div>
+
+        <!-- Mobile toggle -->
+        <button class="navbar-toggler-custom d-md-none" id="mobile-toggle">
+          <i class="bi bi-list"></i>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="d-none d-md-none mt-2">
+        <div class="d-flex flex-column gap-1 pb-2">
+          <a href="#home" class="nav-link-custom">Home</a>
+          <a href="#about" class="nav-link-custom">About</a>
+          <a href="#education" class="nav-link-custom">Education</a>
+          <a href="#project" class="nav-link-custom">Project</a>
+          <a href="#contact" class="nav-link-custom">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <div id="main-content">
+
+    <!-- ===== HOME ===== -->
+    <section id="home">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <!-- Left -->
+          <div class="col-lg-6 order-2 order-lg-1">
+            <div class="reveal">
+              <div class="available-badge">
+                <span class="available-dot"></span>
+                Available For Projects
+              </div>
+            </div>
+            <div class="reveal" style="transition-delay:0.1s">
+              <h1 class="home-headline">
+                Creative<br><span class="accent">Video Editor</span>
+              </h1>
+            </div>
+            <div class="reveal" style="transition-delay:0.15s">
+              <p class="home-subtitle">Telkom University Student · Computer Science</p>
+            </div>
+            <div class="reveal" style="transition-delay:0.2s">
+              <p class="home-desc">
+                Turning raw footage into stories that captivate. I focus on precise pacing
+                and cinematic aesthetics to deliver visual content that elevates brand identity
+                and drives engagement.
+              </p>
+            </div>
+            <div class="reveal" style="transition-delay:0.25s">
+              <div class="skill-tags">
+                <span class="skill-tag">Adobe Premiere Pro</span>
+                <span class="skill-tag">DaVinci Resolve</span>
+                <span class="skill-tag">CapCut</span>
+                <span class="skill-tag">Adobe After Effects</span>
+              </div>
+            </div>
+            <div class="reveal" style="transition-delay:0.3s">
+              <div class="d-flex flex-wrap gap-3 align-items-center">
+                <a href="#project" class="btn-primary-custom">
+                  <i class="bi bi-grid-fill"></i> Projects
+                </a>
+                <a href="#contact" class="btn-outline-custom">
+                  <i class="bi bi-send"></i> Contact
+                </a>
+              </div>
+            </div>
+            <div class="reveal" style="transition-delay:0.35s">
+              <div class="social-icons">
+                <a href="https://www.tiktok.com/@sikywil" target="_blank" class="social-icon" title="TikTok">
+                  <i class="bi bi-tiktok"></i>
+                </a>
+                <a href="https://www.instagram.com/xann._n/" target="_blank" class="social-icon" title="Instagram">
+                  <i class="bi bi-instagram"></i>
+                </a>
+                <a href="https://id.linkedin.com/in/axandio-biyanatul-lizan-b79a29260" target="_blank"
+                  class="social-icon" title="LinkedIn">
+                  <i class="bi bi-linkedin"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Quote from API -->
+            <div class="reveal" style="transition-delay:0.4s">
+              <div id="quote-banner" class="mt-4">
+                <p class="quote-text" id="quote-text">
+                  <i class="bi bi-quote" style="color:var(--accent); margin-right:0.3rem;"></i>
+                  Loading inspiration...
+                </p>
+                <p class="quote-author" id="quote-author">— —</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Photo -->
+          <div class="col-lg-6 order-1 order-lg-2">
+            <div class="photo-wrapper reveal" style="transition-delay:0.2s">
+              <div class="photo-bg">
+                <div class="photo-placeholder">
+                  <img src="/public/profile_photo.png" alt="">
+                </div>
+              </div>
+              <div class="photo-floating-tag photo-tag-1">
+                <i class="bi bi-play-fill" style="color:var(--accent)"></i>
+                12+ Projects Done
+              </div>
+              <div class="photo-floating-tag photo-tag-2">
+                <i class="bi bi-star-fill" style="color:var(--accent)"></i>
+                Trusted by 8 Brands
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about">
+      <div class="container">
+        <div class="text-center mb-5 reveal">
+          <p class="section-label">About Me</p>
+          <h2 class="section-title">Crafting seamless narratives<br>from raw frames</h2>
+        </div>
+
+        <div class="row g-5 align-items-start">
+          <div class="col-lg-6 reveal">
+            <p class="section-label">Hello, I'm</p>
+            <h3 class="section-title mb-3" style="font-size:clamp(1.8rem,3.5vw,2.5rem)">
+              Axandio Biyanatul Lizan
+            </h3>
+            <p class="home-desc" style="max-width:100%">
+              Based in Indonesia, I combine the analytical mindset of a Computer Engineering
+              student with the creative intuition of a professional Video Editor. I specialize
+              in comprehensive post-production transforming raw clips into engaging,
+              cinematic stories tailored for commercial clients, digital campaigns, and
+              social media platforms.
+            </p>
+            <p class="home-desc mt-3" style="max-width:100%">
+              With 2 years of hands-on experience, I've collaborated with 8 local and regional
+              brands, delivering visual narratives that not only look stunning but also
+              achieve measurable engagement results.
+            </p>
+            <a href="https://drive.google.com/file/d/1p2Ow6MBJHcdtJfJPSar6rqeszg-Q43Gd/view?usp=sharing"
+              class="btn-primary-custom mt-3">
+              <i class="bi bi-download"></i> Download CV
+            </a>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="row g-3">
+              <div class="col-12 reveal" style="transition-delay:0.1s">
+                <div class="stat-card">
+                  <div class="d-flex align-items-center gap-3">
+                    <div class="stat-icon-wrap"><i class="bi bi-film"></i></div>
+                    <div>
+                      <div class="stat-number"><span class="counter" data-target="12">0</span>+</div>
+                      <div class="stat-label">Total Projects</div>
+                      <div class="stat-desc">Completed visual narratives</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 reveal" style="transition-delay:0.2s">
+                <div class="stat-card">
+                  <div class="d-flex align-items-center gap-3">
+                    <div class="stat-icon-wrap"><i class="bi bi-award"></i></div>
+                    <div>
+                      <div class="stat-number"><span class="counter" data-target="8">0</span>+</div>
+                      <div class="stat-label">Brands Collaborated</div>
+                      <div class="stat-desc">Trusted by local & regional partners</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 reveal" style="transition-delay:0.3s">
+                <div class="stat-card">
+                  <div class="d-flex align-items-center gap-3">
+                    <div class="stat-icon-wrap"><i class="bi bi-globe2"></i></div>
+                    <div>
+                      <div class="stat-number"><span class="counter" data-target="2.5">0</span></div>
+                      <div class="stat-label">Years of Experience</div>
+                      <div class="stat-desc">Professional editing journey</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- ===== EDUCATION ===== -->
+    <section id="education">
+      <div class="container">
+        <div class="text-center mb-5 reveal">
+          <p class="section-label">Education</p>
+          <h2 class="section-title">Academic & Creative Journey</h2>
+          <p class="section-subtitle">Where technical precision meets creative vision</p>
+        </div>
+
+        <div class="row g-5">
+          <!-- Timeline -->
+          <div class="col-lg-7 reveal">
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-card">
+                  <div class="timeline-year">2020 – 2023</div>
+                  <div class="timeline-title">Computer and Network Engineering</div>
+                  <div class="timeline-sub">SMK Telkom Purwokerto</div>
+                  <p class="timeline-desc">
+                    Graduated with honors in Computer and Network Engineering, securing the full OPES scholarship to
+                    pursue higher education at Telkom University. During this time, I built a rigorous technical
+                    foundation in hardware and systems while discovering a passion for visual media coordination through
+                    my role in the 2023 Yearbook Project.
+                  </p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-card">
+                  <div class="timeline-year">2023 – Present</div>
+                  <div class="timeline-title">S1 Computer Science</div>
+                  <div class="timeline-sub">Telkom University Purwokerto</div>
+                  <p class="timeline-desc">
+                    Pursuing an Informatics Engineering degree that bridges analytical problem-solving and digital
+                    creativity. Core studies include Artificial Intelligence, Computer Vision, and Software
+                    Architecture a technical foundation that sharpens my approach to post-production. It allows me to
+                    build highly structured editing workflows, leverage advanced AI visual tools, and execute precise
+                    visual storytelling.
+                  </p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-card">
+                  <div class="timeline-year">2023 – Present</div>
+                  <div class="timeline-title">Active Freelance</div>
+                  <div class="timeline-sub">Video Editor · Indonesia</div>
+                  <p class="timeline-desc">
+                    Working with brands, content creators, and event organizers to deliver
+                    commercial and cinematic video edits. Each project adds to a growing
+                    portfolio of diverse storytelling styles.
+                  </p>
+                  <div class="mt-2">
+                    <span class="cert-badge">Adobe Premiere Pro</span>
+                    <span class="cert-badge">DaVinci Resolve</span>
+                    <span class="cert-badge">Color Grading</span>
+                    <span class="cert-badge">Audio Mixing</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skills panel -->
+          <div class="col-lg-5 reveal" style="transition-delay:0.15s">
+            <div class="stat-card h-auto">
+              <h4 class="section-label mb-3">Core Competencies</h4>
+              <div id="skills-list"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- ===== PROJECT ===== -->
+    <section id="project">
+      <div class="container">
+        <div class="text-center mb-5 reveal">
+          <p class="section-label">Portfolio Highlights</p>
+          <h2 class="section-title">A curated selection of my best<br>visual narratives</h2>
+          <p class="section-subtitle">From cinematic event recaps to engaging commercial branding</p>
+        </div>
+
+        <!-- Tabs -->
+        <div class="tabs-wrapper reveal">
+          <button class="tab-btn active" data-tab="projects">
+            <i class="bi bi-grid-3x3-gap-fill"></i>
+            Projects
+          </button>
+          <button class="tab-btn" data-tab="brands">
+            <i class="bi bi-award-fill"></i>
+            Brands Collaboration
+          </button>
+          <button class="tab-btn" data-tab="toolkit">
+            <i class="bi bi-tools"></i>
+            Creative Toolkit
+          </button>
+        </div>
+
+        <!-- Projects Tab -->
+        <div id="tab-projects" class="tab-pane-custom active">
+          <div class="row g-4" id="projects-grid">
+            <!-- Injected by JS -->
+          </div>
+          <div class="text-end mt-4" id="show-more-wrap">
+            <button class="btn-show-more" id="show-more-btn">
+              Show More <i class="bi bi-chevron-down"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Brands Tab -->
+        <div id="tab-brands" class="tab-pane-custom">
+          <div class="row g-4" id="brands-grid">
+            <!-- Injected by JS -->
+          </div>
+        </div>
+
+        <!-- Toolkit Tab -->
+        <div id="tab-toolkit" class="tab-pane-custom">
+          <div class="row g-4" id="toolkit-grid">
+            <!-- Injected by JS -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact">
+      <div class="container">
+        <div class="text-center reveal">
+          <p class="section-label">Contact Me</p>
+          <h2 class="section-title" style="font-size:clamp(2.5rem,6vw,4rem); letter-spacing:-0.04em">
+            Have a <span style="color:var(--accent)">PROJECT?</span>
+          </h2>
+          <p class="section-subtitle mt-2 mb-4">
+            Let's create something extraordinary together
+          </p>
+
+          <!-- Social buttons -->
+          <div class="contact-social-row reveal" style="transition-delay:0.1s">
+            <a href="https://id.linkedin.com/in/axandio-biyanatul-lizan-b79a29260" target="_blank"
+              class="contact-social-btn">
+              <i class="bi bi-linkedin"></i><span>LinkedIn</span>
+            </a>
+            <a href="https://www.tiktok.com/@sikywil" target="_blank" class="contact-social-btn">
+              <i class="bi bi-tiktok"></i><span>TikTok</span>
+            </a>
+            <a href="https://www.instagram.com/xann._n/" target="_blank" class="contact-social-btn">
+              <i class="bi bi-instagram"></i><span>Instagram</span>
+            </a>
+            <a href="https://api.whatsapp.com/send/?phone=%2B6282331581933&text&type=phone_number&app_absent=0"
+              target="_blank" class="contact-social-btn">
+              <i class="bi bi-whatsapp"></i><span>WhatsApp</span>
+            </a>
+          </div>
+
+          <div class="response-note reveal" style="transition-delay:0.15s">
+            <i class="bi bi-circle-fill" style="font-size:0.55rem"></i>
+            Usually responds within 12 hours · WIB (GMT+7)
+          </div>
+        </div>
+
+        <!-- Photo collage -->
+        <div class="contact-photo-grid mt-5 reveal" style="transition-delay:0.2s">
+          <div class="contact-photo-item far-photo">
+            <div class="contact-photo-placeholder" style="height:140px;">
+              <img src="public/contact_5.jpg" alt="">
+            </div>
+          </div>
+          <div class="contact-photo-item side-photo">
+            <div class="contact-photo-placeholder" style="height:180px;">
+              <img src="public/contact_1.jpg" alt="">
+            </div>
+          </div>
+          <div class="contact-photo-item main-photo">
+            <div class="contact-photo-placeholder" style="height:280px;">
+              <img src="public/contact_4.jpg" alt="">
+            </div>
+          </div>
+          <div class="contact-photo-item side-photo">
+            <div class="contact-photo-placeholder" style="height:180px;">
+              <img src="public/contact_2.jpeg" alt="">
+            </div>
+          </div>
+          <div class="contact-photo-item far-photo">
+            <div class="contact-photo-placeholder" style="height:140px;">
+              <img src="public/contact_6.jpeg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+      <div class="container">
+        <p class="footer-text">
+          © 2026 <a href="#home">Axandio Biyanatul Lizan</a>. All rights reserved.
+          &nbsp;·&nbsp; Creative Video Editor &nbsp;·&nbsp; Telkom University Student
+        </p>
+      </div>
+    </footer>
+
+  </div><!-- end main-content -->
+
+  <!-- PROJECT MODAL -->
+  <div class="modal-custom" id="project-modal">
+    <div class="modal-box">
+      <div class="modal-header-custom">
+        <img id="modal-img" src="" alt="Project" />
+        <button class="modal-close" id="modal-close-btn">
+          <i class="bi bi-x"></i>
+        </button>
+      </div>
+      <div class="modal-body-custom">
+        <div class="modal-cat" id="modal-cat"></div>
+        <h3 class="modal-title" id="modal-title"></h3>
+        <p class="modal-desc" id="modal-desc"></p>
+        <div class="modal-meta" id="modal-meta"></div>
+        <a href="#" class="modal-link" id="modal-link" target="_blank" rel="noopener">
+          <i class="bi bi-play-fill"></i> View Project
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    /* ===================================================
+       DATA
+    =================================================== */
+    const PROJECTS = [
+      {
+        id: 1,
+        title: "Banyumas Ngibing — 24 Jam Menari",
+        category: "Cultural Event",
+        desc: "Managing the complete visual lifecycle of a major regional cultural festival, from high-conversion promotional hooks and agile daily recaps to the official cinematic aftermovie.",
+        longDesc: "Executed a multi-phase digital video campaign for the large-scale 'Banyumas Ngibing' cultural event. The objective was to sustain audience engagement across the entire event lifecycle. The project scope required producing diverse content pillars: pre-event registration promos, exclusive interviews with the 24-hour endurance dancers, fast-turnaround daily event recaps, and the final cinematic aftermovie. Additionally, the project included directing and editing official addresses from key regional stakeholders, including the Regent of Banyumas and cultural maestro Rianto.",
+        tools: ["Adobe Premiere Pro", "DaVinci Resolve", "CapCut"],
+        platform: "Instagram Reels / TikTok",
+        duration: "00:30 - 01:30",
+        views: "340K+ views",
+        link: "https://drive.google.com/drive/folders/1JZeWJzPYYsEM6c1yvm78TGxW2hsFw2EC?usp=sharing",
+        img: "public/project_1.jpg"
+      },
+      {
+        id: 2,
+        title: "Art Camp Lengger Bicara Banyumas",
+        category: "Cultural Event",
+        desc: "Directing a 3-phase visual content strategy spanning promotional soft-selling, dynamic daily recaps, and a cinematic documentary for an immersive cultural residency.",
+        longDesc: "Executed an end-to-end visual marketing and documentation campaign for the Lengger Bicara Art Camp. The primary objective was to manage the event's entire digital lifecycle. This required producing pre-event assets (venue introductions and soft-selling promos) to drive participant conversions, followed by rapid-turnaround daily recaps (Days 1-3) to sustain real-time social media momentum. The campaign culminated in an official cinematic aftermovie designed to encapsulate the profound cultural and artistic immersion of the residency.",
+        tools: ["Adobe Premiere Pro", "DaVinci Resolve", "CapCut"],
+        platform: "Instagram Reels / TikTok",
+        duration: "00:30 - 01:30",
+        views: "125K+ views",
+        link: "https://drive.google.com/drive/folders/1PfLMKOTAHSa3Nnph_hllvaXXOXL_UBRK?usp=sharing",
+        img: "public/project_2.jpeg"
+      },
+      {
+        id: 3,
+        title: "Bisik Serayu Festival Banyumas",
+        category: "Cultural Event",
+        desc: "High-impact visual documentation of an international cultural festival bridging local heritage with dynamic performances from global artists.",
+        longDesc: "Comprehensive videography and post-production for the Bisik Serayu Festival 2025. Unlike standard regional events, this festival served as a global stage featuring artists from Spain, Singapore, Japan, and Mexico. The primary objective was to craft a world-class visual record capturing the cross-cultural exchange and effectively positioning the region as a vibrant hub for international arts and collaboration.",
+        tools: ["Adobe Premiere Pro", "DaVinci Resolve", "CapCut"],
+        platform: "Instagram Reels / TikTok",
+        duration: "00:30 - 01:30",
+        views: "85K+ views",
+        link: "https://drive.google.com/drive/folders/1uf8XdrLRHiKTDhJZreIHIkC-_ZXmOvcR?usp=sharing",
+        img: "public/project_3.jpg"
+      },
+      {
+        id: 4,
+        title: "TipTopz Food Advertisement",
+        category: "Commercial",
+        desc: "High-retention commercial product showcases for a Singaporean culinary brand, utilizing precision speed ramping to maximize visual appetite appeal.",
+        longDesc: "An international freelance post-production project for TipTopz, a snack brand based in Singapore. The objective was to transform standard culinary preparation footage into a high-energy digital asset. The content needed to demonstrate the authentic creation process of the local snack while adhering to the aggressive retention demands of modern social media marketing.",
+        tools: ["Adobe Premiere Pro", "DaVinci Resolve"],
+        platform: "Private / Client Delivery",
+        duration: "0:45",
+        views: "Privately shared with client",
+        link: "https://drive.google.com/drive/folders/1J2ObX5DT-8bNvuHLmzI-h2VU3wSR9Lh9?usp=sharing",
+        img: "public/project_4.jpg"
+      },
+      {
+        id: 5,
+        title: "Sersan Podcast Bupati Banyumas",
+        category: "Podcast",
+        desc: "Executing multi-cam post-production for the Regent of Banyumas' official podcast, balancing institutional credibility with highly engaging digital talk-show pacing.",
+        longDesc: "Post-production management for 'SERSAN' (Serius Santai), the official YouTube podcast driving the personal branding and public communication strategy for the Regent of Banyumas (Sadewo.id). The primary objective of this long-form content is to humanize government figures and translate complex public policies—such as digital infrastructure and public service apps—into accessible, dialogue-driven discussions for a younger demographic.",
+        tools: ["DaVinci Resolve"],
+        platform: "YouTube",
+        duration: "30:00 - 55:00",
+        views: "10K+ views",
+        link: "https://drive.google.com/drive/folders/1Q-WioEfCsIFuoy8ls0HoFbOq7qrYBaHz?usp=sharing",
+        img: "public/project_5.jpg"
+      },
+      {
+        id: 6,
+        title: "Lancar Bahasa — Educational Series",
+        category: "Education",
+        desc: "End-to-end production and editing of Video on Demand (VOD) modules for a language learning platform, engineered for optimal student retention and instructional clarity.",
+        longDesc: "Comprehensive production and post-production management for 'Lancar Bahasa' a Learning Management System (LMS) platform offering structured language courses. The primary objective was to produce a high-quality Video on Demand (VOD) library covering diverse educational topics. The content required a professional, distraction-free aesthetic specifically designed to maximize learner comprehension and sustain long-term focus within an academic digital environment.",
+        tools: ["Adobe Premiere Pro"],
+        platform: "LMS Platform",
+        duration: "05:00 - 15:00",
+        views: "Privately",
+        link: "https://drive.google.com/drive/folders/1o1AegP-h3FAV1MHj26wF2hdy4WtKTc9W?usp=sharing",
+        img: "public/project_6.jpg"
+      },
+      {
+        id: 7,
+        title: "Commercial Ads & Event Coverage: Raja Bakso Indonesia",
+        category: "Commercial Ads",
+        desc: "Commercial event coverage and seasonal social media ads designed to elevate brand credibility and drive sales conversions.",
+        longDesc: "A targeted commercial video campaign aimed at establishing institutional trust and generating holiday sales. The project scope included official documentation of high-profile catering events for the TNI, alongside the production of seasonal promotional ads for Christmas and New Year.",
+        tools: ["CapCut", "Adobe Premiere Pro"],
+        platform: "Instagram Reels / TikTok",
+        duration: "0:30 - 1:20",
+        views: "20K+ views",
+        link: "https://drive.google.com/drive/folders/1g2QnpXnVTDdPAHPWRefrAYQ_xgGbCReZ?usp=sharing",
+        img: "public/project_7.jpg"
+      },
+      {
+        id: 8,
+        title: "Social Media Growth: Warung Tepi Sawah",
+        category: "Brand Engagement",
+        desc: "Agile short-form video content engineered for algorithmic reach and high organic engagement on TikTok and Instagram Reels.",
+        longDesc: "A growth-focused social media project designed to rapidly scale brand awareness and audience interaction for a local F&B business. The primary goal was to penetrate the highly competitive short-form video algorithms through consistent, trend-driven content.",
+        tools: ["Adobe Premiere Pro", "DaVinci Resolve", "CapCut"],
+        platform: "Instagram Reels / TikTok",
+        duration: "0:30 - 1:15",
+        views: "1.9M+ views",
+        link: "https://drive.google.com/drive/folders/1O7Xw1ngeakhwtybmBY6tvec6CKgkFTCu?usp=sharing",
+        img: "public/project_8.png"
+      },
+      {
+        id: 9,
+        title: "Venue Branding & Edutainment: Xtreme Shoot Billiard",
+        category: "Brand Engagement",
+        desc: "Engaging Instagram content blending billiard tutorials, trend adaptation, and lifestyle promotion to build an active digital community.",
+        longDesc: "A targeted social media growth campaign for a local billiard lounge. The primary objective was to cultivate a loyal digital community on Instagram by delivering value-driven content. The content pillar strategy integrated educational billiard tips, trend-adapted entertainment, and soft promotional material to position the venue as both an instructional hub and a premier lifestyle destination.",
+        tools: ["Adobe Premiere Pro", "CapCut"],
+        platform: "Instagram Reels",
+        duration: "00:30 - 1:00",
+        views: "400K+ views",
+        link: "https://drive.google.com/drive/folders/1Lw7yMyUkugmR6nWh4xpB6L9DB6q08XfL?usp=sharing",
+        img: "public/project_9.png"
+      },
+      {
+        id: 10,
+        title: "Destination Branding: The Banyumas Narrative",
+        category: "Destination Branding",
+        desc: "A dynamic video essay blending conversational hooks with authentic cinematic archives to showcase the cultural and infrastructural milestones of Banyumas.",
+        longDesc: "Produced as a comprehensive visual narrative celebrating the 455th anniversary of Banyumas. The objective was to modernize traditional regional profiling by replacing standard, dry voiceovers with an engaging, dialogue-driven format. The content systematically highlights the regency's progressive milestones, ranging from ASEAN-recognized waste management systems and global export achievements to major international cultural festivals.",
+        tools: ["Adobe Premiere Pro", "CapCut"],
+        platform: "Instagram Reels",
+        duration: "2:58",
+        views: "1.5K+ views",
+        link: "https://drive.google.com/file/d/1y0mE-HeDIkNXUOWr3NWJJjx8sUpzPHTD/view?usp=sharing",
+        img: "public/project_10.png"
+      },
+      {
+        id: 11,
+        title: "Narrative-Driven Event Coverage & Aftermovies",
+        category: "Aftermovies",
+        desc: "Transforming hours of raw event footage into structured, engaging narratives that prioritize emotional arcs over hollow visual montages.",
+        longDesc: "Comprehensive post-production for various event recaps and aftermovies. The primary objective is to move beyond standard highlight reels by crafting a cohesive narrative arc. Whether documenting a cultural festival or a corporate gathering, the focus is on capturing the event's core message, energy, and atmosphere, ensuring the final deliverable tells a definitive story that resonates with the target audience.",
+        tools: ["Premiere Pro", "CapCut", "DaVinci Resolve"],
+        platform: "Private / Client Delivery",
+        duration: "Varies (2-20 mins)",
+        views: "Private",
+        link: "https://drive.google.com/drive/folders/1TCp53T77ppdlCgWl-RVDzjd73tpgdGBS?usp=sharing",
+        img: "public/project_11.png"
+      },
+      {
+        id: 12,
+        title: "UKP Mendengar Ruang Dialog Pekerja Seni & Pemuda",
+        category: "Documentary",
+        desc: "Dynamic visual documentation of the 'UKP Mendengar' regional creative dialogue, featuring Raffi Ahmad and local art communities.",
+        longDesc: "An official event documentation project capturing the 'UKP Mendengar' public dialogue forum in Purwokerto, Banyumas, on January 17, 2026. Produced in collaboration with the Rianto Dance Studio Community , the primary objective of this video is to document Raffi Ahmad's direct interaction with local youth, art workers, and creative economy stakeholders. The video serves as a visual record of regional creative challenges and grassroots aspirations within the Banyumas and Cilacap creative ecosystems.",
+        tools: ["Adobe Premiere Pro"],
+        platform: "Private / Client Delivery",
+        duration: "20:38",
+        views: "Private",
+        link: "https://drive.google.com/file/d/1WYU_Tbw4bTzfZyVP76s5BsCBiVY6er5i/view?usp=drivesdk",
+        img: "public/project_12.jpg"
+      },
+    ];
+
+    const BRANDS = [
+      { name: "Xtreme Shoot Billiard ", type: "Sports & Leisure", icon: "bi-camera-video" },
+      { name: "Lancar Bahasa", type: "EdTech Platform", icon: "bi-translate" },
+      { name: "Raja Bakso", type: "Food & Beverage", icon: "bi-broadcast" },
+      { name: "Warung Tepi Sawah", type: "Food & Beverage", icon: "bi-cup-hot" },
+      { name: "Bakso Prabu Wengi", type: "Food & Beverage", icon: "bi-people" },
+      { name: "Dilesin Academy", type: "EdTech Platform", icon: "bi-laptop" },
+      { name: "Beyond Creative", type: "Media Agency", icon: "bi-music-note-beamed" },
+      { name: "Soekarno Circle", type: "Coffee Shop", icon: "bi-trophy" },
+    ];
+
+    const TOOLKIT = [
+      { name: "Adobe Premiere Pro", desc: "Primary editing suite for commercial and long-form content", icon: "bi-film", level: 5 },
+      { name: "DaVinci Resolve", desc: "Professional color grading and advanced editing workflows", icon: "bi-palette", level: 5 },
+      { name: "CapCut", desc: "Fast-turnaround social media content and short-form videos", icon: "bi-scissors", level: 5 },
+      { name: "Adobe After Effects", desc: "Motion graphics, visual effects, and animated titles", icon: "bi-stars", level: 4 },
+    ];
+
+    const SKILLS = [
+      { name: "Video Editing", level: 95 },
+      { name: "Storytelling & Pacing", level: 92 },
+      { name: "Color Grading", level: 88 },
+      { name: "Front-End Development", level: 85 },
+      { name: "Computer Vision & ML", level: 80 },
+      { name: "Social Media Optimization", level: 80 },
+    ];
+
+    /* ===================================================
+       OPENING PAGE
+    =================================================== */
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        document.getElementById('opening-page').classList.add('fade-out');
+        document.getElementById('main-navbar').classList.add('visible');
+        document.getElementById('main-content').classList.add('visible');
+        setTimeout(() => {
+          document.getElementById('opening-page').style.display = 'none';
+          triggerReveal();
+        }, 800);
+      }, 2200);
+    });
+
+    /* ===================================================
+       CURSOR GLOW
+    =================================================== */
+    const cursorGlow = document.getElementById('cursor-glow');
+    document.addEventListener('mousemove', e => {
+      cursorGlow.style.left = e.clientX + 'px';
+      cursorGlow.style.top = e.clientY + 'px';
+    });
+
+    /* ===================================================
+       MOBILE NAV
+    =================================================== */
+    document.getElementById('mobile-toggle').addEventListener('click', () => {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('d-none');
+    });
+
+    document.querySelectorAll('#mobile-menu a').forEach(a => {
+      a.addEventListener('click', () => {
+        document.getElementById('mobile-menu').classList.add('d-none');
+      });
+    });
+
+    /* ===================================================
+       ACTIVE NAV ON SCROLL
+    =================================================== */
+    const sections = ['home', 'about', 'education', 'project', 'contact'];
+
+    function updateActiveNav() {
+      let current = 'home';
+      sections.forEach(id => {
+        const el = document.getElementById(id);
+        if (el && window.scrollY >= el.offsetTop - 120) current = id;
+      });
+      document.querySelectorAll('.nav-link-custom[data-nav]').forEach(a => {
+        a.classList.toggle('active', a.dataset.nav === current);
+      });
+    }
+
+    /* ===================================================
+       FLOATING HIRE BUTTON
+    =================================================== */
+    function updateFloatingBtn() {
+      const btn = document.getElementById('floating-hire');
+      btn.classList.toggle('show', window.scrollY > 400);
+    }
+
+    window.addEventListener('scroll', () => {
+      updateActiveNav();
+      updateFloatingBtn();
+      triggerReveal();
+    });
+
+    /* ===================================================
+       SCROLL REVEAL
+    =================================================== */
+    function triggerReveal() {
+      document.querySelectorAll('.reveal:not(.revealed)').forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 80) el.classList.add('revealed');
+      });
+    }
+
+    /* ===================================================
+       COUNTER ANIMATION
+    =================================================== */
+    function animateCounters() {
+      document.querySelectorAll('.counter').forEach(el => {
+        if (el.dataset.done) return;
+        const target = +el.dataset.target;
+        const duration = 1200;
+        const step = target / (duration / 16);
+        let current = 0;
+        const timer = setInterval(() => {
+          current += step;
+          if (current >= target) { current = target; clearInterval(timer); }
+          el.textContent = Math.floor(current);
+        }, 16);
+        el.dataset.done = '1';
+      });
+    }
+
+    const counterObserver = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) animateCounters(); });
+    }, { threshold: 0.3 });
+
+    const aboutSection = document.getElementById('about');
+    if (aboutSection) counterObserver.observe(aboutSection);
+
+    /* ===================================================
+       RENDER SKILLS BAR
+    =================================================== */
+    function renderSkills() {
+      const container = document.getElementById('skills-list');
+      if (!container) return;
+      container.innerHTML = SKILLS.map(s => `
+    <div class="mb-3">
+      <div class="d-flex justify-content-between align-items-center mb-1">
+        <span style="font-size:0.85rem; font-weight:600; color:var(--text-primary)">${s.name}</span>
+        <span style="font-size:0.78rem; color:var(--accent); font-weight:600">${s.level}%</span>
+      </div>
+      <div style="height:6px; background:var(--stroke); border-radius:3px; overflow:hidden;">
+        <div class="skill-bar-fill" style="height:100%; width:0%; background:linear-gradient(90deg,var(--accent),var(--accent-light)); border-radius:3px; transition: width 1s ease;" data-width="${s.level}%"></div>
+      </div>
+    </div>
+  `).join('');
+
+      const skillObserver = new IntersectionObserver((entries) => {
+        if (entries[0].isIntersecting) {
+          document.querySelectorAll('.skill-bar-fill').forEach(bar => {
+            bar.style.width = bar.dataset.width;
+          });
+        }
+      }, { threshold: 0.4 });
+      skillObserver.observe(container);
+    }
+
+    /* ===================================================
+       RENDER PROJECTS
+    =================================================== */
+    const VISIBLE_COUNT = 6;
+    let projectsRendered = false;
+
+    function renderProjects() {
+      const grid = document.getElementById('projects-grid');
+      const showMoreWrap = document.getElementById('show-more-wrap');
+      if (!grid) return;
+
+      grid.innerHTML = PROJECTS.map((p, i) => `
+    <div class="col-md-6 col-lg-4 project-col${i >= VISIBLE_COUNT ? ' hidden' : ''} reveal" style="transition-delay:${(i % 3) * 0.08}s">
+      <div class="project-card" onclick="openModal(${p.id})">
+        <div class="project-thumb">
+          <img src="${p.img}" alt="${p.title}" loading="lazy" />
+          <div class="project-overlay">
+            <div class="project-play"><i class="bi bi-play-fill"></i></div>
+          </div>
+          <span class="project-cat">${p.category}</span>
+        </div>
+        <div class="project-body">
+          <div class="project-title">${p.title}</div>
+          <p class="project-desc">${p.desc}</p>
+          <div class="project-footer">
+            <div class="project-tools">
+              ${p.tools.map(t => `<span class="tool-chip">${t}</span>`).join('')}
+            </div>
+            <button class="btn-details" onclick="event.stopPropagation();openModal(${p.id})">
+              Details <i class="bi bi-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  `).join('');
+
+      if (PROJECTS.length <= VISIBLE_COUNT) showMoreWrap.style.display = 'none';
+      triggerReveal();
+    }
+
+    document.getElementById('show-more-btn').addEventListener('click', () => {
+      document.querySelectorAll('.project-col.hidden').forEach(el => el.classList.remove('hidden'));
+      document.getElementById('show-more-wrap').style.display = 'none';
+      triggerReveal();
+    });
+
+    /* ===================================================
+       RENDER BRANDS
+    =================================================== */
+    function renderBrands() {
+      const grid = document.getElementById('brands-grid');
+      if (!grid) return;
+      grid.innerHTML = BRANDS.map((b, i) => `
+    <div class="col-sm-6 col-md-4 col-lg-3 reveal" style="transition-delay:${i * 0.05}s">
+      <div class="brand-card">
+        <div class="brand-icon"><i class="bi ${b.icon}"></i></div>
+        <div class="brand-name">${b.name}</div>
+        <div class="brand-type">${b.type}</div>
+      </div>
+    </div>
+  `).join('');
+      triggerReveal();
+    }
+
+    /* ===================================================
+       RENDER TOOLKIT
+    =================================================== */
+    function renderToolkit() {
+      const grid = document.getElementById('toolkit-grid');
+      if (!grid) return;
+      grid.innerHTML = TOOLKIT.map((t, i) => `
+    <div class="col-sm-6 col-lg-3 reveal" style="transition-delay:${i * 0.1}s">
+      <div class="tool-card">
+        <div class="tool-logo"><i class="bi ${t.icon}"></i></div>
+        <div class="tool-name">${t.name}</div>
+        <p class="tool-desc">${t.desc}</p>
+        <div class="tool-level">
+          ${[1, 2, 3, 4, 5].map(n => `<div class="level-dot${n <= t.level ? ' filled' : ''}"></div>`).join('')}
+        </div>
+      </div>
+    </div>
+  `).join('');
+      triggerReveal();
+    }
+
+    /* ===================================================
+       TABS
+    =================================================== */
+    document.querySelectorAll('.tab-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+        document.querySelectorAll('.tab-pane-custom').forEach(p => p.classList.remove('active'));
+        btn.classList.add('active');
+        document.getElementById('tab-' + btn.dataset.tab).classList.add('active');
+        triggerReveal();
+      });
+    });
+
+    /* ===================================================
+       MODAL
+    =================================================== */
+    function openModal(id) {
+      const p = PROJECTS.find(x => x.id === id);
+      if (!p) return;
+      document.getElementById('modal-img').src = p.img;
+      document.getElementById('modal-cat').textContent = p.category;
+      document.getElementById('modal-title').textContent = p.title;
+      document.getElementById('modal-desc').textContent = p.longDesc;
+      document.getElementById('modal-link').href = p.link;
+      document.getElementById('modal-meta').innerHTML = `
+    <div class="modal-meta-item"><span class="modal-meta-label">Platform</span><span class="modal-meta-val">${p.platform}</span></div>
+    <div class="modal-meta-item"><span class="modal-meta-label">Duration</span><span class="modal-meta-val">${p.duration}</span></div>
+    <div class="modal-meta-item"><span class="modal-meta-label">Performance</span><span class="modal-meta-val">${p.views}</span></div>
+    <div class="modal-meta-item"><span class="modal-meta-label">Tools</span><span class="modal-meta-val">${p.tools.join(' · ')}</span></div>
+  `;
+      document.getElementById('project-modal').classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+
+    document.getElementById('modal-close-btn').addEventListener('click', closeModal);
+    document.getElementById('project-modal').addEventListener('click', e => {
+      if (e.target === e.currentTarget) closeModal();
+    });
+
+    function closeModal() {
+      document.getElementById('project-modal').classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') closeModal();
+    });
+
+    /* ===================================================
+       API: QUOTE MOTIVASI (via quotable.io / zenquotes)
+       Using AJAX (XMLHttpRequest)
+    =================================================== */
+    function fetchQuote() {
+      const xhr = new XMLHttpRequest();
+      xhr.open('GET', 'https://api.quotable.io/quotes/random?tags=motivational,inspirational&limit=1', true);
+      xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4) {
+          if (xhr.status === 200) {
+            try {
+              const data = JSON.parse(xhr.responseText);
+              if (data && data.length > 0) {
+                document.getElementById('quote-text').innerHTML =
+                  `<i class="bi bi-quote" style="color:var(--accent); margin-right:0.3rem;"></i>${data[0].content}`;
+                document.getElementById('quote-author').textContent = `— ${data[0].author}`;
+              }
+            } catch (e) {
+              fallbackQuote();
+            }
+          } else {
+            fallbackQuote();
+          }
+        }
+      };
+      xhr.onerror = fallbackQuote;
+      xhr.send();
+    }
+
+    function fallbackQuote() {
+      const quotes = [
+        { text: "Every frame tells a story. Every cut shapes the emotion.", author: "Axandio" },
+        { text: "Cinema is a mirror by which we often see ourselves.", author: "Martin Scorsese" },
+        { text: "Great stories happen to those who can tell them.", author: "Ira Glass" },
+      ];
+      const q = quotes[Math.floor(Math.random() * quotes.length)];
+      document.getElementById('quote-text').innerHTML =
+        `<i class="bi bi-quote" style="color:var(--accent); margin-right:0.3rem;"></i>${q.text}`;
+      document.getElementById('quote-author').textContent = `— ${q.author}`;
+    }
+
+    /* ===================================================
+       INIT
+    =================================================== */
+    renderProjects();
+    renderBrands();
+    renderToolkit();
+    renderSkills();
+    fetchQuote();
+    triggerReveal();
+  </script>
+</body>
+
+</html>
