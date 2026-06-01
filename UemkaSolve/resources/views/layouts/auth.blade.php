@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    {{-- // Bagian Head & Style --}}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    @php
+        $siteName = config('app.name', 'UemkaSolve');
+        $siteTagline = config('app.tagline', 'Solusi UMKM');
+
+        // Auth pages should use a single marketing-focused title (per SEO/snippet needs)
+        // Keep it short so Google is less likely to rewrite it.
+        $seoTitle = $siteName;
+
+        // You can override per-page via: @section('meta_description', '...')
+        $seoDescription = trim($__env->yieldContent(
+            'meta_description',
+            'Uemkasolve membantu UMKM mengelola keuangan dan inventaris secara digital dengan mudah. Masuk ke akun Anda untuk mulai mengelola bisnis.'
+        ));
+
+        $currentUrl = url()->current();
+    @endphp
+
+    <title>{{ $seoTitle }}</title>
+    <meta name="description" content="{{ $seoDescription }}">
+    <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+    <meta name="application-name" content="{{ $siteName }}">
+    <link rel="canonical" href="{{ $currentUrl }}">
+
+    <meta property="og:site_name" content="{{ $siteName }}">
+    <meta property="og:title" content="{{ $seoTitle }}">
+    <meta property="og:description" content="{{ $seoDescription }}">
+    <meta property="og:url" content="{{ $currentUrl }}">
+    <meta property="og:type" content="website">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="{{ $seoTitle }}">
+    <meta name="twitter:description" content="{{ $seoDescription }}">
+
+    <script type="application/ld+json">
+        {!! json_encode([
+            '@context' => 'https://schema.org',
+            '@type' => 'WebSite',
+            'name' => $siteName,
+            'url' => config('app.url'),
+        ], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) !!}
+    </script>
+    <link rel="icon" href="{{ asset('images/favicon.png') }}" type="image/png">
+    <link rel="shortcut icon" href="{{ asset('images/favicon.png') }}" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    @vite('resources/css/app.css')
+    <style>
+        /* Minimal toast styles */
+        #toast-container {
+            position: fixed;
+            right: 16px;
+            bottom: 20px;
+            z-index: 1100;
+        }
+
+        .toast-message {
+            background: rgba(0, 0, 0, 0.85);
+            color: #fff;
+            padding: 10px 14px;
+            margin-top: 8px;
+            border-radius: 8px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+            font-size: 0.95rem;
+            max-width: 320px;
+        }
+
+        .toast-success {
+            background: #16a34a;
+        }
+
+        .toast-error {
+            background: #dc2626;
+        }
+    </style>
+</head>
+
+<body>
+    {{-- // Bagian Layout Auth (Kiri: Logo, Kanan: Konten) --}}
+    <div class="auth-container">
+        <div class="auth-left">
+            <div class="logo-container">
+                <img src="{{ asset('img/Logo.png') }}" alt="logo" class="logo">
+            </div>
+        </div>
+
+        <div class="auth-right">
+            @yield('content')
+        </div>
+    </div>
+    <div id="toast-container"
+        aria-live="polite"
+        aria-atomic="true"
+        data-status="{{ session('status') }}"
+        data-error="{{ isset($errors) && $errors->any() ? $errors->first() : '' }}"></div>
+    <script>
+        // Kode fungsi showToast
+        function showToast(type, message, timeout = 3500) {
+            const container = document.getElementById('toast-container');
+            if (!container) return;
+            const div = document.createElement('div');
+            div.className = 'toast-message ' + (type === 'success' ? 'toast-success' : 'toast-error');
+            div.textContent = message;
+            container.appendChild(div);
+            setTimeout(() => {
+                div.style.transition = 'opacity 250ms ease, transform 250ms ease';
+                div.style.opacity = '0';
+                div.style.transform = 'translateY(6px)';
+                setTimeout(() => container.removeChild(div), 300);
+            }, timeout);
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            // Show server-side session messages as minimal toast
+            // Kode penanganan pesan sesi server-side
+            const container = document.getElementById('toast-container');
+            if (!container) return;
+
+            const serverStatusMessage = container.dataset.status;
+            const firstServerError = container.dataset.error;
+
+            if (serverStatusMessage) showToast('success', serverStatusMessage);
+            if (firstServerError) showToast('error', firstServerError);
+        });
+    </script>
+    @stack('scripts')
+</body>
+
+</html>
