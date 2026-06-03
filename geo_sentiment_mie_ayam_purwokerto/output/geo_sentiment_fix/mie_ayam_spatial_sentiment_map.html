@@ -1,0 +1,3211 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f876240770e0e85e67ab3f1bcb70160d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_f876240770e0e85e67ab3f1bcb70160d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_f876240770e0e85e67ab3f1bcb70160d = L.map(
+                "map_f876240770e0e85e67ab3f1bcb70160d",
+                {
+                    center: [-7.4228343192982456, 109.23557164210526],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_cbedbf768e4774a0dc3014b61ca41e5d = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_cbedbf768e4774a0dc3014b61ca41e5d.addTo(map_f876240770e0e85e67ab3f1bcb70160d);
+        
+    
+            var marker_cluster_d1f030e612ad6514cef7f2a92aa05300 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_e74a42b505435c015c2537a163c02646 = L.marker(
+                [-7.535501, 109.12372],
+                {
+}
+            ).addTo(marker_cluster_d1f030e612ad6514cef7f2a92aa05300);
+        
+    
+            var icon_308b5bddd948d8169efdd845ff479313 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e065429aadc8c6a0c78987efcfea265e = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_f711d8ac4917825b197dd165ab1c8f65 = $(`<div id="html_f711d8ac4917825b197dd165ab1c8f65" style="width: 100.0%; height: 100.0%;">     <div style='width:310px; font-family:Arial, sans-serif'>       <h4 style='margin:0 0 6px 0'>Mie Ayam Mbah Jas</h4>       <div style='font-size:12px; color:#555'>Jl. Nasional III No.19-23, Tunjung Wetan, Tunjung, Kec. Jatilawang, Kabupaten Banyumas, Jawa Tengah 53174, Indonesia</div>       <hr style='margin:8px 0'>       <b>Mayoritas sentimen =</b>       <span style='color:white; background:#E74C3C; padding:2px 7px; border-radius:10px'>         Negatif       </span><br>       <b>Ulasan singkat =</b> otentik, bukan, pasar<br>       <b>Jumlah ulasan =</b> 1 ulasan       <span style='color:#777'>(Negatif 1, Positif 0)</span><br>       <hr style='margin:8px 0'>       <b>Contoh ulasan:</b><br>mi nya otentik, bukan mi pasaran, racikan sdnr nih     </div>     </div>`)[0];
+                popup_e065429aadc8c6a0c78987efcfea265e.setContent(html_f711d8ac4917825b197dd165ab1c8f65);
+            
+        
+
+        marker_e74a42b505435c015c2537a163c02646.bindPopup(popup_e065429aadc8c6a0c78987efcfea265e)
+        ;
+
+        
+    
+    
+            marker_e74a42b505435c015c2537a163c02646.bindTooltip(
+                `<div>
+                     
+    <div style='font-size:13px; line-height:1.35; min-width:220px'>
+      <b>Mie Ayam Mbah Jas</b><br>
+      Mayoritas sentimen = <b style='color:#E74C3C'>Negatif</b><br>
+      Ulasan singkat = otentik, bukan, pasar
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e74a42b505435c015c2537a163c02646.setIcon(icon_308b5bddd948d8169efdd845ff479313);
+            
+    
+            var marker_5a6404a418b8acafc7237b6d5bfd2473 = L.marker(
+                [-7.429113799999997, 109.2445805],
+                {
+}
+            ).addTo(marker_cluster_d1f030e612ad6514cef7f2a92aa05300);
+        
+    
+            var icon_17ee2e4f5e6986e26c52c12488b945c0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_38b8c7f4667665916943f8b15078ba07 = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_19385c6b61b159eea4003785f7816127 = $(`<div id="html_19385c6b61b159eea4003785f7816127" style="width: 100.0%; height: 100.0%;">     <div style='width:310px; font-family:Arial, sans-serif'>       <h4 style='margin:0 0 6px 0'>Mi Ayam Pak Wanto Purwokerto</h4>       <div style='font-size:12px; color:#555'>Jl. Pramuka No.18, Kongsen, Purwokerto Kulon, Kec. Purwokerto Sel., Kabupaten Banyumas, Jawa Tengah 53141, Indonesia</div>       <hr style='margin:8px 0'>       <b>Mayoritas sentimen =</b>       <span style='color:white; background:#27AE60; padding:2px 7px; border-radius:10px'>         Positif       </span><br>       <b>Ulasan singkat =</b> rasa gurih/enak, porsi sedikit, tempat nyaman/bersih<br>       <b>Jumlah ulasan =</b> 224 ulasan       <span style='color:#777'>(Negatif 24, Positif 200)</span><br>       <hr style='margin:8px 0'>       <b>Contoh ulasan:</b><br>Mie ne ora benyek, pas di lidah, rasa maknyuuzz harga terjangkau<br>Mie ayam legend… murah meriah enakk… harga 12rb<br>yummy! ini tempat fav mie ayam temenkuu😊💞     </div>     </div>`)[0];
+                popup_38b8c7f4667665916943f8b15078ba07.setContent(html_19385c6b61b159eea4003785f7816127);
+            
+        
+
+        marker_5a6404a418b8acafc7237b6d5bfd2473.bindPopup(popup_38b8c7f4667665916943f8b15078ba07)
+        ;
+
+        
+    
+    
+            marker_5a6404a418b8acafc7237b6d5bfd2473.bindTooltip(
+                `<div>
+                     
+    <div style='font-size:13px; line-height:1.35; min-width:220px'>
+      <b>Mi Ayam Pak Wanto Purwokerto</b><br>
+      Mayoritas sentimen = <b style='color:#27AE60'>Positif</b><br>
+      Ulasan singkat = rasa gurih/enak, porsi sedikit, tempat nyaman/bersih
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5a6404a418b8acafc7237b6d5bfd2473.setIcon(icon_17ee2e4f5e6986e26c52c12488b945c0);
+            
+    
+            var marker_9f95449e8d328d03390ce37e61982dff = L.marker(
+                [-7.417760799999997, 109.25332940000003],
+                {
+}
+            ).addTo(marker_cluster_d1f030e612ad6514cef7f2a92aa05300);
+        
+    
+            var icon_755b44eb68a711c81aded2f3c90e12d5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b612cdfe1e0806bc40a0664f05c4a23e = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_c5e66a6e5db042e48f3664972653b93d = $(`<div id="html_c5e66a6e5db042e48f3664972653b93d" style="width: 100.0%; height: 100.0%;">     <div style='width:310px; font-family:Arial, sans-serif'>       <h4 style='margin:0 0 6px 0'>Mie Ayam Nyak Dien</h4>       <div style='font-size:12px; color:#555'>Jl. Prof. Dr. Suharso, Arcawinangun, Kec. Purwokerto Tim., Kabupaten Banyumas, Jawa Tengah 53114, Indonesia</div>       <hr style='margin:8px 0'>       <b>Mayoritas sentimen =</b>       <span style='color:white; background:#27AE60; padding:2px 7px; border-radius:10px'>         Positif       </span><br>       <b>Ulasan singkat =</b> rasa gurih/enak, tempat nyaman/bersih, pelayanan ramah/cepat<br>       <b>Jumlah ulasan =</b> 215 ulasan       <span style='color:#777'>(Negatif 35, Positif 180)</span><br>       <hr style='margin:8px 0'>       <b>Contoh ulasan:</b><br>Mienya kenyal dan nggak lembek, pas banget. Ayamnya juga lumayan banyak, bumbunya gurih ada manis-manis dikit. Pelayanannya juga cepat dan ramah, harganya juga masih ramah di kanto<br>Dari pertama datang, aromanya aja udah menggoda. Mienya kenyal, dimasak pas, terus topping ayamnya gurih manis dengan bumbu rendang yang meresap sampai ke dalam. Kalau kamu bosan s<br>mie ayam nyak dien purwokerto betol betol recommended. rasa mie ayamnya enak, mienya kenyal kenyul, gurih, porsinya pas, dan topping ayamnya melimpah. endyull poll pokoke, tempatny     </div>     </div>`)[0];
+                popup_b612cdfe1e0806bc40a0664f05c4a23e.setContent(html_c5e66a6e5db042e48f3664972653b93d);
+            
+        
+
+        marker_9f95449e8d328d03390ce37e61982dff.bindPopup(popup_b612cdfe1e0806bc40a0664f05c4a23e)
+        ;
+
+        
+    
+    
+            marker_9f95449e8d328d03390ce37e61982dff.bindTooltip(
+                `<div>
+                     
+    <div style='font-size:13px; line-height:1.35; min-width:220px'>
+      <b>Mie Ayam Nyak Dien</b><br>
+      Mayoritas sentimen = <b style='color:#27AE60'>Positif</b><br>
+      Ulasan singkat = rasa gurih/enak, tempat nyaman/bersih, pelayanan ramah/cepat
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9f95449e8d328d03390ce37e61982dff.setIcon(icon_755b44eb68a711c81aded2f3c90e12d5);
+            
+    
+            var marker_d25a5e90e3c05c9739a213f878e402b0 = L.marker(
+                [-7.417195600000001, 109.24613750000002],
+                {
+}
+            ).addTo(marker_cluster_d1f030e612ad6514cef7f2a92aa05300);
+        
+    
+            var icon_8ef4d41867fddf3e0b3b28590dc36f4d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_38934394e8a99e68c8c7fb22024fe841 = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_a5f5793ff0e247785e6159e4303d9127 = $(`<div id="html_a5f5793ff0e247785e6159e4303d9127" style="width: 100.0%; height: 100.0%;">     <div style='width:310px; font-family:Arial, sans-serif'>       <h4 style='margin:0 0 6px 0'>Mie Ayam dan Bakso Tunggal Rasa</h4>       <div style='font-size:12px; color:#555'>Jl. Prof. Dr. Suharso No.12, Glempang, Bancarkembar, Kec. Purwokerto Utara, Kabupaten Banyumas, Jawa Tengah 53115, Indonesia</div>       <hr style='margin:8px 0'>       <b>Mayoritas sentimen =</b>       <span style='color:white; background:#27AE60; padding:2px 7px; border-radius:10px'>         Positif       </span><br>       <b>Ulasan singkat =</b> rasa gurih/enak, tempat nyaman/bersih, pelayanan ramah/cepat<br>       <b>Jumlah ulasan =</b> 212 ulasan       <span style='color:#777'>(Negatif 30, Positif 182)</span><br>       <hr style='margin:8px 0'>       <b>Contoh ulasan:</b><br>Mie Ayam 🐔 yang sudah lama jadi langganan rasanya nggak diragukan lagi<br>Rasanya mantap<br>rasanya pas     </div>     </div>`)[0];
+                popup_38934394e8a99e68c8c7fb22024fe841.setContent(html_a5f5793ff0e247785e6159e4303d9127);
+            
+        
+
+        marker_d25a5e90e3c05c9739a213f878e402b0.bindPopup(popup_38934394e8a99e68c8c7fb22024fe841)
+        ;
+
+        
+    
+    
+            marker_d25a5e90e3c05c9739a213f878e402b0.bindTooltip(
+                `<div>
+                     
+    <div style='font-size:13px; line-height:1.35; min-width:220px'>
+      <b>Mie Ayam dan Bakso Tunggal Rasa</b><br>
+      Mayoritas sentimen = <b style='color:#27AE60'>Positif</b><br>
+      Ulasan singkat = rasa gurih/enak, tempat nyaman/bersih, pelayanan ramah/cepat
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d25a5e90e3c05c9739a213f878e402b0.setIcon(icon_8ef4d41867fddf3e0b3b28590dc36f4d);
+            
+    
+            var marker_31a0abe480c51a700916b5db6fa9b590 = L.marker(
+                [-7.4310969999999985, 109.2564693],
+                {
+}
+            ).addTo(marker_cluster_d1f030e612ad6514cef7f2a92aa05300);
+        
+    
+            var icon_cffa9174b65705d193b9febeceb42d2c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d7705b719483a06343982c7124252fa3 = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_ed79b3ec0d6ae23f0b5a88cd2cc29ac4 = $(`<div id="html_ed79b3ec0d6ae23f0b5a88cd2cc29ac4" style="width: 100.0%; height: 100.0%;">     <div style='width:310px; font-family:Arial, sans-serif'>       <h4 style='margin:0 0 6px 0'>Mie Ayam Mbak Kimun</h4>       <div style='font-size:12px; color:#555'>Jl. Jend. Sudirman No.895, Pejagalan, Purwokerto Wetan, Kec. Purwokerto Tim., Kabupaten Banyumas, Jawa Tengah 53147, Indonesia</div>       <hr style='margin:8px 0'>       <b>Mayoritas sentimen =</b>       <span style='color:white; background:#27AE60; padding:2px 7px; border-radius:10px'>         Positif       </span><br>       <b>Ulasan singkat =</b> rasa gurih/enak, tempat nyaman/bersih, pelayanan lama/kurang<br>       <b>Jumlah ulasan =</b> 212 ulasan       <span style='color:#777'>(Negatif 48, Positif 164)</span><br>       <hr style='margin:8px 0'>       <b>Contoh ulasan:</b><br>Mie Gopalanya Enakkkkkk<br>Salah satu pilihan mie ayam di Purwokerto yang wajib dikunjungi.. Es teh jangan lupa Kie ayam kriuk...<br>Mie ayam goreng (Mieago) paling enak di sini, untuk pelayanan dan suasana biasa saja tidak ada yang spesial.     </div>     </div>`)[0];
+                popup_d7705b719483a06343982c7124252fa3.setContent(html_ed79b3ec0d6ae23f0b5a88cd2cc29ac4);
+            
+        
+
+        marker_31a0abe480c51a700916b5db6fa9b590.bindPopup(popup_d7705b719483a06343982c7124252fa3)
+        ;
+
+        
+    
+    
+            marker_31a0abe480c51a700916b5db6fa9b590.bindTooltip(
+                `<div>
+                     
+    <div style='font-size:13px; line-height:1.35; min-width:220px'>
+      <b>Mie Ayam Mbak Kimun</b><br>
+      Mayoritas sentimen = <b style='color:#27AE60'>Positif</b><br>
+      Ulasan singkat = rasa gurih/enak, tempat nyaman/bersih, pelayanan lama/kurang
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_31a0abe480c51a700916b5db6fa9b590.setIcon(icon_cffa9174b65705d193b9febeceb42d2c);
+            
+    
+            var marker_406e075afdff76f10b45fefd5e5f1c9d = L.marker(
+                [-7.4239679999999995, 109.23604300000001],
+                {
+}
+            ).addTo(marker_cluster_d1f030e612ad6514cef7f2a92aa05300);
+        
+    
+            var icon_a0ebf9f4ccdd0a868032a33bc0b7b7e2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_502f0c69fb051c7cadeae3ec0a4c8e54 = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_e347b62f9ded873e2fcf161cb3d83334 = $(`<div id="html_e347b62f9ded873e2fcf161cb3d83334" style="width: 100.0%; height: 100.0%;">     <div style='width:310px; font-family:Arial, sans-serif'>       <h4 style='margin:0 0 6px 0'>Mie Ayam Pak Marso</h4>       <div style='font-size:12px; color:#555'>Jl. Mardikenya, Brubahan, Purwanegara, Kec. Purwokerto Utara, Kabupaten Banyumas, Jawa Tengah 53116, Indonesia</div>       <hr style='margin:8px 0'>       <b>Mayoritas sentimen =</b>       <span style='color:white; background:#27AE60; padding:2px 7px; border-radius:10px'>         Positif       </span><br>       <b>Ulasan singkat =</b> rasa gurih/enak, porsi banyak, tempat nyaman/bersih<br>       <b>Jumlah ulasan =</b> 206 ulasan       <span style='color:#777'>(Negatif 21, Positif 185)</span><br>       <hr style='margin:8px 0'>       <b>Contoh ulasan:</b><br>salah satu mie ayam enak di pwt yang recommended buat dicoba. yang bikin enak itu sambalnya, ngga ada di tempat lain. lumayan ramai dan penuh di jam makan siang, tapi cepet kok pel<br>pelayanannya cepet, enak mie ayamnya, kecil² tipis gtu bentuk mienya, tp porsinya jumbo dengan harga yg murah<br>porsi nya jumbo bikin kenyang rasa mantul, harga pas di kantong     </div>     </div>`)[0];
+                popup_502f0c69fb051c7cadeae3ec0a4c8e54.setContent(html_e347b62f9ded873e2fcf161cb3d83334);
+            
+        
+
+        marker_406e075afdff76f10b45fefd5e5f1c9d.bindPopup(popup_502f0c69fb051c7cadeae3ec0a4c8e54)
+        ;
+
+        
+    
+    
+            marker_406e075afdff76f10b45fefd5e5f1c9d.bindTooltip(
+                `<div>
+                     
+    <div style='font-size:13px; line-height:1.35; min-width:220px'>
+      <b>Mie Ayam Pak Marso</b><br>
+      Mayoritas sentimen = <b style='color:#27AE60'>Positif</b><br>
+      Ulasan singkat = rasa gurih/enak, porsi banyak, tempat nyaman/bersih
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_406e075afdff76f10b45fefd5e5f1c9d.setIcon(icon_a0ebf9f4ccdd0a868032a33bc0b7b7e2);
+            
+    
+            var marker_1683b6a7dbe5242946f4cb9e3d374690 = L.marker(
+                [-7.4335718, 109.24020360000002],
+                {
+}
+            ).addTo(marker_cluster_d1f030e612ad6514cef7f2a92aa05300);
+        
+    
+            var icon_0ea4fa9617c4f2cebbed14d7bb8a8d5e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9910b89bbe611319adfee847a60c659a = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_cd1e11f958359decefa4418f672c3d26 = $(`<div id="html_cd1e11f958359decefa4418f672c3d26" style="width: 100.0%; height: 100.0%;">     <div style='width:310px; font-family:Arial, sans-serif'>       <h4 style='margin:0 0 6px 0'>Bakso dan Mie Ayam Ceker Pak Sariman Purwokerto</h4>       <div style='font-size:12px; color:#555'>Jl. Perintis Kemerdekaan Jl. Sidanegara II No.18, Penisian, Purwokerto Kulon, Kec. Purwokerto Sel., Kabupaten Banyumas, Jawa Tengah 53141, Indonesia</div>       <hr style='margin:8px 0'>       <b>Mayoritas sentimen =</b>       <span style='color:white; background:#27AE60; padding:2px 7px; border-radius:10px'>         Positif       </span><br>       <b>Ulasan singkat =</b> rasa gurih/enak, tempat nyaman/bersih, pelayanan ramah/cepat<br>       <b>Jumlah ulasan =</b> 172 ulasan       <span style='color:#777'>(Negatif 7, Positif 165)</span><br>       <hr style='margin:8px 0'>       <b>Contoh ulasan:</b><br>rasa nya pas gurih, enak bangetttt bestt pokoknya, untuk pelayanan nya mungkin bisa lebih ditingkatkan lagi<br>kesini 3x jam makan siang tapi 3x juga menu  yang di pesan ngga ada semua. kalo ngga ada mending ga usah ditulis dimenu. mau ganti yg lain katanya suruh nggu stengah jam lebih.<br>pelayanan ramah, banyak promo menarik yang menguntungkan WAJIB DI COBA!     </div>     </div>`)[0];
+                popup_9910b89bbe611319adfee847a60c659a.setContent(html_cd1e11f958359decefa4418f672c3d26);
+            
+        
+
+        marker_1683b6a7dbe5242946f4cb9e3d374690.bindPopup(popup_9910b89bbe611319adfee847a60c659a)
+        ;
+
+        
+    
+    
+            marker_1683b6a7dbe5242946f4cb9e3d374690.bindTooltip(
+                `<div>
+                     
+    <div style='font-size:13px; line-height:1.35; min-width:220px'>
+      <b>Bakso dan Mie Ayam Ceker Pak Sariman Purwokerto</b><br>
+      Mayoritas sentimen = <b style='color:#27AE60'>Positif</b><br>
+      Ulasan singkat = rasa gurih/enak, tempat nyaman/bersih, pelayanan ramah/cepat
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1683b6a7dbe5242946f4cb9e3d374690.setIcon(icon_0ea4fa9617c4f2cebbed14d7bb8a8d5e);
+            
+    
+            var marker_fcea17e2548620a867dc17baae6f0f23 = L.marker(
+                [-7.399537399999999, 109.24071299999997],
+                {
+}
+            ).addTo(marker_cluster_d1f030e612ad6514cef7f2a92aa05300);
+        
+    
+            var icon_898dd629f24ad3f581a84f8951f493e2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b52d20f32381521f5b297c5d464bf9b4 = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_9bd97b26b330e59bdda70c2ed55c4e00 = $(`<div id="html_9bd97b26b330e59bdda70c2ed55c4e00" style="width: 100.0%; height: 100.0%;">     <div style='width:310px; font-family:Arial, sans-serif'>       <h4 style='margin:0 0 6px 0'>Mie Ayam Kita (spesial Rendang)</h4>       <div style='font-size:12px; color:#555'>Jl. Riyanto, RT.002/RW.001, Sumampir Wetan, Sumampir, Kec. Purwokerto Utara, Kabupaten Banyumas, Jawa Tengah 53125, Indonesia</div>       <hr style='margin:8px 0'>       <b>Mayoritas sentimen =</b>       <span style='color:white; background:#27AE60; padding:2px 7px; border-radius:10px'>         Positif       </span><br>       <b>Ulasan singkat =</b> rasa gurih/enak, pelayanan ramah/cepat, tempat nyaman/bersih<br>       <b>Jumlah ulasan =</b> 158 ulasan       <span style='color:#777'>(Negatif 15, Positif 143)</span><br>       <hr style='margin:8px 0'>       <b>Contoh ulasan:</b><br>Nyam nyamm... enak, harga nya lumayan murah<br>Selama di Purwokerto baru Mie Ayam ini sih yang sesuai sama lidah aku😭🫶 Bumbunya rich dan tipe kuahnya kental. Mau pesen balungan 2 porsi kata mas nya satu porsi itu semangkuk. Dan<br>Payah bgt udah ke sini bbrp kali, semalam ke sini tekstur sambalnya macam Air di kasih saus = encer pollllll, lebih parahnya lagi saya dan teman makan di sini paginya langsung diar     </div>     </div>`)[0];
+                popup_b52d20f32381521f5b297c5d464bf9b4.setContent(html_9bd97b26b330e59bdda70c2ed55c4e00);
+            
+        
+
+        marker_fcea17e2548620a867dc17baae6f0f23.bindPopup(popup_b52d20f32381521f5b297c5d464bf9b4)
+        ;
+
+        
+    
+    
+            marker_fcea17e2548620a867dc17baae6f0f23.bindTooltip(
+                `<div>
+                     
+    <div style='font-size:13px; line-height:1.35; min-width:220px'>
+      <b>Mie Ayam Kita (spesial Rendang)</b><br>
+      Mayoritas sentimen = <b style='color:#27AE60'>Positif</b><br>
+      Ulasan singkat = rasa gurih/enak, pelayanan ramah/cepat, tempat nyaman/bersih
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fcea17e2548620a867dc17baae6f0f23.setIcon(icon_898dd629f24ad3f581a84f8951f493e2);
+            
+    
+            var marker_321252b93df5c739823093af02781b7a = L.marker(
+                [-7.416409200000001, 109.22940249999999],
+                {
+}
+            ).addTo(marker_cluster_d1f030e612ad6514cef7f2a92aa05300);
+        
+    
+            var icon_964ee6450be58b15d1c36e0bf03ea9b4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e607e6cc37dcd9c46b142c188425ae71 = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_6f43675b7859936a154b1f8507a40778 = $(`<div id="html_6f43675b7859936a154b1f8507a40778" style="width: 100.0%; height: 100.0%;">     <div style='width:310px; font-family:Arial, sans-serif'>       <h4 style='margin:0 0 6px 0'>Mie Ayam Tanjlig</h4>       <div style='font-size:12px; color:#555'>H6MH+CQJ, Karangjengkol, Sokanegara, Kec. Purwokerto Tim., Kabupaten Banyumas, Jawa Tengah 53131, Indonesia</div>       <hr style='margin:8px 0'>       <b>Mayoritas sentimen =</b>       <span style='color:white; background:#27AE60; padding:2px 7px; border-radius:10px'>         Positif       </span><br>       <b>Ulasan singkat =</b> rasa gurih/enak, porsi banyak, tempat nyaman/bersih<br>       <b>Jumlah ulasan =</b> 119 ulasan       <span style='color:#777'>(Negatif 14, Positif 105)</span><br>       <hr style='margin:8px 0'>       <b>Contoh ulasan:</b><br>Mantap baksonya kresss waktu di gigit. Mie ayamnya enak<br>Salah satu mie ayam terenak di Purwokerto  Tips makan mie ayamnya jangan terlalu banyak saus agar rasa mie ayamnya lwbih terasa bumbunya<br>Kalo anda baca ini, cobain mie ayam + baksonya cuy… pastikan kondisi perut anda kosong ya, karena porsinya kusus buat orang-orang yang punya porsi banyak 😁🙏🏻  Ampe lupa rasanya kan     </div>     </div>`)[0];
+                popup_e607e6cc37dcd9c46b142c188425ae71.setContent(html_6f43675b7859936a154b1f8507a40778);
+            
+        
+
+        marker_321252b93df5c739823093af02781b7a.bindPopup(popup_e607e6cc37dcd9c46b142c188425ae71)
+        ;
+
+        
+    
+    
+            marker_321252b93df5c739823093af02781b7a.bindTooltip(
+                `<div>
+                     
+    <div style='font-size:13px; line-height:1.35; min-width:220px'>
+      <b>Mie Ayam Tanjlig</b><br>
+      Mayoritas sentimen = <b style='color:#27AE60'>Positif</b><br>
+      Ulasan singkat = rasa gurih/enak, porsi banyak, tempat nyaman/bersih
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_321252b93df5c739823093af02781b7a.setIcon(icon_964ee6450be58b15d1c36e0bf03ea9b4);
+            
+    
+            var marker_cbf0f313c5ac624d29fd681fc3e9a38e = L.marker(
+                [-7.425954200000001, 109.23717689999998],
+                {
+}
+            ).addTo(marker_cluster_d1f030e612ad6514cef7f2a92aa05300);
+        
+    
+            var icon_87c8286d0a513232f3bc914a7df0efc6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_86b62c6e617e74aa27aaea9d8b0a9a46 = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_3acd9108e6f56e650a8896690a9ec49d = $(`<div id="html_3acd9108e6f56e650a8896690a9ec49d" style="width: 100.0%; height: 100.0%;">     <div style='width:310px; font-family:Arial, sans-serif'>       <h4 style='margin:0 0 6px 0'>Dapoer Prambanan</h4>       <div style='font-size:12px; color:#555'>Jl. Merdeka No.10, Brubahan, Kranji, Kec. Purwokerto Tim., Kabupaten Banyumas, Jawa Tengah 53116, Indonesia</div>       <hr style='margin:8px 0'>       <b>Mayoritas sentimen =</b>       <span style='color:white; background:#27AE60; padding:2px 7px; border-radius:10px'>         Positif       </span><br>       <b>Ulasan singkat =</b> rasa gurih/enak, pelayanan ramah/cepat, tempat nyaman/bersih<br>       <b>Jumlah ulasan =</b> 110 ulasan       <span style='color:#777'>(Negatif 23, Positif 87)</span><br>       <hr style='margin:8px 0'>       <b>Contoh ulasan:</b><br>Gak lg lah cukup sekali aja,,emg dtngny udh mlm cmn kn yg namanya layanan hrsny tetep baik<br>Beberapa kali makan di sini, recomended untuk rasa nya. Harga standar, tempat cukup nyaman.<br>Luas nyaman enak estetik     </div>     </div>`)[0];
+                popup_86b62c6e617e74aa27aaea9d8b0a9a46.setContent(html_3acd9108e6f56e650a8896690a9ec49d);
+            
+        
+
+        marker_cbf0f313c5ac624d29fd681fc3e9a38e.bindPopup(popup_86b62c6e617e74aa27aaea9d8b0a9a46)
+        ;
+
+        
+    
+    
+            marker_cbf0f313c5ac624d29fd681fc3e9a38e.bindTooltip(
+                `<div>
+                     
+    <div style='font-size:13px; line-height:1.35; min-width:220px'>
+      <b>Dapoer Prambanan</b><br>
+      Mayoritas sentimen = <b style='color:#27AE60'>Positif</b><br>
+      Ulasan singkat = rasa gurih/enak, pelayanan ramah/cepat, tempat nyaman/bersih
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_cbf0f313c5ac624d29fd681fc3e9a38e.setIcon(icon_87c8286d0a513232f3bc914a7df0efc6);
+            
+    
+            var marker_d83b3f1fac8b2a3dafc03fc28998a66b = L.marker(
+                [-7.4272170000000015, 109.23510730000004],
+                {
+}
+            ).addTo(marker_cluster_d1f030e612ad6514cef7f2a92aa05300);
+        
+    
+            var icon_98c22a5209ccd2c109f9ada9ea124b9d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c477ff7275c263e9c529e09ef2eda93a = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_973dd22babb3970b99b27be57135ad5c = $(`<div id="html_973dd22babb3970b99b27be57135ad5c" style="width: 100.0%; height: 100.0%;">     <div style='width:310px; font-family:Arial, sans-serif'>       <h4 style='margin:0 0 6px 0'>Mie Ayam Tipar</h4>       <div style='font-size:12px; color:#555'>H6FP+429, Jl. Kolonel Sugiono, Kranjimuntang, Purwanegara, Kec. Purwokerto Utara, Kabupaten Banyumas, Jawa Tengah 53116, Indonesia</div>       <hr style='margin:8px 0'>       <b>Mayoritas sentimen =</b>       <span style='color:white; background:#27AE60; padding:2px 7px; border-radius:10px'>         Positif       </span><br>       <b>Ulasan singkat =</b> rasa gurih/enak, porsi sedikit, porsi banyak<br>       <b>Jumlah ulasan =</b> 108 ulasan       <span style='color:#777'>(Negatif 18, Positif 90)</span><br>       <hr style='margin:8px 0'>       <b>Contoh ulasan:</b><br>Maap saya fokus ke sampah bawah tangga & kandang burung didalam rumahnya<br>rasanya b aja harga sangat mahal<br>Penasaran karna katanya mie ayam yg enak di purwokerto Beneran enaaakk, suka karna bukan tipe mie ayam yg medok kecap. Rasanya lbh ke gurih, ayamnya cukup banyak, dan paling suka s     </div>     </div>`)[0];
+                popup_c477ff7275c263e9c529e09ef2eda93a.setContent(html_973dd22babb3970b99b27be57135ad5c);
+            
+        
+
+        marker_d83b3f1fac8b2a3dafc03fc28998a66b.bindPopup(popup_c477ff7275c263e9c529e09ef2eda93a)
+        ;
+
+        
+    
+    
+            marker_d83b3f1fac8b2a3dafc03fc28998a66b.bindTooltip(
+                `<div>
+                     
+    <div style='font-size:13px; line-height:1.35; min-width:220px'>
+      <b>Mie Ayam Tipar</b><br>
+      Mayoritas sentimen = <b style='color:#27AE60'>Positif</b><br>
+      Ulasan singkat = rasa gurih/enak, porsi sedikit, porsi banyak
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d83b3f1fac8b2a3dafc03fc28998a66b.setIcon(icon_98c22a5209ccd2c109f9ada9ea124b9d);
+            
+    
+            var marker_172341cb30951ed6a3ee4ce1d7b2f6b8 = L.marker(
+                [-7.433213499999999, 109.2584942],
+                {
+}
+            ).addTo(marker_cluster_d1f030e612ad6514cef7f2a92aa05300);
+        
+    
+            var icon_4af6a4093b423644085a5917e8a043d3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_19827f46972d9c018906e6475cdcc590 = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_8ca729afbb03faf32e36f2a7929fa00f = $(`<div id="html_8ca729afbb03faf32e36f2a7929fa00f" style="width: 100.0%; height: 100.0%;">     <div style='width:310px; font-family:Arial, sans-serif'>       <h4 style='margin:0 0 6px 0'>Bakmi Nyemek Bu TRIMO</h4>       <div style='font-size:12px; color:#555'>Jl. Jend. Sudirman, Karanganyar, Berkoh, Kec. Purwokerto Sel., Kabupaten Banyumas, Jawa Tengah 53147, Indonesia</div>       <hr style='margin:8px 0'>       <b>Mayoritas sentimen =</b>       <span style='color:white; background:#27AE60; padding:2px 7px; border-radius:10px'>         Positif       </span><br>       <b>Ulasan singkat =</b> rasa gurih/enak, porsi banyak, tempat nyaman/bersih<br>       <b>Jumlah ulasan =</b> 88 ulasan       <span style='color:#777'>(Negatif 12, Positif 76)</span><br>       <hr style='margin:8px 0'>       <b>Contoh ulasan:</b><br>Salah satu bakmi Nyemek favorite<br>Bumbunya berasa dan bukan tipikal ngecap banget, tipikal masakan Jawa dan ciri khas mienya pipih...kalo suka pedes nampol mantap bener2 cabai plus acarnya juga enak...mantap kalo b<br>Rasa biasa, nunggu masakan agak lama, harga utk kalangan biasa berat.     </div>     </div>`)[0];
+                popup_19827f46972d9c018906e6475cdcc590.setContent(html_8ca729afbb03faf32e36f2a7929fa00f);
+            
+        
+
+        marker_172341cb30951ed6a3ee4ce1d7b2f6b8.bindPopup(popup_19827f46972d9c018906e6475cdcc590)
+        ;
+
+        
+    
+    
+            marker_172341cb30951ed6a3ee4ce1d7b2f6b8.bindTooltip(
+                `<div>
+                     
+    <div style='font-size:13px; line-height:1.35; min-width:220px'>
+      <b>Bakmi Nyemek Bu TRIMO</b><br>
+      Mayoritas sentimen = <b style='color:#27AE60'>Positif</b><br>
+      Ulasan singkat = rasa gurih/enak, porsi banyak, tempat nyaman/bersih
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_172341cb30951ed6a3ee4ce1d7b2f6b8.setIcon(icon_4af6a4093b423644085a5917e8a043d3);
+            
+    
+            var marker_9ec5478019f64c85e9a046f120bcd6a0 = L.marker(
+                [-7.4275052000000015, 109.25256529999997],
+                {
+}
+            ).addTo(marker_cluster_d1f030e612ad6514cef7f2a92aa05300);
+        
+    
+            var icon_d536e85e1400fbaae42184ff3ee387e9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a45aae8ed9f6c9b062fd3f5d3a822708 = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_c6896439d7381951539507deffd36a49 = $(`<div id="html_c6896439d7381951539507deffd36a49" style="width: 100.0%; height: 100.0%;">     <div style='width:310px; font-family:Arial, sans-serif'>       <h4 style='margin:0 0 6px 0'>Bakso Gendut Putro</h4>       <div style='font-size:12px; color:#555'>H7C3+X2W, Jl. Jend. Sudirman, Purwokerto Wetan, Kec. Purwokerto Tim., Kabupaten Banyumas, Jawa Tengah 53147, Indonesia</div>       <hr style='margin:8px 0'>       <b>Mayoritas sentimen =</b>       <span style='color:white; background:#27AE60; padding:2px 7px; border-radius:10px'>         Positif       </span><br>       <b>Ulasan singkat =</b> rasa gurih/enak, porsi banyak, tempat nyaman/bersih<br>       <b>Jumlah ulasan =</b> 83 ulasan       <span style='color:#777'>(Negatif 15, Positif 68)</span><br>       <hr style='margin:8px 0'>       <b>Contoh ulasan:</b><br>kurang ramah<br>Seger semua bahan bahannya, enakkk<br>Tempat strategis di jalur utama.. harga terjangkau, rasa enak..yang punya ramah     </div>     </div>`)[0];
+                popup_a45aae8ed9f6c9b062fd3f5d3a822708.setContent(html_c6896439d7381951539507deffd36a49);
+            
+        
+
+        marker_9ec5478019f64c85e9a046f120bcd6a0.bindPopup(popup_a45aae8ed9f6c9b062fd3f5d3a822708)
+        ;
+
+        
+    
+    
+            marker_9ec5478019f64c85e9a046f120bcd6a0.bindTooltip(
+                `<div>
+                     
+    <div style='font-size:13px; line-height:1.35; min-width:220px'>
+      <b>Bakso Gendut Putro</b><br>
+      Mayoritas sentimen = <b style='color:#27AE60'>Positif</b><br>
+      Ulasan singkat = rasa gurih/enak, porsi banyak, tempat nyaman/bersih
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9ec5478019f64c85e9a046f120bcd6a0.setIcon(icon_d536e85e1400fbaae42184ff3ee387e9);
+            
+    
+            var marker_dd85efeb13c55c7a507c8ec991cb4eed = L.marker(
+                [-7.423589600000001, 109.23911039999997],
+                {
+}
+            ).addTo(marker_cluster_d1f030e612ad6514cef7f2a92aa05300);
+        
+    
+            var icon_bc624af3a462d8f4c5fd822343de29ed = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4bc51eb22629fe65fd46f2c1a4878648 = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_1b2f825ef57a527a12121810f4f0aefa = $(`<div id="html_1b2f825ef57a527a12121810f4f0aefa" style="width: 100.0%; height: 100.0%;">     <div style='width:310px; font-family:Arial, sans-serif'>       <h4 style='margin:0 0 6px 0'>Mie Ayam Ijo Bpk. Sabar</h4>       <div style='font-size:12px; color:#555'>Brubahan, Purwanegara, Kec. Purwokerto Utara, Kabupaten Banyumas, Jawa Tengah 53116, Indonesia</div>       <hr style='margin:8px 0'>       <b>Mayoritas sentimen =</b>       <span style='color:white; background:#27AE60; padding:2px 7px; border-radius:10px'>         Positif       </span><br>       <b>Ulasan singkat =</b> rasa gurih/enak, porsi banyak, porsi sedikit<br>       <b>Jumlah ulasan =</b> 83 ulasan       <span style='color:#777'>(Negatif 12, Positif 71)</span><br>       <hr style='margin:8px 0'>       <b>Contoh ulasan:</b><br>Enak ini Mampir sini ada 2 pilihan mie yaitu standar dan ijo Rasanya mantep banget, ini tipikal mie kecil dan rasa ayam nya manis. Tingkat kematangan sayure pas banget dan masih fr<br>Enak...sayang tempatnya kurang jyaman<br>Mie Ayam Hijau yang kalo disantap mengenyangkan.  Dari rasa dan tampilan kuahnya tebakan saya menganut mazhab Wonogirian. Kuah cenderung coklat, kental dan ada layer bumbu-bumbu ku     </div>     </div>`)[0];
+                popup_4bc51eb22629fe65fd46f2c1a4878648.setContent(html_1b2f825ef57a527a12121810f4f0aefa);
+            
+        
+
+        marker_dd85efeb13c55c7a507c8ec991cb4eed.bindPopup(popup_4bc51eb22629fe65fd46f2c1a4878648)
+        ;
+
+        
+    
+    
+            marker_dd85efeb13c55c7a507c8ec991cb4eed.bindTooltip(
+                `<div>
+                     
+    <div style='font-size:13px; line-height:1.35; min-width:220px'>
+      <b>Mie Ayam Ijo Bpk. Sabar</b><br>
+      Mayoritas sentimen = <b style='color:#27AE60'>Positif</b><br>
+      Ulasan singkat = rasa gurih/enak, porsi banyak, porsi sedikit
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_dd85efeb13c55c7a507c8ec991cb4eed.setIcon(icon_bc624af3a462d8f4c5fd822343de29ed);
+            
+    
+            var marker_aca785f6bedc7ff5344704596022ac97 = L.marker(
+                [-7.430193400000002, 109.25597820000002],
+                {
+}
+            ).addTo(marker_cluster_d1f030e612ad6514cef7f2a92aa05300);
+        
+    
+            var icon_6a2295d1a8700f37397c33c7a532bbab = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_98c107f921a16bc2caead342884c787e = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_2944f6071d78225fe095a3c58e5e878e = $(`<div id="html_2944f6071d78225fe095a3c58e5e878e" style="width: 100.0%; height: 100.0%;">     <div style='width:310px; font-family:Arial, sans-serif'>       <h4 style='margin:0 0 6px 0'>Mie Ayam Deddy</h4>       <div style='font-size:12px; color:#555'>H794+W9H, Jl. Jend. Sudirman, Sokayasa, Purwokerto Wetan, Kec. Purwokerto Tim., Kabupaten Banyumas, Jawa Tengah 53147, Indonesia</div>       <hr style='margin:8px 0'>       <b>Mayoritas sentimen =</b>       <span style='color:white; background:#27AE60; padding:2px 7px; border-radius:10px'>         Positif       </span><br>       <b>Ulasan singkat =</b> rasa gurih/enak, porsi banyak, porsi sedikit<br>       <b>Jumlah ulasan =</b> 79 ulasan       <span style='color:#777'>(Negatif 6, Positif 73)</span><br>       <hr style='margin:8px 0'>       <b>Contoh ulasan:</b><br>Porsinya banyak, mienya enak bangetttt.. Langganan dari jaman kuliah di kalibakal.<br>Mienya kecil2..aku sukaa Rasane ga lebay..passs Sambele enak Saoese juga enak ga kucel Porsine pass buatku yg ga suka mie kebanyakan Hayuk beliii<br>Enak tp kurang gurih aja kuahnya     </div>     </div>`)[0];
+                popup_98c107f921a16bc2caead342884c787e.setContent(html_2944f6071d78225fe095a3c58e5e878e);
+            
+        
+
+        marker_aca785f6bedc7ff5344704596022ac97.bindPopup(popup_98c107f921a16bc2caead342884c787e)
+        ;
+
+        
+    
+    
+            marker_aca785f6bedc7ff5344704596022ac97.bindTooltip(
+                `<div>
+                     
+    <div style='font-size:13px; line-height:1.35; min-width:220px'>
+      <b>Mie Ayam Deddy</b><br>
+      Mayoritas sentimen = <b style='color:#27AE60'>Positif</b><br>
+      Ulasan singkat = rasa gurih/enak, porsi banyak, porsi sedikit
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_aca785f6bedc7ff5344704596022ac97.setIcon(icon_6a2295d1a8700f37397c33c7a532bbab);
+            
+    
+            var marker_fef6375dbd361bc84fc1e5db602b8f24 = L.marker(
+                [-7.435634400000001, 109.27323210000002],
+                {
+}
+            ).addTo(marker_cluster_d1f030e612ad6514cef7f2a92aa05300);
+        
+    
+            var icon_231aa783d04e25919623fd9ce8fe4a35 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_890a97fc86de3086eab83ad21d46aafa = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_8f3ed6c0a0b36ea3fb0a5bbf78c66dc1 = $(`<div id="html_8f3ed6c0a0b36ea3fb0a5bbf78c66dc1" style="width: 100.0%; height: 100.0%;">     <div style='width:310px; font-family:Arial, sans-serif'>       <h4 style='margin:0 0 6px 0'>Mie Ayam Pojok Lapang</h4>       <div style='font-size:12px; color:#555'>H77F+P7X, Gg. Puteran 1, Kedungkidang, Pamijen, Kec. Sokaraja, Kabupaten Banyumas, Jawa Tengah 53181, Indonesia</div>       <hr style='margin:8px 0'>       <b>Mayoritas sentimen =</b>       <span style='color:white; background:#27AE60; padding:2px 7px; border-radius:10px'>         Positif       </span><br>       <b>Ulasan singkat =</b> rasa gurih/enak, harga murah, porsi banyak<br>       <b>Jumlah ulasan =</b> 79 ulasan       <span style='color:#777'>(Negatif 10, Positif 69)</span><br>       <hr style='margin:8px 0'>       <b>Contoh ulasan:</b><br>udah langganan dari warung masih di gubug kecil sampe sekarang buka di rumah, kalau lewat situ pasti mampir,mie ayamnya mantap sekali, ngangenin 👍<br>makanannya enak, mienya pas, tapi pelayanan lamaa, hampir 1 jam menunggu..<br>Rasa Mie Ayamnya Biasa saja. Untuk Mie Ayam Cekernya masih ada kuku di kaki ayamnya. Jadi tidak Napsu makan. Tempatnya Sempit dan Panas     </div>     </div>`)[0];
+                popup_890a97fc86de3086eab83ad21d46aafa.setContent(html_8f3ed6c0a0b36ea3fb0a5bbf78c66dc1);
+            
+        
+
+        marker_fef6375dbd361bc84fc1e5db602b8f24.bindPopup(popup_890a97fc86de3086eab83ad21d46aafa)
+        ;
+
+        
+    
+    
+            marker_fef6375dbd361bc84fc1e5db602b8f24.bindTooltip(
+                `<div>
+                     
+    <div style='font-size:13px; line-height:1.35; min-width:220px'>
+      <b>Mie Ayam Pojok Lapang</b><br>
+      Mayoritas sentimen = <b style='color:#27AE60'>Positif</b><br>
+      Ulasan singkat = rasa gurih/enak, harga murah, porsi banyak
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fef6375dbd361bc84fc1e5db602b8f24.setIcon(icon_231aa783d04e25919623fd9ce8fe4a35);
+            
+    
+            var marker_d03b8963d70d7892f72f0efb5cde23cd = L.marker(
+                [-7.412019299999999, 109.2451626],
+                {
+}
+            ).addTo(marker_cluster_d1f030e612ad6514cef7f2a92aa05300);
+        
+    
+            var icon_bec0584f4b4cff8bb3d9ab046805dc87 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_701351b9b6642027a81fb0fc452a3807 = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_7a3dabdca60eac3c4f6ffb7ce82d7362 = $(`<div id="html_7a3dabdca60eac3c4f6ffb7ce82d7362" style="width: 100.0%; height: 100.0%;">     <div style='width:310px; font-family:Arial, sans-serif'>       <h4 style='margin:0 0 6px 0'>Mie Ayam Pak Kumis</h4>       <div style='font-size:12px; color:#555'>JL. H.R Bunyamin No.47, Glempang, Bancarkembar, Kec. Purwokerto Utara, Kabupaten Banyumas, Jawa Tengah 53121, Indonesia</div>       <hr style='margin:8px 0'>       <b>Mayoritas sentimen =</b>       <span style='color:white; background:#27AE60; padding:2px 7px; border-radius:10px'>         Positif       </span><br>       <b>Ulasan singkat =</b> rasa gurih/enak, porsi sedikit, harga mahal<br>       <b>Jumlah ulasan =</b> 77 ulasan       <span style='color:#777'>(Negatif 18, Positif 59)</span><br>       <hr style='margin:8px 0'>       <b>Contoh ulasan:</b><br>overall enak dan selalu langganan 👍🏼<br>overall enak dan pelayanan cepat, selalu langganan<br>The food is tasty and budget friendly.     </div>     </div>`)[0];
+                popup_701351b9b6642027a81fb0fc452a3807.setContent(html_7a3dabdca60eac3c4f6ffb7ce82d7362);
+            
+        
+
+        marker_d03b8963d70d7892f72f0efb5cde23cd.bindPopup(popup_701351b9b6642027a81fb0fc452a3807)
+        ;
+
+        
+    
+    
+            marker_d03b8963d70d7892f72f0efb5cde23cd.bindTooltip(
+                `<div>
+                     
+    <div style='font-size:13px; line-height:1.35; min-width:220px'>
+      <b>Mie Ayam Pak Kumis</b><br>
+      Mayoritas sentimen = <b style='color:#27AE60'>Positif</b><br>
+      Ulasan singkat = rasa gurih/enak, porsi sedikit, harga mahal
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d03b8963d70d7892f72f0efb5cde23cd.setIcon(icon_bec0584f4b4cff8bb3d9ab046805dc87);
+            
+    
+            var marker_bc5c9fb090ff1a2f8e508b735812b5d9 = L.marker(
+                [-7.4082968000000005, 109.27497089999999],
+                {
+}
+            ).addTo(marker_cluster_d1f030e612ad6514cef7f2a92aa05300);
+        
+    
+            var icon_dc52d5732fbe8429648f5e4ce5c96e0f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_09e5e8850fc436357795f91a71e84772 = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_6fbaea6f18b53679c90bb25b37aef83b = $(`<div id="html_6fbaea6f18b53679c90bb25b37aef83b" style="width: 100.0%; height: 100.0%;">     <div style='width:310px; font-family:Arial, sans-serif'>       <h4 style='margin:0 0 6px 0'>MieAgo</h4>       <div style='font-size:12px; color:#555'>Jl. Perdamaian Dusun Dampit, RT.02/RW.08, Dusun I, Dukuhwaluh, Kec. Kembaran, Kabupaten Banyumas, Jawa Tengah 53182, Indonesia</div>       <hr style='margin:8px 0'>       <b>Mayoritas sentimen =</b>       <span style='color:white; background:#27AE60; padding:2px 7px; border-radius:10px'>         Positif       </span><br>       <b>Ulasan singkat =</b> rasa gurih/enak, tempat nyaman/bersih, pelayanan ramah/cepat<br>       <b>Jumlah ulasan =</b> 72 ulasan       <span style='color:#777'>(Negatif 11, Positif 61)</span><br>       <hr style='margin:8px 0'>       <b>Contoh ulasan:</b><br>Pertama kali dl ke mie ago mangkok pangsit dukuhwaluh Kesanny baik bagus n enak mie nya... Naaah Hari inih makan lagi nieh Mank bner² mantap rasa mie ago ny Ngg berubah Mas² n mba²<br>Makanan enak, rasa yg mie ayam goreng manis pedas, yg kuah asin gurih... 👍<br>Trimakasih hidangan dan pelayanan sangat memuaskan kami 🙏     </div>     </div>`)[0];
+                popup_09e5e8850fc436357795f91a71e84772.setContent(html_6fbaea6f18b53679c90bb25b37aef83b);
+            
+        
+
+        marker_bc5c9fb090ff1a2f8e508b735812b5d9.bindPopup(popup_09e5e8850fc436357795f91a71e84772)
+        ;
+
+        
+    
+    
+            marker_bc5c9fb090ff1a2f8e508b735812b5d9.bindTooltip(
+                `<div>
+                     
+    <div style='font-size:13px; line-height:1.35; min-width:220px'>
+      <b>MieAgo</b><br>
+      Mayoritas sentimen = <b style='color:#27AE60'>Positif</b><br>
+      Ulasan singkat = rasa gurih/enak, tempat nyaman/bersih, pelayanan ramah/cepat
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_bc5c9fb090ff1a2f8e508b735812b5d9.setIcon(icon_dc52d5732fbe8429648f5e4ce5c96e0f);
+            
+    
+            var marker_4151a3da5b1a9b1169e99806dc0eb583 = L.marker(
+                [-7.4502034, 109.24290610000004],
+                {
+}
+            ).addTo(marker_cluster_d1f030e612ad6514cef7f2a92aa05300);
+        
+    
+            var icon_5e7de5df270a0dfa4b5df18f50ce8131 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b60a82f2b22af364a0844ef5387d896b = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_6eed28c5b5c5049183210332b6aa9347 = $(`<div id="html_6eed28c5b5c5049183210332b6aa9347" style="width: 100.0%; height: 100.0%;">     <div style='width:310px; font-family:Arial, sans-serif'>       <h4 style='margin:0 0 6px 0'>Mie Ayam "We-Tan"2</h4>       <div style='font-size:12px; color:#555'>Jl. Kyai H. Wahid Hasim, Windusara, Karangklesem, Kec. Purwokerto Sel., Kabupaten Banyumas, Jawa Tengah 53144, Indonesia</div>       <hr style='margin:8px 0'>       <b>Mayoritas sentimen =</b>       <span style='color:white; background:#27AE60; padding:2px 7px; border-radius:10px'>         Positif       </span><br>       <b>Ulasan singkat =</b> rasa gurih/enak, porsi banyak, pelayanan ramah/cepat<br>       <b>Jumlah ulasan =</b> 71 ulasan       <span style='color:#777'>(Negatif 23, Positif 48)</span><br>       <hr style='margin:8px 0'>       <b>Contoh ulasan:</b><br>Makanannya enak sih cuman pelayanannya kurang ramah senyum<br>Tolong itu kang parkirnya bayar 2rb ngga mundurin sama nyebrangin Mana lngsung ditinggal pergi enak bgt cuma minta uang<br>Enak.. Sukaaa sambelnya.. Pedes nya nampol     </div>     </div>`)[0];
+                popup_b60a82f2b22af364a0844ef5387d896b.setContent(html_6eed28c5b5c5049183210332b6aa9347);
+            
+        
+
+        marker_4151a3da5b1a9b1169e99806dc0eb583.bindPopup(popup_b60a82f2b22af364a0844ef5387d896b)
+        ;
+
+        
+    
+    
+            marker_4151a3da5b1a9b1169e99806dc0eb583.bindTooltip(
+                `<div>
+                     
+    <div style='font-size:13px; line-height:1.35; min-width:220px'>
+      <b>Mie Ayam "We-Tan"2</b><br>
+      Mayoritas sentimen = <b style='color:#27AE60'>Positif</b><br>
+      Ulasan singkat = rasa gurih/enak, porsi banyak, pelayanan ramah/cepat
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4151a3da5b1a9b1169e99806dc0eb583.setIcon(icon_5e7de5df270a0dfa4b5df18f50ce8131);
+            
+    
+            var marker_53bf42347aae26869f11f169f718912a = L.marker(
+                [-7.400219300000002, 109.2445157],
+                {
+}
+            ).addTo(marker_cluster_d1f030e612ad6514cef7f2a92aa05300);
+        
+    
+            var icon_596edfdd684d4bc9dca87a1f97c346ec = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_91ee79aca3589fd11b7b6054f8c3cb1a = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_a2714125437ceaf0f83edce793cfdb78 = $(`<div id="html_a2714125437ceaf0f83edce793cfdb78" style="width: 100.0%; height: 100.0%;">     <div style='width:310px; font-family:Arial, sans-serif'>       <h4 style='margin:0 0 6px 0'>Mie Ayam Pak Kumis Asli Bumiayu</h4>       <div style='font-size:12px; color:#555'>Jl. Riyanto No.16, Sumampir Wetan, Pabuaran, Kec. Purwokerto Utara, Kabupaten Banyumas, Jawa Tengah 53125, Indonesia</div>       <hr style='margin:8px 0'>       <b>Mayoritas sentimen =</b>       <span style='color:white; background:#27AE60; padding:2px 7px; border-radius:10px'>         Positif       </span><br>       <b>Ulasan singkat =</b> rasa gurih/enak, porsi banyak, harga mahal<br>       <b>Jumlah ulasan =</b> 71 ulasan       <span style='color:#777'>(Negatif 25, Positif 46)</span><br>       <hr style='margin:8px 0'>       <b>Contoh ulasan:</b><br>Iseng cari d tiktok. Secara rasa enak. Cuma kurang baso aja. Karena kalau pribadi saya suka bgt mie ayam plus baso<br>harga mahal tapi estehnya kaya ga pake gula, gaada tisu di meja<br>Coba makan mie nya aja tanpa toping ayam nya lebih enak, toping nya ga enak blass.. itu yg perlu diperbaiki sih.     </div>     </div>`)[0];
+                popup_91ee79aca3589fd11b7b6054f8c3cb1a.setContent(html_a2714125437ceaf0f83edce793cfdb78);
+            
+        
+
+        marker_53bf42347aae26869f11f169f718912a.bindPopup(popup_91ee79aca3589fd11b7b6054f8c3cb1a)
+        ;
+
+        
+    
+    
+            marker_53bf42347aae26869f11f169f718912a.bindTooltip(
+                `<div>
+                     
+    <div style='font-size:13px; line-height:1.35; min-width:220px'>
+      <b>Mie Ayam Pak Kumis Asli Bumiayu</b><br>
+      Mayoritas sentimen = <b style='color:#27AE60'>Positif</b><br>
+      Ulasan singkat = rasa gurih/enak, porsi banyak, harga mahal
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_53bf42347aae26869f11f169f718912a.setIcon(icon_596edfdd684d4bc9dca87a1f97c346ec);
+            
+    
+            var marker_c6aa31ce002aa778638fc566f28068b5 = L.marker(
+                [-7.409269100000002, 109.2175917],
+                {
+}
+            ).addTo(marker_cluster_d1f030e612ad6514cef7f2a92aa05300);
+        
+    
+            var icon_34bf30a503be25143ca022429e5cf6e5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7d6b2d0e6ec836d8161d4ad8aa48c247 = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_c2f3de283bd5725185b54ab3bb557bf0 = $(`<div id="html_c2f3de283bd5725185b54ab3bb557bf0" style="width: 100.0%; height: 100.0%;">     <div style='width:310px; font-family:Arial, sans-serif'>       <h4 style='margin:0 0 6px 0'>Mie Ayam Anjatan Pak Kusman</h4>       <div style='font-size:12px; color:#555'>Jl. Kamandaka, Dusun II, Karangsalam Kidul, Kec. Kedungbanteng, Kabupaten Banyumas, Jawa Tengah 53152, Indonesia</div>       <hr style='margin:8px 0'>       <b>Mayoritas sentimen =</b>       <span style='color:white; background:#27AE60; padding:2px 7px; border-radius:10px'>         Positif       </span><br>       <b>Ulasan singkat =</b> rasa gurih/enak, porsi banyak, pelayanan ramah/cepat<br>       <b>Jumlah ulasan =</b> 66 ulasan       <span style='color:#777'>(Negatif 13, Positif 53)</span><br>       <hr style='margin:8px 0'>       <b>Contoh ulasan:</b><br>mie ayamnya enak bumbunya juga rasa,kasih ayamnya juga ga pelit pelit😍<br>EDIT. ngaco ini siapa yang ngedit nama tempatnya, harusnya titik ini tempat mie ayam kamandaka kenapa jadi mie ayam yang sebelahnya? saya belum pernah makan di sini enak bener bint<br>Sebelah mie ayam kamandaka. Harga mie ayam 10ribu, Bakso 15ribu, Soto Ayam 12ribu. Nyoba Mie ayamnya aja, porsi dan ayamnya lumayan banyak, cuma ayamnya masih campur tulang. Rasany     </div>     </div>`)[0];
+                popup_7d6b2d0e6ec836d8161d4ad8aa48c247.setContent(html_c2f3de283bd5725185b54ab3bb557bf0);
+            
+        
+
+        marker_c6aa31ce002aa778638fc566f28068b5.bindPopup(popup_7d6b2d0e6ec836d8161d4ad8aa48c247)
+        ;
+
+        
+    
+    
+            marker_c6aa31ce002aa778638fc566f28068b5.bindTooltip(
+                `<div>
+                     
+    <div style='font-size:13px; line-height:1.35; min-width:220px'>
+      <b>Mie Ayam Anjatan Pak Kusman</b><br>
+      Mayoritas sentimen = <b style='color:#27AE60'>Positif</b><br>
+      Ulasan singkat = rasa gurih/enak, porsi banyak, pelayanan ramah/cepat
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c6aa31ce002aa778638fc566f28068b5.setIcon(icon_34bf30a503be25143ca022429e5cf6e5);
+            
+    
+            var marker_acf17d14eaac9a03edf38c57a62171d1 = L.marker(
+                [-7.41966, 109.2412438],
+                {
+}
+            ).addTo(marker_cluster_d1f030e612ad6514cef7f2a92aa05300);
+        
+    
+            var icon_abbd6697f98694dfee4344def5fda326 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_09bc9613209d4da5d285ae23c060f2ce = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_dd894ed463b9ec071744330ba92da42a = $(`<div id="html_dd894ed463b9ec071744330ba92da42a" style="width: 100.0%; height: 100.0%;">     <div style='width:310px; font-family:Arial, sans-serif'>       <h4 style='margin:0 0 6px 0'>Mie Ayam Pak Gimin</h4>       <div style='font-size:12px; color:#555'>Jl. Jatiwinangun Gg. Arjuna No.21, Kebondalem, Purwokerto Lor, Kec. Purwokerto Tim., Kabupaten Banyumas, Jawa Tengah 53116, Indonesia</div>       <hr style='margin:8px 0'>       <b>Mayoritas sentimen =</b>       <span style='color:white; background:#27AE60; padding:2px 7px; border-radius:10px'>         Positif       </span><br>       <b>Ulasan singkat =</b> rasa gurih/enak, pelayanan ramah/cepat, porsi banyak<br>       <b>Jumlah ulasan =</b> 65 ulasan       <span style='color:#777'>(Negatif 9, Positif 56)</span><br>       <hr style='margin:8px 0'>       <b>Contoh ulasan:</b><br>Enak, harga sesuai dengan porsi, asli bikin kenyang, mba²nya jga ramah<br>Kaya udah ga ada orang yang jual mi ayam lagi di kota Purwokerto, kalo pengen mi ayam sudah pasti ke pak Gimin<br>Rasa mienya enak, teh nya juga segar. Mantaappp     </div>     </div>`)[0];
+                popup_09bc9613209d4da5d285ae23c060f2ce.setContent(html_dd894ed463b9ec071744330ba92da42a);
+            
+        
+
+        marker_acf17d14eaac9a03edf38c57a62171d1.bindPopup(popup_09bc9613209d4da5d285ae23c060f2ce)
+        ;
+
+        
+    
+    
+            marker_acf17d14eaac9a03edf38c57a62171d1.bindTooltip(
+                `<div>
+                     
+    <div style='font-size:13px; line-height:1.35; min-width:220px'>
+      <b>Mie Ayam Pak Gimin</b><br>
+      Mayoritas sentimen = <b style='color:#27AE60'>Positif</b><br>
+      Ulasan singkat = rasa gurih/enak, pelayanan ramah/cepat, porsi banyak
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_acf17d14eaac9a03edf38c57a62171d1.setIcon(icon_abbd6697f98694dfee4344def5fda326);
+            
+    
+            var marker_743761ddd447c99a4ec510ea97f899bb = L.marker(
+                [-7.422884800000001, 109.24076700000003],
+                {
+}
+            ).addTo(marker_cluster_d1f030e612ad6514cef7f2a92aa05300);
+        
+    
+            var icon_f77972daa7a272b2f916bc8dde8662a1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dd2a4ab207b08389dab732c834598248 = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_67ab2c2499a13c6c610d8432f540cea2 = $(`<div id="html_67ab2c2499a13c6c610d8432f540cea2" style="width: 100.0%; height: 100.0%;">     <div style='width:310px; font-family:Arial, sans-serif'>       <h4 style='margin:0 0 6px 0'>Mie Ayam Mame</h4>       <div style='font-size:12px; color:#555'>H6GR+R8R, Jl. Adhyaksa I, Brubahan, Purwanegara, Kec. Purwokerto Utara, Kabupaten Banyumas, Jawa Tengah 53116, Indonesia</div>       <hr style='margin:8px 0'>       <b>Mayoritas sentimen =</b>       <span style='color:white; background:#27AE60; padding:2px 7px; border-radius:10px'>         Positif       </span><br>       <b>Ulasan singkat =</b> rasa gurih/enak, porsi sedikit, porsi banyak<br>       <b>Jumlah ulasan =</b> 62 ulasan       <span style='color:#777'>(Negatif 16, Positif 46)</span><br>       <hr style='margin:8px 0'>       <b>Contoh ulasan:</b><br>Siki bukak ora mas?<br>Rasanya ta seenak dulu Tapi masih tetep enak si Cuma agak beda saja rasanya dengan yang dulu, menurut lidahku.<br>Rekomended pisan mie ayam ini hanya buka pagi hari jangan sampai telat dengan citarasa kaldu yang medok pisan dan mie bentukannya kecil kenyal dan punya ciri khas sendiri di lidah.     </div>     </div>`)[0];
+                popup_dd2a4ab207b08389dab732c834598248.setContent(html_67ab2c2499a13c6c610d8432f540cea2);
+            
+        
+
+        marker_743761ddd447c99a4ec510ea97f899bb.bindPopup(popup_dd2a4ab207b08389dab732c834598248)
+        ;
+
+        
+    
+    
+            marker_743761ddd447c99a4ec510ea97f899bb.bindTooltip(
+                `<div>
+                     
+    <div style='font-size:13px; line-height:1.35; min-width:220px'>
+      <b>Mie Ayam Mame</b><br>
+      Mayoritas sentimen = <b style='color:#27AE60'>Positif</b><br>
+      Ulasan singkat = rasa gurih/enak, porsi sedikit, porsi banyak
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_743761ddd447c99a4ec510ea97f899bb.setIcon(icon_f77972daa7a272b2f916bc8dde8662a1);
+            
+    
+            var marker_10a43a80f8879b78ed94bf7fdf766d7d = L.marker(
+                [-7.4041367000000005, 109.25583299999997],
+                {
+}
+            ).addTo(marker_cluster_d1f030e612ad6514cef7f2a92aa05300);
+        
+    
+            var icon_5289dd2b235eeaa21e716be032a04f3d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8ac096ba990291c6070824fba43149b4 = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_913ed6b2e0f5b1b7102ebbf1605b9b31 = $(`<div id="html_913ed6b2e0f5b1b7102ebbf1605b9b31" style="width: 100.0%; height: 100.0%;">     <div style='width:310px; font-family:Arial, sans-serif'>       <h4 style='margin:0 0 6px 0'>Mie Ayam wonogiri Pak Bothak Purwokerto</h4>       <div style='font-size:12px; color:#555'>Jl. A Jaelani No.31, RT.3/RW.02, Karangwangkal, Kec. Purwokerto Utara, Kabupaten Banyumas, Jawa Tengah 53123, Indonesia</div>       <hr style='margin:8px 0'>       <b>Mayoritas sentimen =</b>       <span style='color:white; background:#27AE60; padding:2px 7px; border-radius:10px'>         Positif       </span><br>       <b>Ulasan singkat =</b> rasa gurih/enak, pelayanan ramah/cepat, harga murah<br>       <b>Jumlah ulasan =</b> 56 ulasan       <span style='color:#777'>(Negatif 1, Positif 55)</span><br>       <hr style='margin:8px 0'>       <b>Contoh ulasan:</b><br>mie ayam e enak, harga terjangkau, suasana nyaman<br>mie nya mantaaap<br>Mantul... bumbunya ayam banget... tampilan menggugah selera porsi jg pas banget... harga merakyat... bakal jadi mie ayam favorite ni...     </div>     </div>`)[0];
+                popup_8ac096ba990291c6070824fba43149b4.setContent(html_913ed6b2e0f5b1b7102ebbf1605b9b31);
+            
+        
+
+        marker_10a43a80f8879b78ed94bf7fdf766d7d.bindPopup(popup_8ac096ba990291c6070824fba43149b4)
+        ;
+
+        
+    
+    
+            marker_10a43a80f8879b78ed94bf7fdf766d7d.bindTooltip(
+                `<div>
+                     
+    <div style='font-size:13px; line-height:1.35; min-width:220px'>
+      <b>Mie Ayam wonogiri Pak Bothak Purwokerto</b><br>
+      Mayoritas sentimen = <b style='color:#27AE60'>Positif</b><br>
+      Ulasan singkat = rasa gurih/enak, pelayanan ramah/cepat, harga murah
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_10a43a80f8879b78ed94bf7fdf766d7d.setIcon(icon_5289dd2b235eeaa21e716be032a04f3d);
+            
+    
+            var marker_47fb4e4fefc70327c0c20a4251248ebc = L.marker(
+                [-7.416812900000001, 109.24202549999997],
+                {
+}
+            ).addTo(marker_cluster_d1f030e612ad6514cef7f2a92aa05300);
+        
+    
+            var icon_1d65d55dd75a6bd22ff1cf4485c15cfe = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ef11add247bfcf2bba7ff6e1d608d975 = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_5e9691445f82815466c31554d36cd13c = $(`<div id="html_5e9691445f82815466c31554d36cd13c" style="width: 100.0%; height: 100.0%;">     <div style='width:310px; font-family:Arial, sans-serif'>       <h4 style='margin:0 0 6px 0'>Mie Jogja Pak Karso Purwokerto</h4>       <div style='font-size:12px; color:#555'>Jl. Dr. Angka No.75, Glempang, Bancarkembar, Kec. Purwokerto Utara, Kabupaten Banyumas, Jawa Tengah 53114, Indonesia</div>       <hr style='margin:8px 0'>       <b>Mayoritas sentimen =</b>       <span style='color:white; background:#27AE60; padding:2px 7px; border-radius:10px'>         Positif       </span><br>       <b>Ulasan singkat =</b> rasa gurih/enak, tempat nyaman/bersih, pelayanan ramah/cepat<br>       <b>Jumlah ulasan =</b> 52 ulasan       <span style='color:#777'>(Negatif 6, Positif 46)</span><br>       <hr style='margin:8px 0'>       <b>Contoh ulasan:</b><br>Mie gorengnya enak, mienya kenyal, rasanya pas di lidah<br>pas hujan jd agak terhambat lumayan enak sih<br>Mie rebusnya enak... Kuahnya sueeegeerrr...     </div>     </div>`)[0];
+                popup_ef11add247bfcf2bba7ff6e1d608d975.setContent(html_5e9691445f82815466c31554d36cd13c);
+            
+        
+
+        marker_47fb4e4fefc70327c0c20a4251248ebc.bindPopup(popup_ef11add247bfcf2bba7ff6e1d608d975)
+        ;
+
+        
+    
+    
+            marker_47fb4e4fefc70327c0c20a4251248ebc.bindTooltip(
+                `<div>
+                     
+    <div style='font-size:13px; line-height:1.35; min-width:220px'>
+      <b>Mie Jogja Pak Karso Purwokerto</b><br>
+      Mayoritas sentimen = <b style='color:#27AE60'>Positif</b><br>
+      Ulasan singkat = rasa gurih/enak, tempat nyaman/bersih, pelayanan ramah/cepat
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_47fb4e4fefc70327c0c20a4251248ebc.setIcon(icon_1d65d55dd75a6bd22ff1cf4485c15cfe);
+            
+    
+            var marker_91652f110de53517ed07ee5eeabe8254 = L.marker(
+                [-7.415789300000002, 109.2637874],
+                {
+}
+            ).addTo(marker_cluster_d1f030e612ad6514cef7f2a92aa05300);
+        
+    
+            var icon_a49b22a81a744284f020d4c7959d56ac = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8571306dea007a49a370a3f5252aa9e2 = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_6ee93d942098d5d26f1416927d8e6d11 = $(`<div id="html_6ee93d942098d5d26f1416927d8e6d11" style="width: 100.0%; height: 100.0%;">     <div style='width:310px; font-family:Arial, sans-serif'>       <h4 style='margin:0 0 6px 0'>Mie Ayam & Bakso WE-TAN</h4>       <div style='font-size:12px; color:#555'>Jl. Senopati, Arcawinangun, Kec. Purwokerto Tim., Kabupaten Banyumas, Jawa Tengah 53113, Indonesia</div>       <hr style='margin:8px 0'>       <b>Mayoritas sentimen =</b>       <span style='color:white; background:#27AE60; padding:2px 7px; border-radius:10px'>         Positif       </span><br>       <b>Ulasan singkat =</b> rasa gurih/enak, pelayanan ramah/cepat, porsi banyak<br>       <b>Jumlah ulasan =</b> 51 ulasan       <span style='color:#777'>(Negatif 14, Positif 37)</span><br>       <hr style='margin:8px 0'>       <b>Contoh ulasan:</b><br>Mie ayam yang sangat enak. Semangkok mie ayam berisi: mie, sawi, ayam, dan kuah. Mienya kenyal dan lembut, ayamnya dapat banyak dan rasanya enak. Kuahnya sangat gurih. Menu yang te<br>Sambelnya kecut (asem) Porsi cukup Baksonya biasa saja Karyawanya sibuk megang HP semua (kaya males).<br>Porsinya banyak, rasanya enak, pelayanannya cepat     </div>     </div>`)[0];
+                popup_8571306dea007a49a370a3f5252aa9e2.setContent(html_6ee93d942098d5d26f1416927d8e6d11);
+            
+        
+
+        marker_91652f110de53517ed07ee5eeabe8254.bindPopup(popup_8571306dea007a49a370a3f5252aa9e2)
+        ;
+
+        
+    
+    
+            marker_91652f110de53517ed07ee5eeabe8254.bindTooltip(
+                `<div>
+                     
+    <div style='font-size:13px; line-height:1.35; min-width:220px'>
+      <b>Mie Ayam & Bakso WE-TAN</b><br>
+      Mayoritas sentimen = <b style='color:#27AE60'>Positif</b><br>
+      Ulasan singkat = rasa gurih/enak, pelayanan ramah/cepat, porsi banyak
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_91652f110de53517ed07ee5eeabe8254.setIcon(icon_a49b22a81a744284f020d4c7959d56ac);
+            
+    
+            var marker_13fc5cd4d37583238b7105e9277c7376 = L.marker(
+                [-7.4194958, 109.22901329999999],
+                {
+}
+            ).addTo(marker_cluster_d1f030e612ad6514cef7f2a92aa05300);
+        
+    
+            var icon_2641a85e14b06f9b9432bc2310df8a28 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c000f17f46e74131a85a31d0e2d5f510 = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_27f5a4c2a1c56a316e13ccbc4341edf6 = $(`<div id="html_27f5a4c2a1c56a316e13ccbc4341edf6" style="width: 100.0%; height: 100.0%;">     <div style='width:310px; font-family:Arial, sans-serif'>       <h4 style='margin:0 0 6px 0'>Mie Ayam Racikan Ibu Purwokerto ( Enak, Bar-bar & Higienis )</h4>       <div style='font-size:12px; color:#555'>Jl. Jend. Gatot Subroto No.23, Pesayangan, Kedungwuluh, Kec. Purwokerto Bar., Kabupaten Banyumas, Jawa Tengah 53131, Indonesia</div>       <hr style='margin:8px 0'>       <b>Mayoritas sentimen =</b>       <span style='color:white; background:#27AE60; padding:2px 7px; border-radius:10px'>         Positif       </span><br>       <b>Ulasan singkat =</b> rasa gurih/enak, pelayanan ramah/cepat, pelayanan lama/kurang<br>       <b>Jumlah ulasan =</b> 50 ulasan       <span style='color:#777'>(Negatif 5, Positif 45)</span><br>       <hr style='margin:8px 0'>       <b>Contoh ulasan:</b><br>Pelayanan yg leled pelayanan nya mengecewakan padahl udah langganan tp baru ini bikin eneg banget , harusnya udah di siapin bahan"nya kalo kiranya bahannya abis bilang kosong udah <br>Mie ayam Racikan Ibu recommended banget, tekstur mie nya kenyal, pelayanan ramah dan toppingnya banyak, ga pelit. Cocok banget ngemil mie ayam malam-malam bareng keluarga, karena t<br>Porsinya besar satu mangkuk penuh, sawinya banyak... pake bumbu kacang, Ayamnya bumbu manis, cocok bagi yang suka manis2 kecap, kalo penyuka yammie asin beda selera... pelayanan ce     </div>     </div>`)[0];
+                popup_c000f17f46e74131a85a31d0e2d5f510.setContent(html_27f5a4c2a1c56a316e13ccbc4341edf6);
+            
+        
+
+        marker_13fc5cd4d37583238b7105e9277c7376.bindPopup(popup_c000f17f46e74131a85a31d0e2d5f510)
+        ;
+
+        
+    
+    
+            marker_13fc5cd4d37583238b7105e9277c7376.bindTooltip(
+                `<div>
+                     
+    <div style='font-size:13px; line-height:1.35; min-width:220px'>
+      <b>Mie Ayam Racikan Ibu Purwokerto ( Enak, Bar-bar & Higienis )</b><br>
+      Mayoritas sentimen = <b style='color:#27AE60'>Positif</b><br>
+      Ulasan singkat = rasa gurih/enak, pelayanan ramah/cepat, pelayanan lama/kurang
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_13fc5cd4d37583238b7105e9277c7376.setIcon(icon_2641a85e14b06f9b9432bc2310df8a28);
+            
+    
+            var marker_d134e7f5440346f0819f56108dc1fbd9 = L.marker(
+                [-7.408088000000002, 109.2355553],
+                {
+}
+            ).addTo(marker_cluster_d1f030e612ad6514cef7f2a92aa05300);
+        
+    
+            var icon_b3a1f084d795d12806927a311b3b6e8f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e99ae5d41741fa3fe238622f2550d23f = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_2e1c0066cbb7556844f11974ef7d913a = $(`<div id="html_2e1c0066cbb7556844f11974ef7d913a" style="width: 100.0%; height: 100.0%;">     <div style='width:310px; font-family:Arial, sans-serif'>       <h4 style='margin:0 0 6px 0'>Soto Kayu Bakar Pak Man</h4>       <div style='font-size:12px; color:#555'>Jl. Brigjend. Encung, Karanganjing, Bancarkembar, Kec. Purwokerto Utara, Kabupaten Banyumas, Jawa Tengah 53127, Indonesia</div>       <hr style='margin:8px 0'>       <b>Mayoritas sentimen =</b>       <span style='color:white; background:#27AE60; padding:2px 7px; border-radius:10px'>         Positif       </span><br>       <b>Ulasan singkat =</b> rasa gurih/enak, harga murah, pelayanan ramah/cepat<br>       <b>Jumlah ulasan =</b> 42 ulasan       <span style='color:#777'>(Negatif 3, Positif 39)</span><br>       <hr style='margin:8px 0'>       <b>Contoh ulasan:</b><br>Soto kau bakar , enak bgt ini murah meriah menunya banyak aneka gorengan goreng dadakan yg masih anget anget , soto harga 5rb paket nasi ayam udh pake es teh cm 11rb ,, pelayanan r<br>Uweenak suegeer....Dapur Kemebul dalam arti sebenarnya lauknya bervariasi cocok banget utk sarapan yang porsi kecil...Juoss<br>Soto kuah bening, kuah ny sedep ngaldu, ada 2 ukuran mangkok kecil dan ukuran jumbo, harga bersahabat. Ada aneka gorengan, bakso tusuk goreng, telur puyuh, Ada kursi dan lesehan. T     </div>     </div>`)[0];
+                popup_e99ae5d41741fa3fe238622f2550d23f.setContent(html_2e1c0066cbb7556844f11974ef7d913a);
+            
+        
+
+        marker_d134e7f5440346f0819f56108dc1fbd9.bindPopup(popup_e99ae5d41741fa3fe238622f2550d23f)
+        ;
+
+        
+    
+    
+            marker_d134e7f5440346f0819f56108dc1fbd9.bindTooltip(
+                `<div>
+                     
+    <div style='font-size:13px; line-height:1.35; min-width:220px'>
+      <b>Soto Kayu Bakar Pak Man</b><br>
+      Mayoritas sentimen = <b style='color:#27AE60'>Positif</b><br>
+      Ulasan singkat = rasa gurih/enak, harga murah, pelayanan ramah/cepat
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d134e7f5440346f0819f56108dc1fbd9.setIcon(icon_b3a1f084d795d12806927a311b3b6e8f);
+            
+    
+            var marker_e8a7e39086904ff65eb05cd34fada819 = L.marker(
+                [-7.421687500000001, 109.23643749999998],
+                {
+}
+            ).addTo(marker_cluster_d1f030e612ad6514cef7f2a92aa05300);
+        
+    
+            var icon_8aae84d636ffb9c003bc0fd4a7973601 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e2f7c307a51829553c90caf3218b354e = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_175801ae8e02428cd013f4e1bccafec3 = $(`<div id="html_175801ae8e02428cd013f4e1bccafec3" style="width: 100.0%; height: 100.0%;">     <div style='width:310px; font-family:Arial, sans-serif'>       <h4 style='margin:0 0 6px 0'>Mie Ayam 88 (Mie Ayam, Mie Bakso, Bebek Goreng, Ayam Goreng)</h4>       <div style='font-size:12px; color:#555'>Jl. Bayangkara, RT.06/RW.06, Purwokerto, Kranji, Kec. Purwokerto Tim., Kabupaten Banyumas, Jawa Tengah 53116, Indonesia</div>       <hr style='margin:8px 0'>       <b>Mayoritas sentimen =</b>       <span style='color:white; background:#27AE60; padding:2px 7px; border-radius:10px'>         Positif       </span><br>       <b>Ulasan singkat =</b> rasa gurih/enak, harga murah, pelayanan ramah/cepat<br>       <b>Jumlah ulasan =</b> 41 ulasan       <span style='color:#777'>(Negatif 3, Positif 38)</span><br>       <hr style='margin:8px 0'>       <b>Contoh ulasan:</b><br>Menjual mie ayam, bakso, bebek goreng. Berlokasi di sebrang Sat Reskrim Polresta Banyumas.  Mie ayamnya enak, hampir semua bahan dibuat sendiri. Kalau dekat, bisa minta tolong untu<br>Mie ayamnya enak, tempatnya lumayan nyaman, harganya cocok di kantong, apalagi datenh pas dapet diskon, mie ayam+es teh cuma 10k, murah banget kan, rekomen sih.<br>makanannya enak dan dijamin halal, tempatnya juga strategi karena dekat dengan sekolahan, pelayanan nya juga ramah. untuk harga dijamin sesuai kantong pelajar     </div>     </div>`)[0];
+                popup_e2f7c307a51829553c90caf3218b354e.setContent(html_175801ae8e02428cd013f4e1bccafec3);
+            
+        
+
+        marker_e8a7e39086904ff65eb05cd34fada819.bindPopup(popup_e2f7c307a51829553c90caf3218b354e)
+        ;
+
+        
+    
+    
+            marker_e8a7e39086904ff65eb05cd34fada819.bindTooltip(
+                `<div>
+                     
+    <div style='font-size:13px; line-height:1.35; min-width:220px'>
+      <b>Mie Ayam 88 (Mie Ayam, Mie Bakso, Bebek Goreng, Ayam Goreng)</b><br>
+      Mayoritas sentimen = <b style='color:#27AE60'>Positif</b><br>
+      Ulasan singkat = rasa gurih/enak, harga murah, pelayanan ramah/cepat
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e8a7e39086904ff65eb05cd34fada819.setIcon(icon_8aae84d636ffb9c003bc0fd4a7973601);
+            
+    
+            var marker_f697d1b81acf66a192b9711ebe168559 = L.marker(
+                [-7.425781599999999, 109.23012839999998],
+                {
+}
+            ).addTo(marker_cluster_d1f030e612ad6514cef7f2a92aa05300);
+        
+    
+            var icon_7a71b0a43ff4bd470a93d56d88a87e68 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fe3357c4d46ce33ca58f0a8b875ed8e6 = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_a76edd68fc36649e6e0c56b3df29c0a5 = $(`<div id="html_a76edd68fc36649e6e0c56b3df29c0a5" style="width: 100.0%; height: 100.0%;">     <div style='width:310px; font-family:Arial, sans-serif'>       <h4 style='margin:0 0 6px 0'>Bakso Kota Cak Man</h4>       <div style='font-size:12px; color:#555'>H6FJ+M3J, Pereng, Sokanegara, Kec. Purwokerto Tim., Kabupaten Banyumas, Jawa Tengah 53116, Indonesia</div>       <hr style='margin:8px 0'>       <b>Mayoritas sentimen =</b>       <span style='color:white; background:#27AE60; padding:2px 7px; border-radius:10px'>         Positif       </span><br>       <b>Ulasan singkat =</b> rasa gurih/enak, pelayanan ramah/cepat, rasa hambar/tidak enak<br>       <b>Jumlah ulasan =</b> 41 ulasan       <span style='color:#777'>(Negatif 15, Positif 26)</span><br>       <hr style='margin:8px 0'>       <b>Contoh ulasan:</b><br>Baksonya sedep enak dan ada paket biar lebih mudah pesennya<br>Bakso khas Malang yang letaknya di lantai 1 Rita Supermall. Tersedia aneka varian bakso dari urat, daging, telur puyuh, udang, pangsit dan lainnya. Harga kisaran 5000-10.000 per po<br>Enak Harga terjangkau Kuah nya seger banget Bnyak pilihan isi baksonya Selamat menikmati     </div>     </div>`)[0];
+                popup_fe3357c4d46ce33ca58f0a8b875ed8e6.setContent(html_a76edd68fc36649e6e0c56b3df29c0a5);
+            
+        
+
+        marker_f697d1b81acf66a192b9711ebe168559.bindPopup(popup_fe3357c4d46ce33ca58f0a8b875ed8e6)
+        ;
+
+        
+    
+    
+            marker_f697d1b81acf66a192b9711ebe168559.bindTooltip(
+                `<div>
+                     
+    <div style='font-size:13px; line-height:1.35; min-width:220px'>
+      <b>Bakso Kota Cak Man</b><br>
+      Mayoritas sentimen = <b style='color:#27AE60'>Positif</b><br>
+      Ulasan singkat = rasa gurih/enak, pelayanan ramah/cepat, rasa hambar/tidak enak
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f697d1b81acf66a192b9711ebe168559.setIcon(icon_7a71b0a43ff4bd470a93d56d88a87e68);
+            
+    
+            var marker_6bf0847a9d2f9fbe36e92073b40c5427 = L.marker(
+                [-7.4223209, 109.228104],
+                {
+}
+            ).addTo(marker_cluster_d1f030e612ad6514cef7f2a92aa05300);
+        
+    
+            var icon_306a00d42176bb30f04e1e73f81d8bbb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bf68d30a8508e5acf1ba6a1dd83d62c2 = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_3d1c1b38a7412548c8a1f48e5797d512 = $(`<div id="html_3d1c1b38a7412548c8a1f48e5797d512" style="width: 100.0%; height: 100.0%;">     <div style='width:310px; font-family:Arial, sans-serif'>       <h4 style='margin:0 0 6px 0'>Mie Ayam Pak Toro</h4>       <div style='font-size:12px; color:#555'>Jl. Yosodarmo No.25-29, Pesayangan, Kedungwuluh, Kec. Purwokerto Bar., Kabupaten Banyumas, Jawa Tengah 53131, Indonesia</div>       <hr style='margin:8px 0'>       <b>Mayoritas sentimen =</b>       <span style='color:white; background:#27AE60; padding:2px 7px; border-radius:10px'>         Positif       </span><br>       <b>Ulasan singkat =</b> rasa gurih/enak, harga murah, porsi banyak<br>       <b>Jumlah ulasan =</b> 40 ulasan       <span style='color:#777'>(Negatif 3, Positif 37)</span><br>       <hr style='margin:8px 0'>       <b>Contoh ulasan:</b><br>Mie ayam bumiayu, enak, wajib di coba. Rasa sih otentik ya. Dengan free refil teh, dan daun bawang. Untuk ceker2 free yaa.<br>Mie Ayam khas bumiayu dengan porsi mie kering kenyal dan toping ayam melimpah harga relatif murah 1 porsi 13rb ada aneka minuman es dan hangat dan topi krupuk lumayan lengkap<br>Salah satu mie ayam langganan, tipe mie ayam bumiayu yang nagih     </div>     </div>`)[0];
+                popup_bf68d30a8508e5acf1ba6a1dd83d62c2.setContent(html_3d1c1b38a7412548c8a1f48e5797d512);
+            
+        
+
+        marker_6bf0847a9d2f9fbe36e92073b40c5427.bindPopup(popup_bf68d30a8508e5acf1ba6a1dd83d62c2)
+        ;
+
+        
+    
+    
+            marker_6bf0847a9d2f9fbe36e92073b40c5427.bindTooltip(
+                `<div>
+                     
+    <div style='font-size:13px; line-height:1.35; min-width:220px'>
+      <b>Mie Ayam Pak Toro</b><br>
+      Mayoritas sentimen = <b style='color:#27AE60'>Positif</b><br>
+      Ulasan singkat = rasa gurih/enak, harga murah, porsi banyak
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6bf0847a9d2f9fbe36e92073b40c5427.setIcon(icon_306a00d42176bb30f04e1e73f81d8bbb);
+            
+    
+            var marker_fb055bf5d6fa4b57a3624cc40c37b7d2 = L.marker(
+                [-7.4264498, 109.2438204],
+                {
+}
+            ).addTo(marker_cluster_d1f030e612ad6514cef7f2a92aa05300);
+        
+    
+            var icon_92a4b3d9e9c999f8046473e13c40809c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c3280d7d8e64d55e556acc1c75839ffa = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_d5a6fdd70979849d45e0b1fc2c4e5159 = $(`<div id="html_d5a6fdd70979849d45e0b1fc2c4e5159" style="width: 100.0%; height: 100.0%;">     <div style='width:310px; font-family:Arial, sans-serif'>       <h4 style='margin:0 0 6px 0'>Yamien Ajong / Mie Ayam Ajong</h4>       <div style='font-size:12px; color:#555'>H6FV+CGG, Jl. Jendral Suprapto, Kebondalem, Purwokerto Lor, Kec. Purwokerto Tim., Kabupaten Banyumas, Jawa Tengah 53114, Indonesia</div>       <hr style='margin:8px 0'>       <b>Mayoritas sentimen =</b>       <span style='color:white; background:#27AE60; padding:2px 7px; border-radius:10px'>         Positif       </span><br>       <b>Ulasan singkat =</b> rasa gurih/enak, pelayanan ramah/cepat, pelayanan lama/kurang<br>       <b>Jumlah ulasan =</b> 39 ulasan       <span style='color:#777'>(Negatif 4, Positif 35)</span><br>       <hr style='margin:8px 0'>       <b>Contoh ulasan:</b><br>Sayangnya bukanya sore jelang malam. Gk ada niatan buka siang di jam makan siang kah?<br>Mienya enak, Overall oke, Dan koko penjualnya ramah sekali, Hidden gem bgt bakmi di purwokerto..  Bakal balik lg kalo ke purwokerto..<br>Uenak! Apalagi di sambut dengan hangat! Layanan yang sempurna!!     </div>     </div>`)[0];
+                popup_c3280d7d8e64d55e556acc1c75839ffa.setContent(html_d5a6fdd70979849d45e0b1fc2c4e5159);
+            
+        
+
+        marker_fb055bf5d6fa4b57a3624cc40c37b7d2.bindPopup(popup_c3280d7d8e64d55e556acc1c75839ffa)
+        ;
+
+        
+    
+    
+            marker_fb055bf5d6fa4b57a3624cc40c37b7d2.bindTooltip(
+                `<div>
+                     
+    <div style='font-size:13px; line-height:1.35; min-width:220px'>
+      <b>Yamien Ajong / Mie Ayam Ajong</b><br>
+      Mayoritas sentimen = <b style='color:#27AE60'>Positif</b><br>
+      Ulasan singkat = rasa gurih/enak, pelayanan ramah/cepat, pelayanan lama/kurang
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fb055bf5d6fa4b57a3624cc40c37b7d2.setIcon(icon_92a4b3d9e9c999f8046473e13c40809c);
+            
+    
+            var marker_e6fbc4456dd75416417b6c9092147027 = L.marker(
+                [-7.351320899999998, 109.23662060000002],
+                {
+}
+            ).addTo(marker_cluster_d1f030e612ad6514cef7f2a92aa05300);
+        
+    
+            var icon_53e0f21a96025c8ebfce6c8f3f43de26 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_45b898edd99f14827e30fb0a0e6991c9 = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_07aadaae482ef5273e1cb5040ce70a9a = $(`<div id="html_07aadaae482ef5273e1cb5040ce70a9a" style="width: 100.0%; height: 100.0%;">     <div style='width:310px; font-family:Arial, sans-serif'>       <h4 style='margin:0 0 6px 0'>Mie Ayam Kamandaka</h4>       <div style='font-size:12px; color:#555'>J6XP+FJH, Jalan Raya, Dusun I, Rempoah, Baturaden, Banyumas Regency, Central Java 53151, Indonesia</div>       <hr style='margin:8px 0'>       <b>Mayoritas sentimen =</b>       <span style='color:white; background:#27AE60; padding:2px 7px; border-radius:10px'>         Positif       </span><br>       <b>Ulasan singkat =</b> rasa gurih/enak, porsi banyak, tempat nyaman/bersih<br>       <b>Jumlah ulasan =</b> 29 ulasan       <span style='color:#777'>(Negatif 6, Positif 23)</span><br>       <hr style='margin:8px 0'>       <b>Contoh ulasan:</b><br>Enak, jg servisnya ramah. Tapi sanitasinya 👎👎👎👎👎. Wastafel airnya dikit, gak ada sabun. Owner-nya gak notice kebersihan kah?<br>enak 🤝🏻 pecinta mie ayam wajib coba<br>Mie Ayam Kamandaka, salah satu Mie ayam legendaris yang mana sambalnya pakai sambal bumbu kacang. Mie ayam pakai bumbu kacang? Unik ya.  Selain porsinya yang banyak, ciri khas Mie      </div>     </div>`)[0];
+                popup_45b898edd99f14827e30fb0a0e6991c9.setContent(html_07aadaae482ef5273e1cb5040ce70a9a);
+            
+        
+
+        marker_e6fbc4456dd75416417b6c9092147027.bindPopup(popup_45b898edd99f14827e30fb0a0e6991c9)
+        ;
+
+        
+    
+    
+            marker_e6fbc4456dd75416417b6c9092147027.bindTooltip(
+                `<div>
+                     
+    <div style='font-size:13px; line-height:1.35; min-width:220px'>
+      <b>Mie Ayam Kamandaka</b><br>
+      Mayoritas sentimen = <b style='color:#27AE60'>Positif</b><br>
+      Ulasan singkat = rasa gurih/enak, porsi banyak, tempat nyaman/bersih
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e6fbc4456dd75416417b6c9092147027.setIcon(icon_53e0f21a96025c8ebfce6c8f3f43de26);
+            
+    
+            var marker_3ff9d13dc11485e88324fd755a9977b0 = L.marker(
+                [-7.409301, 109.21745229999999],
+                {
+}
+            ).addTo(marker_cluster_d1f030e612ad6514cef7f2a92aa05300);
+        
+    
+            var icon_4f53aaeb62be08090c0dd7c0e1525ddd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5655a170291c545f2526879b2864e894 = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_db6787520d6b00feeb5549d693b12daf = $(`<div id="html_db6787520d6b00feeb5549d693b12daf" style="width: 100.0%; height: 100.0%;">     <div style='width:310px; font-family:Arial, sans-serif'>       <h4 style='margin:0 0 6px 0'>Mie Ayam Kamandaka</h4>       <div style='font-size:12px; color:#555'>H6R8+7XG, Jl. Kamandaka, Dusun II, Bobosan, Kec. Kedungbanteng, Kabupaten Banyumas, Jawa Tengah 53152, Indonesia</div>       <hr style='margin:8px 0'>       <b>Mayoritas sentimen =</b>       <span style='color:white; background:#27AE60; padding:2px 7px; border-radius:10px'>         Positif       </span><br>       <b>Ulasan singkat =</b> porsi banyak, rasa gurih/enak, pelayanan ramah/cepat<br>       <b>Jumlah ulasan =</b> 28 ulasan       <span style='color:#777'>(Negatif 7, Positif 21)</span><br>       <hr style='margin:8px 0'>       <b>Contoh ulasan:</b><br>Enak porsi banyak tapi yang difoto engga habis wkwk<br>mie ayam yg ngasih ayamnya gak pelit, ditambah topping juga jadi tambah mantap, dan yg jadi ciri khas dari dulu yaitu ada taburan kacang yg bisa ditambahin sendiri sepuasnya, harga<br>Mienya kecil tapi enak jarang jarang ada mie ayam pakai mie kecil asli ini enaknya mie nya, sudah 2 kali mampir selalu ramai     </div>     </div>`)[0];
+                popup_5655a170291c545f2526879b2864e894.setContent(html_db6787520d6b00feeb5549d693b12daf);
+            
+        
+
+        marker_3ff9d13dc11485e88324fd755a9977b0.bindPopup(popup_5655a170291c545f2526879b2864e894)
+        ;
+
+        
+    
+    
+            marker_3ff9d13dc11485e88324fd755a9977b0.bindTooltip(
+                `<div>
+                     
+    <div style='font-size:13px; line-height:1.35; min-width:220px'>
+      <b>Mie Ayam Kamandaka</b><br>
+      Mayoritas sentimen = <b style='color:#27AE60'>Positif</b><br>
+      Ulasan singkat = porsi banyak, rasa gurih/enak, pelayanan ramah/cepat
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3ff9d13dc11485e88324fd755a9977b0.setIcon(icon_4f53aaeb62be08090c0dd7c0e1525ddd);
+            
+    
+            var marker_f0fd3c94671163ed9fe846477a31f176 = L.marker(
+                [-7.4232472, 109.25045480000001],
+                {
+}
+            ).addTo(marker_cluster_d1f030e612ad6514cef7f2a92aa05300);
+        
+    
+            var icon_b9a03ecd15a896577eeb5e766a0f8cb5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7382df9da91ae707c53042f1245a0433 = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_10a03e4edfc600e1644498ab1ffb5f88 = $(`<div id="html_10a03e4edfc600e1644498ab1ffb5f88" style="width: 100.0%; height: 100.0%;">     <div style='width:310px; font-family:Arial, sans-serif'>       <h4 style='margin:0 0 6px 0'>Mie Ayam Mas Mul Gendut</h4>       <div style='font-size:12px; color:#555'>Jl. Komisaris Bambang Suprapto, Cigrobak, Purwokerto Lor, Kec. Purwokerto Tim., Kab. Banyumas, Jawa Tengah 53111, Indonesia</div>       <hr style='margin:8px 0'>       <b>Mayoritas sentimen =</b>       <span style='color:white; background:#27AE60; padding:2px 7px; border-radius:10px'>         Positif       </span><br>       <b>Ulasan singkat =</b> rasa gurih/enak, pelayanan ramah/cepat, tempat nyaman/bersih<br>       <b>Jumlah ulasan =</b> 26 ulasan       <span style='color:#777'>(Negatif 2, Positif 24)</span><br>       <hr style='margin:8px 0'>       <b>Contoh ulasan:</b><br>mie ayamnyaa enaakk tipe gurih sedikit manis balance bumbunya, spt tipe mie jadul mienya tipis, lembut, kenyal, porsi pass. mantapp 👍👍<br>Ijolan Karo Sega goreng..🤣<br>Mie ayam enak, gurih dan tidak terlalu blaget. Sesuai selera. Porsi buanyakkkk dan tidak bikin enek. Mie nya masak e pas dan Memang ada ciri khas sdri.     </div>     </div>`)[0];
+                popup_7382df9da91ae707c53042f1245a0433.setContent(html_10a03e4edfc600e1644498ab1ffb5f88);
+            
+        
+
+        marker_f0fd3c94671163ed9fe846477a31f176.bindPopup(popup_7382df9da91ae707c53042f1245a0433)
+        ;
+
+        
+    
+    
+            marker_f0fd3c94671163ed9fe846477a31f176.bindTooltip(
+                `<div>
+                     
+    <div style='font-size:13px; line-height:1.35; min-width:220px'>
+      <b>Mie Ayam Mas Mul Gendut</b><br>
+      Mayoritas sentimen = <b style='color:#27AE60'>Positif</b><br>
+      Ulasan singkat = rasa gurih/enak, pelayanan ramah/cepat, tempat nyaman/bersih
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f0fd3c94671163ed9fe846477a31f176.setIcon(icon_b9a03ecd15a896577eeb5e766a0f8cb5);
+            
+    
+            var marker_37975f62b1783134a2082dfc12116899 = L.marker(
+                [-7.419053299999999, 109.2271083],
+                {
+}
+            ).addTo(marker_cluster_d1f030e612ad6514cef7f2a92aa05300);
+        
+    
+            var icon_39791ef660ce855db5570f932c2feb13 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6e2942fc325be45479c00ccedc4c2364 = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_cdb51d56e67c607c9ac7d471622d0932 = $(`<div id="html_cdb51d56e67c607c9ac7d471622d0932" style="width: 100.0%; height: 100.0%;">     <div style='width:310px; font-family:Arial, sans-serif'>       <h4 style='margin:0 0 6px 0'>Mie Ayam Lampung Khas Bangka Purwokerto</h4>       <div style='font-size:12px; color:#555'>Jl. Jend. Gatot Subroto, Kedungter Lor, Kedunguter, Kec. Purwokerto Bar., Kabupaten Banyumas, Jawa Tengah 53131, Indonesia</div>       <hr style='margin:8px 0'>       <b>Mayoritas sentimen =</b>       <span style='color:white; background:#27AE60; padding:2px 7px; border-radius:10px'>         Positif       </span><br>       <b>Ulasan singkat =</b> rasa gurih/enak, pelayanan ramah/cepat, rasa hambar/tidak enak<br>       <b>Jumlah ulasan =</b> 25 ulasan       <span style='color:#777'>(Negatif 0, Positif 25)</span><br>       <hr style='margin:8px 0'>       <b>Contoh ulasan:</b><br>Mie nya enak dan cocok di lidah. Om Supri (penjual) juga ramah. Satu lagi, jadi tempat kopdar dadakan untuk Komunitas Suzuki Splash Banyumas Raya. Monggo om² semua<br>Mie ayam lampung sangat kenyal dan lembut mie nya rasa sangat nendang dilidah cuman sayang gak ada telor lo nya biar lebih lengkap<br>Keren     </div>     </div>`)[0];
+                popup_6e2942fc325be45479c00ccedc4c2364.setContent(html_cdb51d56e67c607c9ac7d471622d0932);
+            
+        
+
+        marker_37975f62b1783134a2082dfc12116899.bindPopup(popup_6e2942fc325be45479c00ccedc4c2364)
+        ;
+
+        
+    
+    
+            marker_37975f62b1783134a2082dfc12116899.bindTooltip(
+                `<div>
+                     
+    <div style='font-size:13px; line-height:1.35; min-width:220px'>
+      <b>Mie Ayam Lampung Khas Bangka Purwokerto</b><br>
+      Mayoritas sentimen = <b style='color:#27AE60'>Positif</b><br>
+      Ulasan singkat = rasa gurih/enak, pelayanan ramah/cepat, rasa hambar/tidak enak
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_37975f62b1783134a2082dfc12116899.setIcon(icon_39791ef660ce855db5570f932c2feb13);
+            
+    
+            var marker_ef1e0f7dcaaf65823468acb79e51e63c = L.marker(
+                [-7.4285429999999995, 109.2265822],
+                {
+}
+            ).addTo(marker_cluster_d1f030e612ad6514cef7f2a92aa05300);
+        
+    
+            var icon_1636584a4ef2b710226757d90daf9e48 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a69c68cbcaf625a826e0efa68c4599c3 = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_4c38c76da212c3fd6a917717e4d7d3b1 = $(`<div id="html_4c38c76da212c3fd6a917717e4d7d3b1" style="width: 100.0%; height: 100.0%;">     <div style='width:310px; font-family:Arial, sans-serif'>       <h4 style='margin:0 0 6px 0'>Mie Ayam Lik Itis</h4>       <div style='font-size:12px; color:#555'>Jl. Mayjend. Sutoyo, Sawangan, Kedungwuluh, Kec. Purwokerto Bar., Kabupaten Banyumas, Jawa Tengah 53131, Indonesia</div>       <hr style='margin:8px 0'>       <b>Mayoritas sentimen =</b>       <span style='color:white; background:#27AE60; padding:2px 7px; border-radius:10px'>         Positif       </span><br>       <b>Ulasan singkat =</b> rasa gurih/enak, porsi sedikit, pelayanan ramah/cepat<br>       <b>Jumlah ulasan =</b> 25 ulasan       <span style='color:#777'>(Negatif 3, Positif 22)</span><br>       <hr style='margin:8px 0'>       <b>Contoh ulasan:</b><br>Pertama kali kesini karena rekomen teman, kaget karena emang se-tersembunyi itu tempatnya. Masuk gang yg cm muat 1 motor, kalau bawa mobil bisa tapi perlu jalan dlu kedalam gang ny<br>Beberapa bulan lalu nyobain mie ayam ini kaget dan ngga nyangka kalo tempatnya masuk ke gang kecil yang cuman bisa dilewati satu motor aja. Tapi kalo dari segi harga dan rasa i'll <br>Pertama kali makan di sini sama orang² kantor, diajakin & ditraktir sama bos 😁 Sumpah ya, ini lokasinya hidden banget, sampai sempet ada yang nyasar pas pertama ke sini. Mie ayamny     </div>     </div>`)[0];
+                popup_a69c68cbcaf625a826e0efa68c4599c3.setContent(html_4c38c76da212c3fd6a917717e4d7d3b1);
+            
+        
+
+        marker_ef1e0f7dcaaf65823468acb79e51e63c.bindPopup(popup_a69c68cbcaf625a826e0efa68c4599c3)
+        ;
+
+        
+    
+    
+            marker_ef1e0f7dcaaf65823468acb79e51e63c.bindTooltip(
+                `<div>
+                     
+    <div style='font-size:13px; line-height:1.35; min-width:220px'>
+      <b>Mie Ayam Lik Itis</b><br>
+      Mayoritas sentimen = <b style='color:#27AE60'>Positif</b><br>
+      Ulasan singkat = rasa gurih/enak, porsi sedikit, pelayanan ramah/cepat
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ef1e0f7dcaaf65823468acb79e51e63c.setIcon(icon_1636584a4ef2b710226757d90daf9e48);
+            
+    
+            var marker_8d8900a686d258c8452c9697f252f300 = L.marker(
+                [-7.4207155, 109.25956390000002],
+                {
+}
+            ).addTo(marker_cluster_d1f030e612ad6514cef7f2a92aa05300);
+        
+    
+            var icon_dc13e225a80280d3e3d65dc05662083d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_59cc94e823543d764f8cbebfcf555480 = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_b74553919b23dc1b08170e897f214cfb = $(`<div id="html_b74553919b23dc1b08170e897f214cfb" style="width: 100.0%; height: 100.0%;">     <div style='width:310px; font-family:Arial, sans-serif'>       <h4 style='margin:0 0 6px 0'>Mie Ayam Ma-Dyang</h4>       <div style='font-size:12px; color:#555'>Jl. Martadireja 1 No.798, Kejawar, Arcawinangun, Kec. Purwokerto Tim., Kabupaten Banyumas, Jawa Tengah 53113, Indonesia</div>       <hr style='margin:8px 0'>       <b>Mayoritas sentimen =</b>       <span style='color:white; background:#27AE60; padding:2px 7px; border-radius:10px'>         Positif       </span><br>       <b>Ulasan singkat =</b> rasa gurih/enak, porsi banyak, porsi sedikit<br>       <b>Jumlah ulasan =</b> 22 ulasan       <span style='color:#777'>(Negatif 7, Positif 15)</span><br>       <hr style='margin:8px 0'>       <b>Contoh ulasan:</b><br>Mienya uenak banget<br>Suasananya kurang begitu ramai<br>Porsinya kurang banyak..     </div>     </div>`)[0];
+                popup_59cc94e823543d764f8cbebfcf555480.setContent(html_b74553919b23dc1b08170e897f214cfb);
+            
+        
+
+        marker_8d8900a686d258c8452c9697f252f300.bindPopup(popup_59cc94e823543d764f8cbebfcf555480)
+        ;
+
+        
+    
+    
+            marker_8d8900a686d258c8452c9697f252f300.bindTooltip(
+                `<div>
+                     
+    <div style='font-size:13px; line-height:1.35; min-width:220px'>
+      <b>Mie Ayam Ma-Dyang</b><br>
+      Mayoritas sentimen = <b style='color:#27AE60'>Positif</b><br>
+      Ulasan singkat = rasa gurih/enak, porsi banyak, porsi sedikit
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8d8900a686d258c8452c9697f252f300.setIcon(icon_dc13e225a80280d3e3d65dc05662083d);
+            
+    
+            var marker_736c74eb454b5dbe8595234f17b62dc4 = L.marker(
+                [-7.4447847000000005, 109.24913169999999],
+                {
+}
+            ).addTo(marker_cluster_d1f030e612ad6514cef7f2a92aa05300);
+        
+    
+            var icon_42f9a75a6ac6b37e4cd790b323285346 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6eb5a1afb18c1c80bcb2563ffe685d26 = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_8fe3d571b3ddb8ecd2a3eacc251303fb = $(`<div id="html_8fe3d571b3ddb8ecd2a3eacc251303fb" style="width: 100.0%; height: 100.0%;">     <div style='width:310px; font-family:Arial, sans-serif'>       <h4 style='margin:0 0 6px 0'>Mie Ayam Kriuk Purwokerto</h4>       <div style='font-size:12px; color:#555'>Jl. Samparangin No.14, RT.02/RW.01, Tasari, Teluk, Kec. Purwokerto Sel., Kabupaten Banyumas, Jawa Tengah 53145, Indonesia</div>       <hr style='margin:8px 0'>       <b>Mayoritas sentimen =</b>       <span style='color:white; background:#27AE60; padding:2px 7px; border-radius:10px'>         Positif       </span><br>       <b>Ulasan singkat =</b> rasa gurih/enak, pelayanan lama/kurang, harga murah<br>       <b>Jumlah ulasan =</b> 21 ulasan       <span style='color:#777'>(Negatif 2, Positif 19)</span><br>       <hr style='margin:8px 0'>       <b>Contoh ulasan:</b><br>Rasa enak, soft dan ngena di lidah, Tempat nyaman, Saran datang sore hari supaya teduh<br>Tipe mie keriting, harga murah, rasanya enak. Cuma syang kipas anginnya kurang aja sih buat ditempatnya yg menurutku cukup panas<br>Mie ayam enak, porsi pas, harga bersahabat     </div>     </div>`)[0];
+                popup_6eb5a1afb18c1c80bcb2563ffe685d26.setContent(html_8fe3d571b3ddb8ecd2a3eacc251303fb);
+            
+        
+
+        marker_736c74eb454b5dbe8595234f17b62dc4.bindPopup(popup_6eb5a1afb18c1c80bcb2563ffe685d26)
+        ;
+
+        
+    
+    
+            marker_736c74eb454b5dbe8595234f17b62dc4.bindTooltip(
+                `<div>
+                     
+    <div style='font-size:13px; line-height:1.35; min-width:220px'>
+      <b>Mie Ayam Kriuk Purwokerto</b><br>
+      Mayoritas sentimen = <b style='color:#27AE60'>Positif</b><br>
+      Ulasan singkat = rasa gurih/enak, pelayanan lama/kurang, harga murah
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_736c74eb454b5dbe8595234f17b62dc4.setIcon(icon_42f9a75a6ac6b37e4cd790b323285346);
+            
+    
+            var marker_f121c0eb86c6fd9ccb33f68dc483eef4 = L.marker(
+                [-7.4339706, 109.24009070000002],
+                {
+}
+            ).addTo(marker_cluster_d1f030e612ad6514cef7f2a92aa05300);
+        
+    
+            var icon_8c31898ed353938629ecb2664387164b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c0deda1cbd25d1d6583e2ad194ccca84 = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_a9f7b3bab9b234bc5dbb612bc6733714 = $(`<div id="html_a9f7b3bab9b234bc5dbb612bc6733714" style="width: 100.0%; height: 100.0%;">     <div style='width:310px; font-family:Arial, sans-serif'>       <h4 style='margin:0 0 6px 0'>Mie Ayam dan Bakso Pak Man "Mixagrip"</h4>       <div style='font-size:12px; color:#555'>Jl. Perintis Kemerdekaan No.1362, RT.002/RW.6, Penisian, Purwokerto Kulon, Kec. Purwokerto Sel., Kabupaten Banyumas, Jawa Tengah 53141, Indonesia</div>       <hr style='margin:8px 0'>       <b>Mayoritas sentimen =</b>       <span style='color:white; background:#27AE60; padding:2px 7px; border-radius:10px'>         Positif       </span><br>       <b>Ulasan singkat =</b> rasa gurih/enak, porsi banyak, tempat nyaman/bersih<br>       <b>Jumlah ulasan =</b> 20 ulasan       <span style='color:#777'>(Negatif 3, Positif 17)</span><br>       <hr style='margin:8px 0'>       <b>Contoh ulasan:</b><br>Harus pesen Mie ayam ricanya,rasanya pas banget menurutku nggak perlu tambahan kecap/saos lagi udah tambah enak dari topi rica nya<br>Mie ayam rica cocok kalau pas hujan.. anget di badan..<br>1st impresi, porsi besar.. kuahnya cenderung manis sebelum dikasih apa-apa. kalo udah dicampur kuah rica, sambel jadi mantep siii. Ada dominan manis dan pedas, sama asin tipis. Pot     </div>     </div>`)[0];
+                popup_c0deda1cbd25d1d6583e2ad194ccca84.setContent(html_a9f7b3bab9b234bc5dbb612bc6733714);
+            
+        
+
+        marker_f121c0eb86c6fd9ccb33f68dc483eef4.bindPopup(popup_c0deda1cbd25d1d6583e2ad194ccca84)
+        ;
+
+        
+    
+    
+            marker_f121c0eb86c6fd9ccb33f68dc483eef4.bindTooltip(
+                `<div>
+                     
+    <div style='font-size:13px; line-height:1.35; min-width:220px'>
+      <b>Mie Ayam dan Bakso Pak Man "Mixagrip"</b><br>
+      Mayoritas sentimen = <b style='color:#27AE60'>Positif</b><br>
+      Ulasan singkat = rasa gurih/enak, porsi banyak, tempat nyaman/bersih
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f121c0eb86c6fd9ccb33f68dc483eef4.setIcon(icon_8c31898ed353938629ecb2664387164b);
+            
+    
+            var marker_801f222266b27a90ca34542d74e2af0c = L.marker(
+                [-7.430810799999999, 109.24340739999998],
+                {
+}
+            ).addTo(marker_cluster_d1f030e612ad6514cef7f2a92aa05300);
+        
+    
+            var icon_c48601f4150cb7f305efbc7333976034 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1da64ebddce8a870f248d0b59b422f89 = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_a0f120b446b3fdaac0dc67d0145a6399 = $(`<div id="html_a0f120b446b3fdaac0dc67d0145a6399" style="width: 100.0%; height: 100.0%;">     <div style='width:310px; font-family:Arial, sans-serif'>       <h4 style='margin:0 0 6px 0'>Mie Ayam Gajah Mungkur (Pasar Burung)</h4>       <div style='font-size:12px; color:#555'>H69V+M8V, Karangbawang, Purwokerto Kulon, Kec. Purwokerto Sel., Kabupaten Banyumas, Jawa Tengah 53141, Indonesia</div>       <hr style='margin:8px 0'>       <b>Mayoritas sentimen =</b>       <span style='color:white; background:#27AE60; padding:2px 7px; border-radius:10px'>         Positif       </span><br>       <b>Ulasan singkat =</b> porsi banyak, rasa gurih/enak, pelayanan ramah/cepat<br>       <b>Jumlah ulasan =</b> 20 ulasan       <span style='color:#777'>(Negatif 4, Positif 16)</span><br>       <hr style='margin:8px 0'>       <b>Contoh ulasan:</b><br>Sesuai judul warungnya. Ini yang kebanyakan orang bilang Mie Ayam Wonogirian. Beda banget rasanya dengan yang betebaranbdi Purwokerto dengan aliran Bumiayuan. Mie Ayam seperti ini <br>toping lengkap . enak mie ayam nya<br>enakkk, porsinya banyakk     </div>     </div>`)[0];
+                popup_1da64ebddce8a870f248d0b59b422f89.setContent(html_a0f120b446b3fdaac0dc67d0145a6399);
+            
+        
+
+        marker_801f222266b27a90ca34542d74e2af0c.bindPopup(popup_1da64ebddce8a870f248d0b59b422f89)
+        ;
+
+        
+    
+    
+            marker_801f222266b27a90ca34542d74e2af0c.bindTooltip(
+                `<div>
+                     
+    <div style='font-size:13px; line-height:1.35; min-width:220px'>
+      <b>Mie Ayam Gajah Mungkur (Pasar Burung)</b><br>
+      Mayoritas sentimen = <b style='color:#27AE60'>Positif</b><br>
+      Ulasan singkat = porsi banyak, rasa gurih/enak, pelayanan ramah/cepat
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_801f222266b27a90ca34542d74e2af0c.setIcon(icon_c48601f4150cb7f305efbc7333976034);
+            
+    
+            var marker_ff52304e4af90e8f62aacb16e582a0f2 = L.marker(
+                [-7.5364664999999995, 109.12150430000001],
+                {
+}
+            ).addTo(marker_cluster_d1f030e612ad6514cef7f2a92aa05300);
+        
+    
+            var icon_d73d27ec1d314b79c56f2339ff9b0571 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_03419cb45f424a91b18c7ceb4c9610ac = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_043fa3a494d299e37ae84abcb0e9f600 = $(`<div id="html_043fa3a494d299e37ae84abcb0e9f600" style="width: 100.0%; height: 100.0%;">     <div style='width:310px; font-family:Arial, sans-serif'>       <h4 style='margin:0 0 6px 0'>Bakso & Mie Ayam NONI</h4>       <div style='font-size:12px; color:#555'>Jl. Raya Kedungwringin, Tunjung Wetan, Tunjung, Kec. Jatilawang, Kabupaten Banyumas, Jawa Tengah 53174, Indonesia</div>       <hr style='margin:8px 0'>       <b>Mayoritas sentimen =</b>       <span style='color:white; background:#27AE60; padding:2px 7px; border-radius:10px'>         Positif       </span><br>       <b>Ulasan singkat =</b> rasa gurih/enak, pelayanan ramah/cepat, tempat nyaman/bersih<br>       <b>Jumlah ulasan =</b> 19 ulasan       <span style='color:#777'>(Negatif 3, Positif 16)</span><br>       <hr style='margin:8px 0'>       <b>Contoh ulasan:</b><br>PELAYANAN NYA LAMA, baksonya keasinan dan kebanyakan tepung, udah nunggu lama, itu posisinya rame, trs yang diutamain malah yang dibawa pulang, trs yang makan di situ disuru nunggu<br>SEBENERNYA NILAI B4 JUGA KARENA MAKANNYA SAMA DIA AJA SI. Saran aja tolong dikasih menu dan harganya, waktu kesini ga ada itu soalnya agak bingung. Tapi baksonya lumayan kuahnya se<br>Bakso nya semakin enak dan mantap, kuah nikmat, tetelan mantap, Harga bersahabat, tempat nyaman n bersih, si ibunya juga ramah     </div>     </div>`)[0];
+                popup_03419cb45f424a91b18c7ceb4c9610ac.setContent(html_043fa3a494d299e37ae84abcb0e9f600);
+            
+        
+
+        marker_ff52304e4af90e8f62aacb16e582a0f2.bindPopup(popup_03419cb45f424a91b18c7ceb4c9610ac)
+        ;
+
+        
+    
+    
+            marker_ff52304e4af90e8f62aacb16e582a0f2.bindTooltip(
+                `<div>
+                     
+    <div style='font-size:13px; line-height:1.35; min-width:220px'>
+      <b>Bakso & Mie Ayam NONI</b><br>
+      Mayoritas sentimen = <b style='color:#27AE60'>Positif</b><br>
+      Ulasan singkat = rasa gurih/enak, pelayanan ramah/cepat, tempat nyaman/bersih
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ff52304e4af90e8f62aacb16e582a0f2.setIcon(icon_d73d27ec1d314b79c56f2339ff9b0571);
+            
+    
+            var marker_c0a08112b2a9b8cf6859fa6c0104a1b0 = L.marker(
+                [-7.4167708999999995, 109.1995474],
+                {
+}
+            ).addTo(marker_cluster_d1f030e612ad6514cef7f2a92aa05300);
+        
+    
+            var icon_244886959ee414b4ef5815523f225b97 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0966fe8f15db342d9ebe20c45013cc94 = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_86825494bf568cdc4cfcd068541a1d82 = $(`<div id="html_86825494bf568cdc4cfcd068541a1d82" style="width: 100.0%; height: 100.0%;">     <div style='width:310px; font-family:Arial, sans-serif'>       <h4 style='margin:0 0 6px 0'>Mie Ayam Rendang N3</h4>       <div style='font-size:12px; color:#555'>H5MX+7RV, Dusun II, Pasir Kulon, Kec. Karanglewas, Kabupaten Banyumas, Jawa Tengah 53161, Indonesia</div>       <hr style='margin:8px 0'>       <b>Mayoritas sentimen =</b>       <span style='color:white; background:#27AE60; padding:2px 7px; border-radius:10px'>         Positif       </span><br>       <b>Ulasan singkat =</b> rasa gurih/enak, pelayanan ramah/cepat, harga murah<br>       <b>Jumlah ulasan =</b> 19 ulasan       <span style='color:#777'>(Negatif 1, Positif 18)</span><br>       <hr style='margin:8px 0'>       <b>Contoh ulasan:</b><br>Tadi niatnya cuma mau cari makan siang biasa, eh malah salfok sama menu Mie Ayam Rendang. Awalnya skeptis kan, emang nyambung? Tapi pas suapan pertama... rasanya enaknya luar biasa<br>Rendang banget! 💥 Mie ayam khas dengan bumbu rendang otentik yang kental dan pedas gurih. Bikin nagih, aroma rempahnya juara! 🤤🍜<br>Rasa mantab, enak, owner ramah, penyajian cepat...     </div>     </div>`)[0];
+                popup_0966fe8f15db342d9ebe20c45013cc94.setContent(html_86825494bf568cdc4cfcd068541a1d82);
+            
+        
+
+        marker_c0a08112b2a9b8cf6859fa6c0104a1b0.bindPopup(popup_0966fe8f15db342d9ebe20c45013cc94)
+        ;
+
+        
+    
+    
+            marker_c0a08112b2a9b8cf6859fa6c0104a1b0.bindTooltip(
+                `<div>
+                     
+    <div style='font-size:13px; line-height:1.35; min-width:220px'>
+      <b>Mie Ayam Rendang N3</b><br>
+      Mayoritas sentimen = <b style='color:#27AE60'>Positif</b><br>
+      Ulasan singkat = rasa gurih/enak, pelayanan ramah/cepat, harga murah
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c0a08112b2a9b8cf6859fa6c0104a1b0.setIcon(icon_244886959ee414b4ef5815523f225b97);
+            
+    
+            var marker_4b0fd9fe9c0c61e364d7ecab8c488b22 = L.marker(
+                [-7.4235824, 109.2437874],
+                {
+}
+            ).addTo(marker_cluster_d1f030e612ad6514cef7f2a92aa05300);
+        
+    
+            var icon_3781268b9e700ef7a9ffa1687549d115 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2c70602428a4706e755b4083a9575eff = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_b9041fd857780ff3d14b5948b083ffde = $(`<div id="html_b9041fd857780ff3d14b5948b083ffde" style="width: 100.0%; height: 100.0%;">     <div style='width:310px; font-family:Arial, sans-serif'>       <h4 style='margin:0 0 6px 0'>MIE AYAM 99 KEBONDALEM PURWOKERTO</h4>       <div style='font-size:12px; color:#555'>H6GV+HG7, Jl. Jendral Suprapto, Kebondalem, Purwokerto Lor, Kec. Purwokerto Tim., Kabupaten Banyumas, Jawa Tengah 53114, Indonesia</div>       <hr style='margin:8px 0'>       <b>Mayoritas sentimen =</b>       <span style='color:white; background:#27AE60; padding:2px 7px; border-radius:10px'>         Positif       </span><br>       <b>Ulasan singkat =</b> rasa gurih/enak, porsi banyak, pelayanan ramah/cepat<br>       <b>Jumlah ulasan =</b> 17 ulasan       <span style='color:#777'>(Negatif 6, Positif 11)</span><br>       <hr style='margin:8px 0'>       <b>Contoh ulasan:</b><br>Porsi & rasanya sudah berubah nggak seperti dulu lagi...melayani pembeli juga terlihat kurang ramah, jualan emang capek tapi nggak gitu juga bro...sedikit saran saja, jika mungkin <br>Mie nya gepeng, tipikal rasa ringan gurih jdi ngga medok, porsi pas, harga 12.000 Saya yg suka rasa medok, untuk mie ayam ini menurut saya kurang.<br>Salah satu mie ayam legendaris di purwokerto dengan cita rasa yg khas     </div>     </div>`)[0];
+                popup_2c70602428a4706e755b4083a9575eff.setContent(html_b9041fd857780ff3d14b5948b083ffde);
+            
+        
+
+        marker_4b0fd9fe9c0c61e364d7ecab8c488b22.bindPopup(popup_2c70602428a4706e755b4083a9575eff)
+        ;
+
+        
+    
+    
+            marker_4b0fd9fe9c0c61e364d7ecab8c488b22.bindTooltip(
+                `<div>
+                     
+    <div style='font-size:13px; line-height:1.35; min-width:220px'>
+      <b>MIE AYAM 99 KEBONDALEM PURWOKERTO</b><br>
+      Mayoritas sentimen = <b style='color:#27AE60'>Positif</b><br>
+      Ulasan singkat = rasa gurih/enak, porsi banyak, pelayanan ramah/cepat
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4b0fd9fe9c0c61e364d7ecab8c488b22.setIcon(icon_3781268b9e700ef7a9ffa1687549d115);
+            
+    
+            var marker_3e7a236044807ee2e97c5cf605c0101a = L.marker(
+                [-7.4075786, 109.2304534],
+                {
+}
+            ).addTo(marker_cluster_d1f030e612ad6514cef7f2a92aa05300);
+        
+    
+            var icon_afb9945bd1e068f35e3e015fcc28a4fe = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c8afa74217c41900a4481ff2ac4247c3 = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_be0c083318659f1766ed2555c4592413 = $(`<div id="html_be0c083318659f1766ed2555c4592413" style="width: 100.0%; height: 100.0%;">     <div style='width:310px; font-family:Arial, sans-serif'>       <h4 style='margin:0 0 6px 0'>Bakso Tetelan 161</h4>       <div style='font-size:12px; color:#555'>Jl. Bobosan Barat No.Perempatan, Karangjambu, Purwanegara, Kec. Purwokerto Utara, Kabupaten Banyumas, Jawa Tengah 53127, Indonesia</div>       <hr style='margin:8px 0'>       <b>Mayoritas sentimen =</b>       <span style='color:white; background:#27AE60; padding:2px 7px; border-radius:10px'>         Positif       </span><br>       <b>Ulasan singkat =</b> rasa gurih/enak, pelayanan ramah/cepat, harga murah<br>       <b>Jumlah ulasan =</b> 16 ulasan       <span style='color:#777'>(Negatif 2, Positif 14)</span><br>       <hr style='margin:8px 0'>       <b>Contoh ulasan:</b><br>Tempatnya nyaman,sayangnya sepi gak ada suasana musik dan tempatnya agak gelap perlu ditambah lampu lagi.<br>Udah lama penasaran sama mie ayam ini. Keliatan sepi tapi ternyata rasanya enak bgt 🤤 Ini tipikal mie yang setengah mateng. Kebetulan aku suka yang setengah mateng, jadi cocok sama<br>mi ayam favoritt, soalnyaa ada chili oilnya, baksonya juga enakk     </div>     </div>`)[0];
+                popup_c8afa74217c41900a4481ff2ac4247c3.setContent(html_be0c083318659f1766ed2555c4592413);
+            
+        
+
+        marker_3e7a236044807ee2e97c5cf605c0101a.bindPopup(popup_c8afa74217c41900a4481ff2ac4247c3)
+        ;
+
+        
+    
+    
+            marker_3e7a236044807ee2e97c5cf605c0101a.bindTooltip(
+                `<div>
+                     
+    <div style='font-size:13px; line-height:1.35; min-width:220px'>
+      <b>Bakso Tetelan 161</b><br>
+      Mayoritas sentimen = <b style='color:#27AE60'>Positif</b><br>
+      Ulasan singkat = rasa gurih/enak, pelayanan ramah/cepat, harga murah
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3e7a236044807ee2e97c5cf605c0101a.setIcon(icon_afb9945bd1e068f35e3e015fcc28a4fe);
+            
+    
+            var marker_7d1c762d677bb62d3fbf41ba55c71b26 = L.marker(
+                [-7.415882, 109.2326629],
+                {
+}
+            ).addTo(marker_cluster_d1f030e612ad6514cef7f2a92aa05300);
+        
+    
+            var icon_a09cbc91f913fe274448c81b565c9d95 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a092de1295d31abe75aa25d854a88272 = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_87153a314ebc137900c859a693bf6630 = $(`<div id="html_87153a314ebc137900c859a693bf6630" style="width: 100.0%; height: 100.0%;">     <div style='width:310px; font-family:Arial, sans-serif'>       <h4 style='margin:0 0 6px 0'>Mie ayam kaisar</h4>       <div style='font-size:12px; color:#555'>Jl. Dr. Angka, Karangjengkol, Sokanegara, Kec. Purwokerto Tim., Kabupaten Banyumas, Jawa Tengah 53115, Indonesia</div>       <hr style='margin:8px 0'>       <b>Mayoritas sentimen =</b>       <span style='color:white; background:#27AE60; padding:2px 7px; border-radius:10px'>         Positif       </span><br>       <b>Ulasan singkat =</b> rasa gurih/enak, porsi sedikit, harga murah<br>       <b>Jumlah ulasan =</b> 16 ulasan       <span style='color:#777'>(Negatif 1, Positif 15)</span><br>       <hr style='margin:8px 0'>       <b>Contoh ulasan:</b><br>Asli enak klo ini sih Pangsit kuahnya joss gandos.. 👍👍👍<br>Pangsit dan mie ayamnya enak<br>Mienya enak lembut untuk pangsit nya isian sedikit daging dan daun bawang, overall enak recomended, harga terjangkau, pelayanan ramah 😊     </div>     </div>`)[0];
+                popup_a092de1295d31abe75aa25d854a88272.setContent(html_87153a314ebc137900c859a693bf6630);
+            
+        
+
+        marker_7d1c762d677bb62d3fbf41ba55c71b26.bindPopup(popup_a092de1295d31abe75aa25d854a88272)
+        ;
+
+        
+    
+    
+            marker_7d1c762d677bb62d3fbf41ba55c71b26.bindTooltip(
+                `<div>
+                     
+    <div style='font-size:13px; line-height:1.35; min-width:220px'>
+      <b>Mie ayam kaisar</b><br>
+      Mayoritas sentimen = <b style='color:#27AE60'>Positif</b><br>
+      Ulasan singkat = rasa gurih/enak, porsi sedikit, harga murah
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7d1c762d677bb62d3fbf41ba55c71b26.setIcon(icon_a09cbc91f913fe274448c81b565c9d95);
+            
+    
+            var marker_89959fc9c9edc7a626ab20e8df6dc469 = L.marker(
+                [-7.419826099999997, 109.23078489999997],
+                {
+}
+            ).addTo(marker_cluster_d1f030e612ad6514cef7f2a92aa05300);
+        
+    
+            var icon_49d08db885d9db499cb795b3b11c3b7f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ca0181d24d0d7ada0c4e764d1ef77993 = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_d225d06719fa7ad172303c111e373dfa = $(`<div id="html_d225d06719fa7ad172303c111e373dfa" style="width: 100.0%; height: 100.0%;">     <div style='width:310px; font-family:Arial, sans-serif'>       <h4 style='margin:0 0 6px 0'>Mie Ayam "Ti Tasik"</h4>       <div style='font-size:12px; color:#555'>Jl. Jend. Gatot Subroto No.47, Karangjengkol, Sokanegara, Kec. Purwokerto Tim., Kabupaten Banyumas, Jawa Tengah 53115, Indonesia</div>       <hr style='margin:8px 0'>       <b>Mayoritas sentimen =</b>       <span style='color:white; background:#27AE60; padding:2px 7px; border-radius:10px'>         Positif       </span><br>       <b>Ulasan singkat =</b> rasa gurih/enak, tempat nyaman/bersih, harga murah<br>       <b>Jumlah ulasan =</b> 15 ulasan       <span style='color:#777'>(Negatif 3, Positif 12)</span><br>       <hr style='margin:8px 0'>       <b>Contoh ulasan:</b><br>Rasa mie nya enak sepertinya buatan sendiri, namun untuk rasa ayamnya standar. Bumbunya gurih enak tipikal mie yg kuahnya bening. Mie nya ngenyangin tp ga bikin enek<br>Sudah ngga enak mie Ayam baksonya, ngga seenak dulu. Dulu ada sambal buatan Ci Tasik yg sangat enak, sekarang cuma saus botol biasa. Baksonya juga keras, ngga terasa daging sapinya<br>Gak ada kecap, gak ada sambel, mi nya Hanya dikasih saos jd kek kecut gitu. Perlu di upgrade siih rasanya dan ayamnya gak berasa     </div>     </div>`)[0];
+                popup_ca0181d24d0d7ada0c4e764d1ef77993.setContent(html_d225d06719fa7ad172303c111e373dfa);
+            
+        
+
+        marker_89959fc9c9edc7a626ab20e8df6dc469.bindPopup(popup_ca0181d24d0d7ada0c4e764d1ef77993)
+        ;
+
+        
+    
+    
+            marker_89959fc9c9edc7a626ab20e8df6dc469.bindTooltip(
+                `<div>
+                     
+    <div style='font-size:13px; line-height:1.35; min-width:220px'>
+      <b>Mie Ayam "Ti Tasik"</b><br>
+      Mayoritas sentimen = <b style='color:#27AE60'>Positif</b><br>
+      Ulasan singkat = rasa gurih/enak, tempat nyaman/bersih, harga murah
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_89959fc9c9edc7a626ab20e8df6dc469.setIcon(icon_49d08db885d9db499cb795b3b11c3b7f);
+            
+    
+            var marker_4339df264bc4e6b73fb7e6086df44178 = L.marker(
+                [-7.412107500000001, 109.1733545],
+                {
+}
+            ).addTo(marker_cluster_d1f030e612ad6514cef7f2a92aa05300);
+        
+    
+            var icon_38e1da5c55cd2b9e5acd1ecd87d41894 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_233ea9950d80b221560e1265b0bd8089 = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_14988b9ff7809c0581484b0292ac53b8 = $(`<div id="html_14988b9ff7809c0581484b0292ac53b8" style="width: 100.0%; height: 100.0%;">     <div style='width:310px; font-family:Arial, sans-serif'>       <h4 style='margin:0 0 6px 0'>Mie Ayam Kang Sururi</h4>       <div style='font-size:12px; color:#555'>Jl. Balai Desa Langgongsari No.Desa, Dusun II, Langgongsari, Kec. Cilongok, Kabupaten Banyumas, Jawa Tengah 53162, Indonesia</div>       <hr style='margin:8px 0'>       <b>Mayoritas sentimen =</b>       <span style='color:white; background:#27AE60; padding:2px 7px; border-radius:10px'>         Positif       </span><br>       <b>Ulasan singkat =</b> rasa gurih/enak, pelayanan ramah/cepat, tempat nyaman/bersih<br>       <b>Jumlah ulasan =</b> 12 ulasan       <span style='color:#777'>(Negatif 1, Positif 11)</span><br>       <hr style='margin:8px 0'>       <b>Contoh ulasan:</b><br>Tempat nya bersih dan nyaman<br>Tempat mudah dijangkau. Jalan alternatif Pemda. Hanya beberapa ratus meter dari jalur akses provinsi. Untuk rasa boleh diadu. Porsinya full semangkok dijamin kenyang. Asiknya lagi <br>Makanannya enak Pelayanam juga puas Suasana pas juga     </div>     </div>`)[0];
+                popup_233ea9950d80b221560e1265b0bd8089.setContent(html_14988b9ff7809c0581484b0292ac53b8);
+            
+        
+
+        marker_4339df264bc4e6b73fb7e6086df44178.bindPopup(popup_233ea9950d80b221560e1265b0bd8089)
+        ;
+
+        
+    
+    
+            marker_4339df264bc4e6b73fb7e6086df44178.bindTooltip(
+                `<div>
+                     
+    <div style='font-size:13px; line-height:1.35; min-width:220px'>
+      <b>Mie Ayam Kang Sururi</b><br>
+      Mayoritas sentimen = <b style='color:#27AE60'>Positif</b><br>
+      Ulasan singkat = rasa gurih/enak, pelayanan ramah/cepat, tempat nyaman/bersih
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4339df264bc4e6b73fb7e6086df44178.setIcon(icon_38e1da5c55cd2b9e5acd1ecd87d41894);
+            
+    
+            var marker_9b4cdd4d91184bdd8483a48ebe61ee90 = L.marker(
+                [-7.4224605, 109.23948769999998],
+                {
+}
+            ).addTo(marker_cluster_d1f030e612ad6514cef7f2a92aa05300);
+        
+    
+            var icon_4bbe31d2a7c7a294b11176816786a3c6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9c0824742d759e7ec95991478c04e5fc = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_c30021872a3dc9219f6e36b219f9d13e = $(`<div id="html_c30021872a3dc9219f6e36b219f9d13e" style="width: 100.0%; height: 100.0%;">     <div style='width:310px; font-family:Arial, sans-serif'>       <h4 style='margin:0 0 6px 0'>Mie Ayam Bumiayu Pak Tomo</h4>       <div style='font-size:12px; color:#555'>Jl. Jend. Gatot Subroto No.102, Brubahan, Purwokerto Lor, Kec. Purwokerto Tim., Kabupaten Banyumas, Jawa Tengah 53116, Indonesia</div>       <hr style='margin:8px 0'>       <b>Mayoritas sentimen =</b>       <span style='color:white; background:#27AE60; padding:2px 7px; border-radius:10px'>         Positif       </span><br>       <b>Ulasan singkat =</b> rasa gurih/enak, rasa hambar/tidak enak, harga murah<br>       <b>Jumlah ulasan =</b> 12 ulasan       <span style='color:#777'>(Negatif 2, Positif 10)</span><br>       <hr style='margin:8px 0'>       <b>Contoh ulasan:</b><br>Sangat cocok untuk pecinta Mie Ayam Manis. Tekstur mie nya pipih dan lembut, topping Ayam nya juga enak, btw bapaknya produksi sendiri mie nya pake gilingan manual, sehari cuma baw<br>ENAK BGTTTT!!!!! mienya pipih fav aku bgttt😭🫶🏼 bapaknya seru enak diajak ngobrol, dan beneran asli bumiayu soalnya tiap hari pp :)) Lokasi : masuk aja halaman dinas perdagangan Har<br>Suka mie nya kecil tipis/pipih enak menurut lidahku ya Sudah lama jadi pelanggan mi nya pak tomo org ya  ramah lucu     </div>     </div>`)[0];
+                popup_9c0824742d759e7ec95991478c04e5fc.setContent(html_c30021872a3dc9219f6e36b219f9d13e);
+            
+        
+
+        marker_9b4cdd4d91184bdd8483a48ebe61ee90.bindPopup(popup_9c0824742d759e7ec95991478c04e5fc)
+        ;
+
+        
+    
+    
+            marker_9b4cdd4d91184bdd8483a48ebe61ee90.bindTooltip(
+                `<div>
+                     
+    <div style='font-size:13px; line-height:1.35; min-width:220px'>
+      <b>Mie Ayam Bumiayu Pak Tomo</b><br>
+      Mayoritas sentimen = <b style='color:#27AE60'>Positif</b><br>
+      Ulasan singkat = rasa gurih/enak, rasa hambar/tidak enak, harga murah
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9b4cdd4d91184bdd8483a48ebe61ee90.setIcon(icon_4bbe31d2a7c7a294b11176816786a3c6);
+            
+    
+            var marker_eac1cd4c4255a84607fd67a935afe25b = L.marker(
+                [-7.423320599999999, 109.2451137],
+                {
+}
+            ).addTo(marker_cluster_d1f030e612ad6514cef7f2a92aa05300);
+        
+    
+            var icon_7eecc58b3bd303373c1940e9832c3fdf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_910b12b2e0319d2d5b3744fb3777ccd4 = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_2c696222b15dbba21ad90306ee83e5b4 = $(`<div id="html_2c696222b15dbba21ad90306ee83e5b4" style="width: 100.0%; height: 100.0%;">     <div style='width:310px; font-family:Arial, sans-serif'>       <h4 style='margin:0 0 6px 0'>Bakmi Nyemek Andi</h4>       <div style='font-size:12px; color:#555'>Jl. Komisaris Bambang Suprapto No.15, Cigrobak, Purwokerto Lor, Kec. Purwokerto Tim., Kabupaten Banyumas, Jawa Tengah 53114, Indonesia</div>       <hr style='margin:8px 0'>       <b>Mayoritas sentimen =</b>       <span style='color:white; background:#27AE60; padding:2px 7px; border-radius:10px'>         Positif       </span><br>       <b>Ulasan singkat =</b> rasa gurih/enak, rasa hambar/tidak enak, pelayanan ramah/cepat<br>       <b>Jumlah ulasan =</b> 12 ulasan       <span style='color:#777'>(Negatif 2, Positif 10)</span><br>       <hr style='margin:8px 0'>       <b>Contoh ulasan:</b><br>20 tahun berlalu, porsi masih sama. JUMBO. Harga bersahabat. Dulu kadang mampir malam-malam pesan nasgor abis maen di Unsoed kalau kelaparan. Kali ini saya pesan Mie Goreng. Porsi <br>mi nya enak tapi jadi trauma makan disini helm ilang dicuri orang🙃<br>Langganan dari dulu. Rasa & porsinya mantapp     </div>     </div>`)[0];
+                popup_910b12b2e0319d2d5b3744fb3777ccd4.setContent(html_2c696222b15dbba21ad90306ee83e5b4);
+            
+        
+
+        marker_eac1cd4c4255a84607fd67a935afe25b.bindPopup(popup_910b12b2e0319d2d5b3744fb3777ccd4)
+        ;
+
+        
+    
+    
+            marker_eac1cd4c4255a84607fd67a935afe25b.bindTooltip(
+                `<div>
+                     
+    <div style='font-size:13px; line-height:1.35; min-width:220px'>
+      <b>Bakmi Nyemek Andi</b><br>
+      Mayoritas sentimen = <b style='color:#27AE60'>Positif</b><br>
+      Ulasan singkat = rasa gurih/enak, rasa hambar/tidak enak, pelayanan ramah/cepat
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_eac1cd4c4255a84607fd67a935afe25b.setIcon(icon_7eecc58b3bd303373c1940e9832c3fdf);
+            
+    
+            var marker_fd2a0558bce5467a37dfa49a1ef22f9f = L.marker(
+                [-7.4260842, 109.2493904],
+                {
+}
+            ).addTo(marker_cluster_d1f030e612ad6514cef7f2a92aa05300);
+        
+    
+            var icon_506f9a9787242c650898a65a80db0fe5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fba333e4be9fd4bbf70ad5afe6c77a6d = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_4dd4dccc1ded828fbaa58ee14b7182b2 = $(`<div id="html_4dd4dccc1ded828fbaa58ee14b7182b2" style="width: 100.0%; height: 100.0%;">     <div style='width:310px; font-family:Arial, sans-serif'>       <h4 style='margin:0 0 6px 0'>Mie Ayam Goar</h4>       <div style='font-size:12px; color:#555'>Sebelah toko besi paku mas, Jl. Vihara Jl. Pasar Wage No.4, Purwokerto Wetan, Kec. Purwokerto Tim., Kabupaten Banyumas, Jawa Tengah 53136, Indonesia</div>       <hr style='margin:8px 0'>       <b>Mayoritas sentimen =</b>       <span style='color:white; background:#27AE60; padding:2px 7px; border-radius:10px'>         Positif       </span><br>       <b>Ulasan singkat =</b> rasa gurih/enak, harga murah, pelayanan ramah/cepat<br>       <b>Jumlah ulasan =</b> 8 ulasan       <span style='color:#777'>(Negatif 2, Positif 6)</span><br>       <hr style='margin:8px 0'>       <b>Contoh ulasan:</b><br>Mie ayam nya enak Murah pas dikantong Tempat bersih Pelayanan bagus Rasa tidak mengecewakan<br>Wenak tenann sing ora mampir fix arogan<br>mie ayam yami dan yummy,mantap✅⭐️⭐️⭐️⭐️⭐️     </div>     </div>`)[0];
+                popup_fba333e4be9fd4bbf70ad5afe6c77a6d.setContent(html_4dd4dccc1ded828fbaa58ee14b7182b2);
+            
+        
+
+        marker_fd2a0558bce5467a37dfa49a1ef22f9f.bindPopup(popup_fba333e4be9fd4bbf70ad5afe6c77a6d)
+        ;
+
+        
+    
+    
+            marker_fd2a0558bce5467a37dfa49a1ef22f9f.bindTooltip(
+                `<div>
+                     
+    <div style='font-size:13px; line-height:1.35; min-width:220px'>
+      <b>Mie Ayam Goar</b><br>
+      Mayoritas sentimen = <b style='color:#27AE60'>Positif</b><br>
+      Ulasan singkat = rasa gurih/enak, harga murah, pelayanan ramah/cepat
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fd2a0558bce5467a37dfa49a1ef22f9f.setIcon(icon_506f9a9787242c650898a65a80db0fe5);
+            
+    
+            var marker_39276153ba4a5432c0bc027458de3f5b = L.marker(
+                [-7.416400000000001, 109.22933109999998],
+                {
+}
+            ).addTo(marker_cluster_d1f030e612ad6514cef7f2a92aa05300);
+        
+    
+            var icon_94d60b083a9df170282c913afaa92c0b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_295ebc32639ce111836fca7f510a4e82 = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_10e3151909a21508af446e2fb4efa307 = $(`<div id="html_10e3151909a21508af446e2fb4efa307" style="width: 100.0%; height: 100.0%;">     <div style='width:310px; font-family:Arial, sans-serif'>       <h4 style='margin:0 0 6px 0'>Bakso dan Mie Ayam Pak Kisman</h4>       <div style='font-size:12px; color:#555'>Jl. Tanjlig No.12, Karangjengkol, Sokanegara, Kec. Purwokerto Tim., Kabupaten Banyumas, Jawa Tengah 53131, Indonesia</div>       <hr style='margin:8px 0'>       <b>Mayoritas sentimen =</b>       <span style='color:white; background:#27AE60; padding:2px 7px; border-radius:10px'>         Positif       </span><br>       <b>Ulasan singkat =</b> porsi banyak, rasa gurih/enak, pelayanan lama/kurang<br>       <b>Jumlah ulasan =</b> 7 ulasan       <span style='color:#777'>(Negatif 2, Positif 5)</span><br>       <hr style='margin:8px 0'>       <b>Contoh ulasan:</b><br>Mie ayamnya enak, beda dari kebanyakan mie ayam pwt yang ada bumbu kacangnya. Next mau cobain baksonyaa<br>Kebetulan kesini di jam makan siang, tenpatnya kursinya gak banyak jadi gak bisa duduk lama lama. Pelayananya lumayan lama juga, mungkin faktor ramai kali ya.  Untuk harga baso 18k<br>Mencoba mie ayam bakso tetelan, secara rasa umum, tempat di dalam kurang nyaman karena panas, yang tidak terbiasa dengan rokok tidak disarankan, karena ruangan cenderung tertutup d     </div>     </div>`)[0];
+                popup_295ebc32639ce111836fca7f510a4e82.setContent(html_10e3151909a21508af446e2fb4efa307);
+            
+        
+
+        marker_39276153ba4a5432c0bc027458de3f5b.bindPopup(popup_295ebc32639ce111836fca7f510a4e82)
+        ;
+
+        
+    
+    
+            marker_39276153ba4a5432c0bc027458de3f5b.bindTooltip(
+                `<div>
+                     
+    <div style='font-size:13px; line-height:1.35; min-width:220px'>
+      <b>Bakso dan Mie Ayam Pak Kisman</b><br>
+      Mayoritas sentimen = <b style='color:#27AE60'>Positif</b><br>
+      Ulasan singkat = porsi banyak, rasa gurih/enak, pelayanan lama/kurang
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_39276153ba4a5432c0bc027458de3f5b.setIcon(icon_94d60b083a9df170282c913afaa92c0b);
+            
+    
+            var marker_b0da3e6ea350b339c421170928b03087 = L.marker(
+                [-7.413964, 109.23762409999999],
+                {
+}
+            ).addTo(marker_cluster_d1f030e612ad6514cef7f2a92aa05300);
+        
+    
+            var icon_4d6b4fe54922cbaca721b065bdaded9b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c16f988d3032f7a063fbcaf330feb224 = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_9da318427d747ff8f93b955446321270 = $(`<div id="html_9da318427d747ff8f93b955446321270" style="width: 100.0%; height: 100.0%;">     <div style='width:310px; font-family:Arial, sans-serif'>       <h4 style='margin:0 0 6px 0'>Mie Ayam Bangka Oey</h4>       <div style='font-size:12px; color:#555'>H6PQ+C25, Jl. Karang Kobar, Glempang, Sokanegara, Kec. Purwokerto Tim., Kabupaten Banyumas, Jawa Tengah 53115, Indonesia</div>       <hr style='margin:8px 0'>       <b>Mayoritas sentimen =</b>       <span style='color:white; background:#27AE60; padding:2px 7px; border-radius:10px'>         Positif       </span><br>       <b>Ulasan singkat =</b> rasa gurih/enak, porsi sedikit, harga murah<br>       <b>Jumlah ulasan =</b> 6 ulasan       <span style='color:#777'>(Negatif 0, Positif 6)</span><br>       <hr style='margin:8px 0'>       <b>Contoh ulasan:</b><br>Beneran Otentik.. Enak, lezat, Mantafff, speechless lah pokoke<br>Mie ayam bangka manis atau asin gurih.. Mantap<br>Enak makanan nya, masih terjangkau juga untuk harganya     </div>     </div>`)[0];
+                popup_c16f988d3032f7a063fbcaf330feb224.setContent(html_9da318427d747ff8f93b955446321270);
+            
+        
+
+        marker_b0da3e6ea350b339c421170928b03087.bindPopup(popup_c16f988d3032f7a063fbcaf330feb224)
+        ;
+
+        
+    
+    
+            marker_b0da3e6ea350b339c421170928b03087.bindTooltip(
+                `<div>
+                     
+    <div style='font-size:13px; line-height:1.35; min-width:220px'>
+      <b>Mie Ayam Bangka Oey</b><br>
+      Mayoritas sentimen = <b style='color:#27AE60'>Positif</b><br>
+      Ulasan singkat = rasa gurih/enak, porsi sedikit, harga murah
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b0da3e6ea350b339c421170928b03087.setIcon(icon_4d6b4fe54922cbaca721b065bdaded9b);
+            
+    
+            var marker_b83908d2b271d5fa23fce3fb85a45114 = L.marker(
+                [-7.4189653, 109.2269107],
+                {
+}
+            ).addTo(marker_cluster_d1f030e612ad6514cef7f2a92aa05300);
+        
+    
+            var icon_de7104e88f26d5f55b80bf6d628707dd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_87771b1f5238256d3fa48a07023e8d86 = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_7e5a51413fd54a5d5057102928cac0c8 = $(`<div id="html_7e5a51413fd54a5d5057102928cac0c8" style="width: 100.0%; height: 100.0%;">     <div style='width:310px; font-family:Arial, sans-serif'>       <h4 style='margin:0 0 6px 0'>Bakso Daging Sapi Pak Giman Pasar Manis</h4>       <div style='font-size:12px; color:#555'>H6JG+9QR, Jl. Ps. Manis, Pesayangan, Kedungwuluh, Kec. Purwokerto Bar., Kabupaten Banyumas, Jawa Tengah 53131, Indonesia</div>       <hr style='margin:8px 0'>       <b>Mayoritas sentimen =</b>       <span style='color:white; background:#27AE60; padding:2px 7px; border-radius:10px'>         Positif       </span><br>       <b>Ulasan singkat =</b> tempat nyaman/bersih, rasa gurih/enak, porsi banyak<br>       <b>Jumlah ulasan =</b> 3 ulasan       <span style='color:#777'>(Negatif 0, Positif 3)</span><br>       <hr style='margin:8px 0'>       <b>Contoh ulasan:</b><br>lumanyunnnn<br>Kuahnya seger, porsinya juga lumayan banyak, tapi ga pake tetelan ya, kayanya ga ada tetelannya, jadi buat pencinta tetelan jangan berharap.. selain bakso juga ada soto ayam dan so<br>Hei..yg blm prnah coba wisata kuliner di Pasar Manis, coba dong mampir ke sini.. Ada bakso daging sapi pak Giman jg lho di sini. Rasa baksonya enak, kuah mantul plus tetelan jd tmb     </div>     </div>`)[0];
+                popup_87771b1f5238256d3fa48a07023e8d86.setContent(html_7e5a51413fd54a5d5057102928cac0c8);
+            
+        
+
+        marker_b83908d2b271d5fa23fce3fb85a45114.bindPopup(popup_87771b1f5238256d3fa48a07023e8d86)
+        ;
+
+        
+    
+    
+            marker_b83908d2b271d5fa23fce3fb85a45114.bindTooltip(
+                `<div>
+                     
+    <div style='font-size:13px; line-height:1.35; min-width:220px'>
+      <b>Bakso Daging Sapi Pak Giman Pasar Manis</b><br>
+      Mayoritas sentimen = <b style='color:#27AE60'>Positif</b><br>
+      Ulasan singkat = tempat nyaman/bersih, rasa gurih/enak, porsi banyak
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b83908d2b271d5fa23fce3fb85a45114.setIcon(icon_de7104e88f26d5f55b80bf6d628707dd);
+            
+    
+            var marker_9f153ad86ce8b38efc6a3106d7becdd3 = L.marker(
+                [-7.419006200000001, 109.2443641],
+                {
+}
+            ).addTo(marker_cluster_d1f030e612ad6514cef7f2a92aa05300);
+        
+    
+            var icon_8238eefdc42536bb75582fb0120888a9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6a33b51c578623205e737aff1cbb552b = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_26ddf90327e6b594dc4103933ee88b75 = $(`<div id="html_26ddf90327e6b594dc4103933ee88b75" style="width: 100.0%; height: 100.0%;">     <div style='width:310px; font-family:Arial, sans-serif'>       <h4 style='margin:0 0 6px 0'>ceker mercon ngapak</h4>       <div style='font-size:12px; color:#555'>Jl. Overste Isdiman No.20, Kebondalem, Purwokerto Lor, Kec. Purwokerto Tim., Kabupaten Banyumas, Jawa Tengah 53114, Indonesia</div>       <hr style='margin:8px 0'>       <b>Mayoritas sentimen =</b>       <span style='color:white; background:#27AE60; padding:2px 7px; border-radius:10px'>         Positif       </span><br>       <b>Ulasan singkat =</b> rasa gurih/enak, porsi banyak, tempat nyaman/bersih<br>       <b>Jumlah ulasan =</b> 3 ulasan       <span style='color:#777'>(Negatif 0, Positif 3)</span><br>       <hr style='margin:8px 0'>       <b>Contoh ulasan:</b><br>Menu2 disini cukup banyak dengan menu spesialnya adalah ceker merconnya, rasanya sangat enak dan gurih sekali, bumbu-bumbunya pun meresap sampai ke dalam cekernya, bagi yang tidak <br>Cekernya bikin segerr<br>Cukup enak pas di dompet     </div>     </div>`)[0];
+                popup_6a33b51c578623205e737aff1cbb552b.setContent(html_26ddf90327e6b594dc4103933ee88b75);
+            
+        
+
+        marker_9f153ad86ce8b38efc6a3106d7becdd3.bindPopup(popup_6a33b51c578623205e737aff1cbb552b)
+        ;
+
+        
+    
+    
+            marker_9f153ad86ce8b38efc6a3106d7becdd3.bindTooltip(
+                `<div>
+                     
+    <div style='font-size:13px; line-height:1.35; min-width:220px'>
+      <b>ceker mercon ngapak</b><br>
+      Mayoritas sentimen = <b style='color:#27AE60'>Positif</b><br>
+      Ulasan singkat = rasa gurih/enak, porsi banyak, tempat nyaman/bersih
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9f153ad86ce8b38efc6a3106d7becdd3.setIcon(icon_8238eefdc42536bb75582fb0120888a9);
+            
+    
+            var marker_0a2ddf9d213d8ffdd98e821dbc1504eb = L.marker(
+                [-7.3779111, 109.2429119],
+                {
+}
+            ).addTo(marker_cluster_d1f030e612ad6514cef7f2a92aa05300);
+        
+    
+            var icon_f07ca72cf8409aafeb56109bcfa47d3e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6d5bd1bcdf62a6dcb9f762ff4b418a9b = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_5d2e94c208f152fbc651d1d4e7dc7b94 = $(`<div id="html_5d2e94c208f152fbc651d1d4e7dc7b94" style="width: 100.0%; height: 100.0%;">     <div style='width:310px; font-family:Arial, sans-serif'>       <h4 style='margin:0 0 6px 0'>Mie Ayam Pak Dhe</h4>       <div style='font-size:12px; color:#555'>Jl. Permadi No.7, Dusun II Pandak, Pandak, Kec. Baturaden, Kabupaten Banyumas, Jawa Tengah 53151, Indonesia</div>       <hr style='margin:8px 0'>       <b>Mayoritas sentimen =</b>       <span style='color:white; background:#27AE60; padding:2px 7px; border-radius:10px'>         Positif       </span><br>       <b>Ulasan singkat =</b> rasa gurih/enak<br>       <b>Jumlah ulasan =</b> 1 ulasan       <span style='color:#777'>(Negatif 0, Positif 1)</span><br>       <hr style='margin:8px 0'>       <b>Contoh ulasan:</b><br>Mie nya sangat enak, rasanya sangat khas. Baru pernah makan mie ayam seenak ini, sampe pengen nangis     </div>     </div>`)[0];
+                popup_6d5bd1bcdf62a6dcb9f762ff4b418a9b.setContent(html_5d2e94c208f152fbc651d1d4e7dc7b94);
+            
+        
+
+        marker_0a2ddf9d213d8ffdd98e821dbc1504eb.bindPopup(popup_6d5bd1bcdf62a6dcb9f762ff4b418a9b)
+        ;
+
+        
+    
+    
+            marker_0a2ddf9d213d8ffdd98e821dbc1504eb.bindTooltip(
+                `<div>
+                     
+    <div style='font-size:13px; line-height:1.35; min-width:220px'>
+      <b>Mie Ayam Pak Dhe</b><br>
+      Mayoritas sentimen = <b style='color:#27AE60'>Positif</b><br>
+      Ulasan singkat = rasa gurih/enak
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0a2ddf9d213d8ffdd98e821dbc1504eb.setIcon(icon_f07ca72cf8409aafeb56109bcfa47d3e);
+            
+    
+            var marker_e584efb8eb6d142ecdfb52a77a296596 = L.marker(
+                [-7.3989062, 109.2358174],
+                {
+}
+            ).addTo(marker_cluster_d1f030e612ad6514cef7f2a92aa05300);
+        
+    
+            var icon_b9ec9cd752539dd8ba1f201ee68435f4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0fe67c76c9f526ef267699dc42cc9264 = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_3f736785d441506a41eeb103509bc7e4 = $(`<div id="html_3f736785d441506a41eeb103509bc7e4" style="width: 100.0%; height: 100.0%;">     <div style='width:310px; font-family:Arial, sans-serif'>       <h4 style='margin:0 0 6px 0'>BAKSO & MIE AYAM LA TANZA cabang sumedang</h4>       <div style='font-size:12px; color:#555'>Gg. Cemp., Kadisari, Sumampir, Kec. Purwokerto Utara, Kabupaten Banyumas, Jawa Tengah 53125, Indonesia</div>       <hr style='margin:8px 0'>       <b>Mayoritas sentimen =</b>       <span style='color:white; background:#27AE60; padding:2px 7px; border-radius:10px'>         Positif       </span><br>       <b>Ulasan singkat =</b> rasa gurih/enak<br>       <b>Jumlah ulasan =</b> 1 ulasan       <span style='color:#777'>(Negatif 0, Positif 1)</span><br>       <hr style='margin:8px 0'>       <b>Contoh ulasan:</b><br>Mantap betull emang enak👍👍👍👍     </div>     </div>`)[0];
+                popup_0fe67c76c9f526ef267699dc42cc9264.setContent(html_3f736785d441506a41eeb103509bc7e4);
+            
+        
+
+        marker_e584efb8eb6d142ecdfb52a77a296596.bindPopup(popup_0fe67c76c9f526ef267699dc42cc9264)
+        ;
+
+        
+    
+    
+            marker_e584efb8eb6d142ecdfb52a77a296596.bindTooltip(
+                `<div>
+                     
+    <div style='font-size:13px; line-height:1.35; min-width:220px'>
+      <b>BAKSO & MIE AYAM LA TANZA cabang sumedang</b><br>
+      Mayoritas sentimen = <b style='color:#27AE60'>Positif</b><br>
+      Ulasan singkat = rasa gurih/enak
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e584efb8eb6d142ecdfb52a77a296596.setIcon(icon_b9ec9cd752539dd8ba1f201ee68435f4);
+            
+    
+            marker_cluster_d1f030e612ad6514cef7f2a92aa05300.addTo(map_f876240770e0e85e67ab3f1bcb70160d);
+        
+    
+            var layer_control_575bbdccbc2b929e9320020026ff11b0_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_cbedbf768e4774a0dc3014b61ca41e5d,
+                },
+                overlays :  {
+                    "Lokasi Mie Ayam" : marker_cluster_d1f030e612ad6514cef7f2a92aa05300,
+                },
+            };
+            let layer_control_575bbdccbc2b929e9320020026ff11b0 = L.control.layers(
+                layer_control_575bbdccbc2b929e9320020026ff11b0_layers.base_layers,
+                layer_control_575bbdccbc2b929e9320020026ff11b0_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_f876240770e0e85e67ab3f1bcb70160d);
+
+        
+</script>
+</html>
