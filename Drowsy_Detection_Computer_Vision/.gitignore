@@ -1,0 +1,35 @@
+# Notebook/runtime artifacts
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+
+# Logs and generated exports
+logs/
+exports/
+runs/
+
+# Large datasets and preprocessing outputs
+raw_data/
+frames/
+staging_v3/
+annotations_v3/
+dataset_v3/images/
+dataset_v3/labels/
+dataset_v3/**/*.cache
+
+# Large model checkpoints
+models/**/weights/epoch*.pt
+models/**/weights/last.pt
+yolo*.pt
+
+# Raw media files
+*.mp4
+*.avi
+*.mov
+*.mkv
+
+# Local environment files
+.env
+.venv/
+venv/
+env/
