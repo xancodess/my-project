@@ -1,0 +1,493 @@
+﻿layer,month,week,rentang_tanggal,place_name,lat,lon,n_reviews,positive,negative,dominant_sentiment,aspect_summary
+testing_apr_jun,4,1,01-07 Apr 2026,Bakso dan Mie Ayam Ceker Pak Sariman Purwokerto,-7.4335718,109.2402036,34,34,0,Positif,"rasa enak, tempat nyaman & bersih, harga terjangkau"
+testing_apr_jun,4,1,01-07 Apr 2026,Mie Ayam dan Bakso Tunggal Rasa,-7.4171956,109.2461375,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,1,01-07 Apr 2026,Mie Ayam Lingkar Indah,-7.4191991,109.2279491,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,1,01-07 Apr 2026,Mie Ayam Bruderan (Cito),-7.4202487,109.2330205,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,1,01-07 Apr 2026,Mie Ayam Mbak Kimun,-7.431097,109.2564693,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,1,01-07 Apr 2026,Yamien Ajong / Mie Ayam Ajong,-7.4264498,109.2438204,1,1,0,Positif,"pelayanan ramah & cepat, porsi cukup/banyak, rasa enak"
+testing_apr_jun,4,1,01-07 Apr 2026,Mie Ayam Kita (spesial Rendang),-7.3995374,109.240713,1,1,0,Positif,"porsi cukup/banyak, pelayanan lama/kurang"
+testing_apr_jun,4,1,01-07 Apr 2026,Mie Ayam Kriuk Purwokerto,-7.4447847,109.2491317,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,1,01-07 Apr 2026,Mie Ayam Lampung Khas Bangka Purwokerto,-7.4190533,109.2271083,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,1,01-07 Apr 2026,Mi Ayam Pak Wanto Purwokerto,-7.4291138,109.2445805,1,1,0,Positif,tema ulasan belum dominan
+testing_apr_jun,4,1,01-07 Apr 2026,Mie Ayam Nyak Dien,-7.4177608,109.2533294,4,4,0,Positif,"harga terjangkau, pelayanan ramah & cepat, rasa enak"
+testing_apr_jun,4,1,01-07 Apr 2026,"Mie Ayam Racikan Ibu Purwokerto ( Enak, Bar-bar & Higienis )",-7.4194958,109.2290133,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,1,01-07 Apr 2026,Mie Ayam Bumiayu Pak Tomo,-7.4224605,109.2394877,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,1,01-07 Apr 2026,Mie Ayam Pak Toro,-7.4223209,109.228104,2,2,0,Positif,rasa enak
+testing_apr_jun,4,1,01-07 Apr 2026,Mie ayam kaisar,-7.415882,109.2326629,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,1,01-07 Apr 2026,Mie Ayam Pak Marso,-7.423968,109.236043,1,1,0,Positif,rasa enak
+testing_apr_jun,4,1,01-07 Apr 2026,Mie Ayam Pak Kumis Asli Bumiayu,-7.4002193,109.2445157,2,1,1,Positif,"harga mahal, rasa enak"
+testing_apr_jun,4,1,01-07 Apr 2026,Mie Ayam Ijo Bpk. Sabar,-7.4235896,109.2391104,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,1,01-07 Apr 2026,Mie Ayam Tanjlig,-7.4164092,109.2294025,4,2,2,Positif,"porsi cukup/banyak, porsi kurang, rasa kurang cocok"
+testing_apr_jun,4,1,01-07 Apr 2026,Mie Ayam Tipar,-7.427217,109.2351073,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,1,01-07 Apr 2026,Mie Ayam Deddy,-7.4301934,109.2559782,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,1,01-07 Apr 2026,Mie Ayam & Bakso WE-TAN,-7.4157893,109.2637874,2,1,1,Positif,"rasa enak, porsi cukup/banyak, pelayanan ramah & cepat"
+testing_apr_jun,4,1,01-07 Apr 2026,"Mie Ayam ""We-Tan""2",-7.4502034,109.2429061,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,1,01-07 Apr 2026,MieAgo,-7.4082968,109.2749709,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,1,01-07 Apr 2026,Mie Ayam Mame,-7.4228848,109.240767,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,1,01-07 Apr 2026,Mie Ayam Kamandaka,-7.409301,109.2174523,2,2,0,Positif,"porsi kurang, rasa enak, porsi cukup/banyak"
+testing_apr_jun,4,1,01-07 Apr 2026,Mie Ayam Pojok Lapang,-7.4356344,109.2732321,2,0,2,Negatif,"pelayanan lama/kurang, tempat kurang nyaman, rasa enak"
+testing_apr_jun,4,1,01-07 Apr 2026,Mie Ayam Rendang N3,-7.4167709,109.1995474,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,1,01-07 Apr 2026,Bakso & Mie Ayam NONI,-7.5364665,109.1215043,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,1,01-07 Apr 2026,Bakso & Mie Ayam SAHABAT 2,-7.536085,109.124302,1,1,0,Positif,"tempat nyaman & bersih, pelayanan ramah & cepat"
+testing_apr_jun,4,1,01-07 Apr 2026,Mie Ayam Pak Narso,-7.4246043,109.2546241,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,1,01-07 Apr 2026,Bakso Pak Kusno,-7.4478657,109.2437942,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,1,01-07 Apr 2026,Mie ayam pak sutrisno UMKM UMP,-7.4304259,109.2193762,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,1,01-07 Apr 2026,Mie Ayam Bpk. Darno,-7.4006945,109.2364701,1,0,1,Negatif,"porsi cukup/banyak, tempat nyaman & bersih"
+testing_apr_jun,4,1,01-07 Apr 2026,Bakso dan Mie Ayam Pak Kisman,-7.4164,109.2293311,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,1,01-07 Apr 2026,Dapoer Prambanan,-7.4259542,109.2371769,1,1,0,Positif,tempat nyaman & bersih
+testing_apr_jun,4,1,01-07 Apr 2026,Bakmi Nyemek Bu Trimo,-7.4332135,109.2584942,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,1,01-07 Apr 2026,Mie Jogja Pak Karso Purwokerto,-7.4168129,109.2420255,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,1,01-07 Apr 2026,Mie Ayam Bangka Oey,-7.413964,109.2376241,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,1,01-07 Apr 2026,Mie Ayam Enak Lor Kampus,-7.4083949,109.2310756,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,1,01-07 Apr 2026,Mie Ayam Lik Itis,-7.428543,109.2265822,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,2,08-14 Apr 2026,Bakso dan Mie Ayam Ceker Pak Sariman Purwokerto,-7.4335718,109.2402036,33,32,1,Positif,"rasa enak, tempat nyaman & bersih, pelayanan ramah & cepat"
+testing_apr_jun,4,2,08-14 Apr 2026,Mie Ayam dan Bakso Tunggal Rasa,-7.4171956,109.2461375,1,1,0,Positif,rasa enak
+testing_apr_jun,4,2,08-14 Apr 2026,Mie Ayam Lingkar Indah,-7.4191991,109.2279491,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,2,08-14 Apr 2026,Mie Ayam Bruderan (Cito),-7.4202487,109.2330205,1,1,0,Positif,tema ulasan belum dominan
+testing_apr_jun,4,2,08-14 Apr 2026,Mie Ayam Mbak Kimun,-7.431097,109.2564693,1,0,1,Negatif,"pelayanan ramah & cepat, pelayanan lama/kurang, tempat nyaman & bersih"
+testing_apr_jun,4,2,08-14 Apr 2026,Yamien Ajong / Mie Ayam Ajong,-7.4264498,109.2438204,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,2,08-14 Apr 2026,Mie Ayam Kita (spesial Rendang),-7.3995374,109.240713,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,2,08-14 Apr 2026,Mie Ayam Kriuk Purwokerto,-7.4447847,109.2491317,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,2,08-14 Apr 2026,Mie Ayam Lampung Khas Bangka Purwokerto,-7.4190533,109.2271083,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,2,08-14 Apr 2026,Mi Ayam Pak Wanto Purwokerto,-7.4291138,109.2445805,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,2,08-14 Apr 2026,Mie Ayam Nyak Dien,-7.4177608,109.2533294,19,17,2,Positif,"rasa enak, pelayanan ramah & cepat, porsi cukup/banyak"
+testing_apr_jun,4,2,08-14 Apr 2026,"Mie Ayam Racikan Ibu Purwokerto ( Enak, Bar-bar & Higienis )",-7.4194958,109.2290133,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,2,08-14 Apr 2026,Mie Ayam Bumiayu Pak Tomo,-7.4224605,109.2394877,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,2,08-14 Apr 2026,Mie Ayam Pak Toro,-7.4223209,109.228104,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,2,08-14 Apr 2026,Mie ayam kaisar,-7.415882,109.2326629,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,2,08-14 Apr 2026,Mie Ayam Pak Marso,-7.423968,109.236043,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,2,08-14 Apr 2026,Mie Ayam Pak Kumis Asli Bumiayu,-7.4002193,109.2445157,1,1,0,Positif,rasa enak
+testing_apr_jun,4,2,08-14 Apr 2026,Mie Ayam Ijo Bpk. Sabar,-7.4235896,109.2391104,1,1,0,Positif,"porsi cukup/banyak, porsi kurang"
+testing_apr_jun,4,2,08-14 Apr 2026,Mie Ayam Tanjlig,-7.4164092,109.2294025,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,2,08-14 Apr 2026,Mie Ayam Tipar,-7.427217,109.2351073,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,2,08-14 Apr 2026,Mie Ayam Deddy,-7.4301934,109.2559782,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,2,08-14 Apr 2026,Mie Ayam & Bakso WE-TAN,-7.4157893,109.2637874,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,2,08-14 Apr 2026,"Mie Ayam ""We-Tan""2",-7.4502034,109.2429061,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,2,08-14 Apr 2026,MieAgo,-7.4082968,109.2749709,1,1,0,Positif,"rasa enak, rasa kurang cocok"
+testing_apr_jun,4,2,08-14 Apr 2026,Mie Ayam Mame,-7.4228848,109.240767,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,2,08-14 Apr 2026,Mie Ayam Kamandaka,-7.409301,109.2174523,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,2,08-14 Apr 2026,Mie Ayam Pojok Lapang,-7.4356344,109.2732321,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,2,08-14 Apr 2026,Mie Ayam Rendang N3,-7.4167709,109.1995474,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,2,08-14 Apr 2026,Bakso & Mie Ayam NONI,-7.5364665,109.1215043,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,2,08-14 Apr 2026,Bakso & Mie Ayam SAHABAT 2,-7.536085,109.124302,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,2,08-14 Apr 2026,Mie Ayam Pak Narso,-7.4246043,109.2546241,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,2,08-14 Apr 2026,Bakso Pak Kusno,-7.4478657,109.2437942,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,2,08-14 Apr 2026,Mie ayam pak sutrisno UMKM UMP,-7.4304259,109.2193762,1,0,1,Negatif,tempat nyaman & bersih
+testing_apr_jun,4,2,08-14 Apr 2026,Mie Ayam Bpk. Darno,-7.4006945,109.2364701,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,2,08-14 Apr 2026,Bakso dan Mie Ayam Pak Kisman,-7.4164,109.2293311,1,1,0,Positif,"porsi cukup/banyak, rasa enak"
+testing_apr_jun,4,2,08-14 Apr 2026,Dapoer Prambanan,-7.4259542,109.2371769,1,1,0,Positif,pelayanan ramah & cepat
+testing_apr_jun,4,2,08-14 Apr 2026,Bakmi Nyemek Bu Trimo,-7.4332135,109.2584942,1,1,0,Positif,tema ulasan belum dominan
+testing_apr_jun,4,2,08-14 Apr 2026,Mie Jogja Pak Karso Purwokerto,-7.4168129,109.2420255,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,2,08-14 Apr 2026,Mie Ayam Bangka Oey,-7.413964,109.2376241,1,1,0,Positif,rasa enak
+testing_apr_jun,4,2,08-14 Apr 2026,Mie Ayam Enak Lor Kampus,-7.4083949,109.2310756,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,2,08-14 Apr 2026,Mie Ayam Lik Itis,-7.428543,109.2265822,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,3,15-21 Apr 2026,Bakso dan Mie Ayam Ceker Pak Sariman Purwokerto,-7.4335718,109.2402036,16,15,1,Positif,"rasa enak, tempat nyaman & bersih, porsi cukup/banyak"
+testing_apr_jun,4,3,15-21 Apr 2026,Mie Ayam dan Bakso Tunggal Rasa,-7.4171956,109.2461375,1,0,1,Negatif,pelayanan lama/kurang
+testing_apr_jun,4,3,15-21 Apr 2026,Mie Ayam Lingkar Indah,-7.4191991,109.2279491,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,3,15-21 Apr 2026,Mie Ayam Bruderan (Cito),-7.4202487,109.2330205,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,3,15-21 Apr 2026,Mie Ayam Mbak Kimun,-7.431097,109.2564693,2,2,0,Positif,rasa enak
+testing_apr_jun,4,3,15-21 Apr 2026,Yamien Ajong / Mie Ayam Ajong,-7.4264498,109.2438204,1,1,0,Positif,rasa enak
+testing_apr_jun,4,3,15-21 Apr 2026,Mie Ayam Kita (spesial Rendang),-7.3995374,109.240713,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,3,15-21 Apr 2026,Mie Ayam Kriuk Purwokerto,-7.4447847,109.2491317,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,3,15-21 Apr 2026,Mie Ayam Lampung Khas Bangka Purwokerto,-7.4190533,109.2271083,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,3,15-21 Apr 2026,Mi Ayam Pak Wanto Purwokerto,-7.4291138,109.2445805,1,1,0,Positif,tema ulasan belum dominan
+testing_apr_jun,4,3,15-21 Apr 2026,Mie Ayam Nyak Dien,-7.4177608,109.2533294,12,12,0,Positif,"rasa enak, pelayanan ramah & cepat, tempat nyaman & bersih"
+testing_apr_jun,4,3,15-21 Apr 2026,"Mie Ayam Racikan Ibu Purwokerto ( Enak, Bar-bar & Higienis )",-7.4194958,109.2290133,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,3,15-21 Apr 2026,Mie Ayam Bumiayu Pak Tomo,-7.4224605,109.2394877,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,3,15-21 Apr 2026,Mie Ayam Pak Toro,-7.4223209,109.228104,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,3,15-21 Apr 2026,Mie ayam kaisar,-7.415882,109.2326629,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,3,15-21 Apr 2026,Mie Ayam Pak Marso,-7.423968,109.236043,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,3,15-21 Apr 2026,Mie Ayam Pak Kumis Asli Bumiayu,-7.4002193,109.2445157,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,3,15-21 Apr 2026,Mie Ayam Ijo Bpk. Sabar,-7.4235896,109.2391104,1,1,0,Positif,"porsi kurang, pelayanan ramah & cepat, rasa enak"
+testing_apr_jun,4,3,15-21 Apr 2026,Mie Ayam Tanjlig,-7.4164092,109.2294025,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,3,15-21 Apr 2026,Mie Ayam Tipar,-7.427217,109.2351073,1,0,1,Negatif,tema ulasan belum dominan
+testing_apr_jun,4,3,15-21 Apr 2026,Mie Ayam Deddy,-7.4301934,109.2559782,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,3,15-21 Apr 2026,Mie Ayam & Bakso WE-TAN,-7.4157893,109.2637874,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,3,15-21 Apr 2026,"Mie Ayam ""We-Tan""2",-7.4502034,109.2429061,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,3,15-21 Apr 2026,MieAgo,-7.4082968,109.2749709,2,2,0,Positif,"rasa enak, pelayanan ramah & cepat"
+testing_apr_jun,4,3,15-21 Apr 2026,Mie Ayam Mame,-7.4228848,109.240767,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,3,15-21 Apr 2026,Mie Ayam Kamandaka,-7.409301,109.2174523,1,1,0,Positif,rasa enak
+testing_apr_jun,4,3,15-21 Apr 2026,Mie Ayam Pojok Lapang,-7.4356344,109.2732321,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,3,15-21 Apr 2026,Mie Ayam Rendang N3,-7.4167709,109.1995474,2,2,0,Positif,"rasa enak, harga terjangkau"
+testing_apr_jun,4,3,15-21 Apr 2026,Bakso & Mie Ayam NONI,-7.5364665,109.1215043,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,3,15-21 Apr 2026,Bakso & Mie Ayam SAHABAT 2,-7.536085,109.124302,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,3,15-21 Apr 2026,Mie Ayam Pak Narso,-7.4246043,109.2546241,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,3,15-21 Apr 2026,Bakso Pak Kusno,-7.4478657,109.2437942,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,3,15-21 Apr 2026,Mie ayam pak sutrisno UMKM UMP,-7.4304259,109.2193762,1,0,1,Negatif,"rasa enak, tempat nyaman & bersih"
+testing_apr_jun,4,3,15-21 Apr 2026,Mie Ayam Bpk. Darno,-7.4006945,109.2364701,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,3,15-21 Apr 2026,Bakso dan Mie Ayam Pak Kisman,-7.4164,109.2293311,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,3,15-21 Apr 2026,Dapoer Prambanan,-7.4259542,109.2371769,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,3,15-21 Apr 2026,Bakmi Nyemek Bu Trimo,-7.4332135,109.2584942,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,3,15-21 Apr 2026,Mie Jogja Pak Karso Purwokerto,-7.4168129,109.2420255,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,3,15-21 Apr 2026,Mie Ayam Bangka Oey,-7.413964,109.2376241,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,3,15-21 Apr 2026,Mie Ayam Enak Lor Kampus,-7.4083949,109.2310756,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,3,15-21 Apr 2026,Mie Ayam Lik Itis,-7.428543,109.2265822,1,1,0,Positif,"harga terjangkau, pelayanan ramah & cepat, porsi kurang"
+testing_apr_jun,4,4,22-30 Apr 2026,Bakso dan Mie Ayam Ceker Pak Sariman Purwokerto,-7.4335718,109.2402036,10,10,0,Positif,"rasa enak, pelayanan ramah & cepat, porsi cukup/banyak"
+testing_apr_jun,4,4,22-30 Apr 2026,Mie Ayam dan Bakso Tunggal Rasa,-7.4171956,109.2461375,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,4,22-30 Apr 2026,Mie Ayam Lingkar Indah,-7.4191991,109.2279491,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,4,22-30 Apr 2026,Mie Ayam Bruderan (Cito),-7.4202487,109.2330205,1,1,0,Positif,rasa enak
+testing_apr_jun,4,4,22-30 Apr 2026,Mie Ayam Mbak Kimun,-7.431097,109.2564693,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,4,22-30 Apr 2026,Yamien Ajong / Mie Ayam Ajong,-7.4264498,109.2438204,2,1,1,Positif,"pelayanan ramah & cepat, rasa enak"
+testing_apr_jun,4,4,22-30 Apr 2026,Mie Ayam Kita (spesial Rendang),-7.3995374,109.240713,1,1,0,Positif,"harga terjangkau, rasa enak"
+testing_apr_jun,4,4,22-30 Apr 2026,Mie Ayam Kriuk Purwokerto,-7.4447847,109.2491317,1,1,0,Positif,"rasa enak, tempat nyaman & bersih"
+testing_apr_jun,4,4,22-30 Apr 2026,Mie Ayam Lampung Khas Bangka Purwokerto,-7.4190533,109.2271083,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,4,22-30 Apr 2026,Mi Ayam Pak Wanto Purwokerto,-7.4291138,109.2445805,2,2,0,Positif,"harga terjangkau, porsi cukup/banyak, rasa enak"
+testing_apr_jun,4,4,22-30 Apr 2026,Mie Ayam Nyak Dien,-7.4177608,109.2533294,11,9,2,Positif,"rasa enak, tempat kurang nyaman, pelayanan lama/kurang"
+testing_apr_jun,4,4,22-30 Apr 2026,"Mie Ayam Racikan Ibu Purwokerto ( Enak, Bar-bar & Higienis )",-7.4194958,109.2290133,1,1,0,Positif,"rasa enak, pelayanan ramah & cepat, porsi cukup/banyak"
+testing_apr_jun,4,4,22-30 Apr 2026,Mie Ayam Bumiayu Pak Tomo,-7.4224605,109.2394877,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,4,22-30 Apr 2026,Mie Ayam Pak Toro,-7.4223209,109.228104,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,4,22-30 Apr 2026,Mie ayam kaisar,-7.415882,109.2326629,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,4,22-30 Apr 2026,Mie Ayam Pak Marso,-7.423968,109.236043,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,4,22-30 Apr 2026,Mie Ayam Pak Kumis Asli Bumiayu,-7.4002193,109.2445157,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,4,22-30 Apr 2026,Mie Ayam Ijo Bpk. Sabar,-7.4235896,109.2391104,2,1,1,Positif,"rasa enak, porsi kurang"
+testing_apr_jun,4,4,22-30 Apr 2026,Mie Ayam Tanjlig,-7.4164092,109.2294025,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,4,22-30 Apr 2026,Mie Ayam Tipar,-7.427217,109.2351073,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,4,22-30 Apr 2026,Mie Ayam Deddy,-7.4301934,109.2559782,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,4,22-30 Apr 2026,Mie Ayam & Bakso WE-TAN,-7.4157893,109.2637874,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,4,22-30 Apr 2026,"Mie Ayam ""We-Tan""2",-7.4502034,109.2429061,1,1,0,Positif,tema ulasan belum dominan
+testing_apr_jun,4,4,22-30 Apr 2026,MieAgo,-7.4082968,109.2749709,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,4,22-30 Apr 2026,Mie Ayam Mame,-7.4228848,109.240767,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,4,22-30 Apr 2026,Mie Ayam Kamandaka,-7.409301,109.2174523,1,1,0,Positif,"porsi cukup/banyak, rasa enak"
+testing_apr_jun,4,4,22-30 Apr 2026,Mie Ayam Pojok Lapang,-7.4356344,109.2732321,1,1,0,Positif,"porsi kurang, rasa enak"
+testing_apr_jun,4,4,22-30 Apr 2026,Mie Ayam Rendang N3,-7.4167709,109.1995474,1,1,0,Positif,tema ulasan belum dominan
+testing_apr_jun,4,4,22-30 Apr 2026,Bakso & Mie Ayam NONI,-7.5364665,109.1215043,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,4,22-30 Apr 2026,Bakso & Mie Ayam SAHABAT 2,-7.536085,109.124302,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,4,22-30 Apr 2026,Mie Ayam Pak Narso,-7.4246043,109.2546241,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,4,22-30 Apr 2026,Bakso Pak Kusno,-7.4478657,109.2437942,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,4,22-30 Apr 2026,Mie ayam pak sutrisno UMKM UMP,-7.4304259,109.2193762,1,1,0,Positif,"pelayanan ramah & cepat, rasa enak"
+testing_apr_jun,4,4,22-30 Apr 2026,Mie Ayam Bpk. Darno,-7.4006945,109.2364701,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,4,22-30 Apr 2026,Bakso dan Mie Ayam Pak Kisman,-7.4164,109.2293311,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,4,22-30 Apr 2026,Dapoer Prambanan,-7.4259542,109.2371769,1,1,0,Positif,rasa enak
+testing_apr_jun,4,4,22-30 Apr 2026,Bakmi Nyemek Bu Trimo,-7.4332135,109.2584942,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,4,22-30 Apr 2026,Mie Jogja Pak Karso Purwokerto,-7.4168129,109.2420255,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,4,22-30 Apr 2026,Mie Ayam Bangka Oey,-7.413964,109.2376241,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,4,4,22-30 Apr 2026,Mie Ayam Enak Lor Kampus,-7.4083949,109.2310756,1,1,0,Positif,rasa enak
+testing_apr_jun,4,4,22-30 Apr 2026,Mie Ayam Lik Itis,-7.428543,109.2265822,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,1,01-07 Mei 2026,Bakso dan Mie Ayam Ceker Pak Sariman Purwokerto,-7.4335718,109.2402036,1,0,1,Negatif,tema ulasan belum dominan
+testing_apr_jun,5,1,01-07 Mei 2026,Mie Ayam dan Bakso Tunggal Rasa,-7.4171956,109.2461375,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,1,01-07 Mei 2026,Mie Ayam Lingkar Indah,-7.4191991,109.2279491,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,1,01-07 Mei 2026,Mie Ayam Bruderan (Cito),-7.4202487,109.2330205,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,1,01-07 Mei 2026,Mie Ayam Mbak Kimun,-7.431097,109.2564693,1,1,0,Positif,rasa enak
+testing_apr_jun,5,1,01-07 Mei 2026,Yamien Ajong / Mie Ayam Ajong,-7.4264498,109.2438204,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,1,01-07 Mei 2026,Mie Ayam Kita (spesial Rendang),-7.3995374,109.240713,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,1,01-07 Mei 2026,Mie Ayam Kriuk Purwokerto,-7.4447847,109.2491317,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,1,01-07 Mei 2026,Mie Ayam Lampung Khas Bangka Purwokerto,-7.4190533,109.2271083,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,1,01-07 Mei 2026,Mi Ayam Pak Wanto Purwokerto,-7.4291138,109.2445805,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,1,01-07 Mei 2026,Mie Ayam Nyak Dien,-7.4177608,109.2533294,3,3,0,Positif,"pelayanan ramah & cepat, rasa enak, harga terjangkau"
+testing_apr_jun,5,1,01-07 Mei 2026,"Mie Ayam Racikan Ibu Purwokerto ( Enak, Bar-bar & Higienis )",-7.4194958,109.2290133,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,1,01-07 Mei 2026,Mie Ayam Bumiayu Pak Tomo,-7.4224605,109.2394877,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,1,01-07 Mei 2026,Mie Ayam Pak Toro,-7.4223209,109.228104,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,1,01-07 Mei 2026,Mie ayam kaisar,-7.415882,109.2326629,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,1,01-07 Mei 2026,Mie Ayam Pak Marso,-7.423968,109.236043,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,1,01-07 Mei 2026,Mie Ayam Pak Kumis Asli Bumiayu,-7.4002193,109.2445157,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,1,01-07 Mei 2026,Mie Ayam Ijo Bpk. Sabar,-7.4235896,109.2391104,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,1,01-07 Mei 2026,Mie Ayam Tanjlig,-7.4164092,109.2294025,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,1,01-07 Mei 2026,Mie Ayam Tipar,-7.427217,109.2351073,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,1,01-07 Mei 2026,Mie Ayam Deddy,-7.4301934,109.2559782,1,1,0,Positif,"porsi cukup/banyak, rasa enak"
+testing_apr_jun,5,1,01-07 Mei 2026,Mie Ayam & Bakso WE-TAN,-7.4157893,109.2637874,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,1,01-07 Mei 2026,"Mie Ayam ""We-Tan""2",-7.4502034,109.2429061,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,1,01-07 Mei 2026,MieAgo,-7.4082968,109.2749709,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,1,01-07 Mei 2026,Mie Ayam Mame,-7.4228848,109.240767,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,1,01-07 Mei 2026,Mie Ayam Kamandaka,-7.409301,109.2174523,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,1,01-07 Mei 2026,Mie Ayam Pojok Lapang,-7.4356344,109.2732321,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,1,01-07 Mei 2026,Mie Ayam Rendang N3,-7.4167709,109.1995474,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,1,01-07 Mei 2026,Bakso & Mie Ayam NONI,-7.5364665,109.1215043,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,1,01-07 Mei 2026,Bakso & Mie Ayam SAHABAT 2,-7.536085,109.124302,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,1,01-07 Mei 2026,Mie Ayam Pak Narso,-7.4246043,109.2546241,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,1,01-07 Mei 2026,Bakso Pak Kusno,-7.4478657,109.2437942,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,1,01-07 Mei 2026,Mie ayam pak sutrisno UMKM UMP,-7.4304259,109.2193762,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,1,01-07 Mei 2026,Mie Ayam Bpk. Darno,-7.4006945,109.2364701,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,1,01-07 Mei 2026,Bakso dan Mie Ayam Pak Kisman,-7.4164,109.2293311,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,1,01-07 Mei 2026,Dapoer Prambanan,-7.4259542,109.2371769,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,1,01-07 Mei 2026,Bakmi Nyemek Bu Trimo,-7.4332135,109.2584942,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,1,01-07 Mei 2026,Mie Jogja Pak Karso Purwokerto,-7.4168129,109.2420255,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,1,01-07 Mei 2026,Mie Ayam Bangka Oey,-7.413964,109.2376241,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,1,01-07 Mei 2026,Mie Ayam Enak Lor Kampus,-7.4083949,109.2310756,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,1,01-07 Mei 2026,Mie Ayam Lik Itis,-7.428543,109.2265822,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,2,08-14 Mei 2026,Bakso dan Mie Ayam Ceker Pak Sariman Purwokerto,-7.4335718,109.2402036,2,1,1,Positif,"rasa enak, pelayanan lama/kurang, porsi cukup/banyak"
+testing_apr_jun,5,2,08-14 Mei 2026,Mie Ayam dan Bakso Tunggal Rasa,-7.4171956,109.2461375,1,1,0,Positif,"rasa enak, tempat nyaman & bersih"
+testing_apr_jun,5,2,08-14 Mei 2026,Mie Ayam Lingkar Indah,-7.4191991,109.2279491,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,2,08-14 Mei 2026,Mie Ayam Bruderan (Cito),-7.4202487,109.2330205,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,2,08-14 Mei 2026,Mie Ayam Mbak Kimun,-7.431097,109.2564693,1,0,1,Negatif,"pelayanan lama/kurang, rasa kurang cocok"
+testing_apr_jun,5,2,08-14 Mei 2026,Yamien Ajong / Mie Ayam Ajong,-7.4264498,109.2438204,1,1,0,Positif,"rasa enak, rasa kurang cocok"
+testing_apr_jun,5,2,08-14 Mei 2026,Mie Ayam Kita (spesial Rendang),-7.3995374,109.240713,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,2,08-14 Mei 2026,Mie Ayam Kriuk Purwokerto,-7.4447847,109.2491317,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,2,08-14 Mei 2026,Mie Ayam Lampung Khas Bangka Purwokerto,-7.4190533,109.2271083,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,2,08-14 Mei 2026,Mi Ayam Pak Wanto Purwokerto,-7.4291138,109.2445805,2,2,0,Positif,"harga terjangkau, porsi cukup/banyak"
+testing_apr_jun,5,2,08-14 Mei 2026,Mie Ayam Nyak Dien,-7.4177608,109.2533294,5,5,0,Positif,rasa enak
+testing_apr_jun,5,2,08-14 Mei 2026,"Mie Ayam Racikan Ibu Purwokerto ( Enak, Bar-bar & Higienis )",-7.4194958,109.2290133,1,0,1,Negatif,pelayanan lama/kurang
+testing_apr_jun,5,2,08-14 Mei 2026,Mie Ayam Bumiayu Pak Tomo,-7.4224605,109.2394877,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,2,08-14 Mei 2026,Mie Ayam Pak Toro,-7.4223209,109.228104,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,2,08-14 Mei 2026,Mie ayam kaisar,-7.415882,109.2326629,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,2,08-14 Mei 2026,Mie Ayam Pak Marso,-7.423968,109.236043,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,2,08-14 Mei 2026,Mie Ayam Pak Kumis Asli Bumiayu,-7.4002193,109.2445157,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,2,08-14 Mei 2026,Mie Ayam Ijo Bpk. Sabar,-7.4235896,109.2391104,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,2,08-14 Mei 2026,Mie Ayam Tanjlig,-7.4164092,109.2294025,1,1,0,Positif,rasa enak
+testing_apr_jun,5,2,08-14 Mei 2026,Mie Ayam Tipar,-7.427217,109.2351073,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,2,08-14 Mei 2026,Mie Ayam Deddy,-7.4301934,109.2559782,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,2,08-14 Mei 2026,Mie Ayam & Bakso WE-TAN,-7.4157893,109.2637874,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,2,08-14 Mei 2026,"Mie Ayam ""We-Tan""2",-7.4502034,109.2429061,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,2,08-14 Mei 2026,MieAgo,-7.4082968,109.2749709,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,2,08-14 Mei 2026,Mie Ayam Mame,-7.4228848,109.240767,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,2,08-14 Mei 2026,Mie Ayam Kamandaka,-7.409301,109.2174523,1,1,0,Positif,"porsi cukup/banyak, harga terjangkau"
+testing_apr_jun,5,2,08-14 Mei 2026,Mie Ayam Pojok Lapang,-7.4356344,109.2732321,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,2,08-14 Mei 2026,Mie Ayam Rendang N3,-7.4167709,109.1995474,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,2,08-14 Mei 2026,Bakso & Mie Ayam NONI,-7.5364665,109.1215043,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,2,08-14 Mei 2026,Bakso & Mie Ayam SAHABAT 2,-7.536085,109.124302,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,2,08-14 Mei 2026,Mie Ayam Pak Narso,-7.4246043,109.2546241,1,1,0,Positif,"rasa enak, harga terjangkau"
+testing_apr_jun,5,2,08-14 Mei 2026,Bakso Pak Kusno,-7.4478657,109.2437942,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,2,08-14 Mei 2026,Mie ayam pak sutrisno UMKM UMP,-7.4304259,109.2193762,1,1,0,Positif,rasa enak
+testing_apr_jun,5,2,08-14 Mei 2026,Mie Ayam Bpk. Darno,-7.4006945,109.2364701,1,1,0,Positif,"porsi cukup/banyak, rasa enak, tempat nyaman & bersih"
+testing_apr_jun,5,2,08-14 Mei 2026,Bakso dan Mie Ayam Pak Kisman,-7.4164,109.2293311,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,2,08-14 Mei 2026,Dapoer Prambanan,-7.4259542,109.2371769,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,2,08-14 Mei 2026,Bakmi Nyemek Bu Trimo,-7.4332135,109.2584942,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,2,08-14 Mei 2026,Mie Jogja Pak Karso Purwokerto,-7.4168129,109.2420255,2,0,2,Negatif,pelayanan lama/kurang
+testing_apr_jun,5,2,08-14 Mei 2026,Mie Ayam Bangka Oey,-7.413964,109.2376241,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,2,08-14 Mei 2026,Mie Ayam Enak Lor Kampus,-7.4083949,109.2310756,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,2,08-14 Mei 2026,Mie Ayam Lik Itis,-7.428543,109.2265822,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,3,15-21 Mei 2026,Bakso dan Mie Ayam Ceker Pak Sariman Purwokerto,-7.4335718,109.2402036,5,5,0,Positif,"pelayanan ramah & cepat, tempat nyaman & bersih"
+testing_apr_jun,5,3,15-21 Mei 2026,Mie Ayam dan Bakso Tunggal Rasa,-7.4171956,109.2461375,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,3,15-21 Mei 2026,Mie Ayam Lingkar Indah,-7.4191991,109.2279491,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,3,15-21 Mei 2026,Mie Ayam Bruderan (Cito),-7.4202487,109.2330205,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,3,15-21 Mei 2026,Mie Ayam Mbak Kimun,-7.431097,109.2564693,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,3,15-21 Mei 2026,Yamien Ajong / Mie Ayam Ajong,-7.4264498,109.2438204,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,3,15-21 Mei 2026,Mie Ayam Kita (spesial Rendang),-7.3995374,109.240713,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,3,15-21 Mei 2026,Mie Ayam Kriuk Purwokerto,-7.4447847,109.2491317,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,3,15-21 Mei 2026,Mie Ayam Lampung Khas Bangka Purwokerto,-7.4190533,109.2271083,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,3,15-21 Mei 2026,Mi Ayam Pak Wanto Purwokerto,-7.4291138,109.2445805,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,3,15-21 Mei 2026,Mie Ayam Nyak Dien,-7.4177608,109.2533294,21,21,0,Positif,"rasa enak, tempat nyaman & bersih, pelayanan ramah & cepat"
+testing_apr_jun,5,3,15-21 Mei 2026,"Mie Ayam Racikan Ibu Purwokerto ( Enak, Bar-bar & Higienis )",-7.4194958,109.2290133,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,3,15-21 Mei 2026,Mie Ayam Bumiayu Pak Tomo,-7.4224605,109.2394877,1,0,1,Negatif,"porsi cukup/banyak, porsi kurang, rasa kurang cocok"
+testing_apr_jun,5,3,15-21 Mei 2026,Mie Ayam Pak Toro,-7.4223209,109.228104,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,3,15-21 Mei 2026,Mie ayam kaisar,-7.415882,109.2326629,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,3,15-21 Mei 2026,Mie Ayam Pak Marso,-7.423968,109.236043,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,3,15-21 Mei 2026,Mie Ayam Pak Kumis Asli Bumiayu,-7.4002193,109.2445157,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,3,15-21 Mei 2026,Mie Ayam Ijo Bpk. Sabar,-7.4235896,109.2391104,1,1,0,Positif,rasa enak
+testing_apr_jun,5,3,15-21 Mei 2026,Mie Ayam Tanjlig,-7.4164092,109.2294025,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,3,15-21 Mei 2026,Mie Ayam Tipar,-7.427217,109.2351073,1,0,1,Negatif,"harga mahal, porsi cukup/banyak, porsi kurang"
+testing_apr_jun,5,3,15-21 Mei 2026,Mie Ayam Deddy,-7.4301934,109.2559782,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,3,15-21 Mei 2026,Mie Ayam & Bakso WE-TAN,-7.4157893,109.2637874,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,3,15-21 Mei 2026,"Mie Ayam ""We-Tan""2",-7.4502034,109.2429061,2,2,0,Positif,tema ulasan belum dominan
+testing_apr_jun,5,3,15-21 Mei 2026,MieAgo,-7.4082968,109.2749709,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,3,15-21 Mei 2026,Mie Ayam Mame,-7.4228848,109.240767,1,1,0,Positif,"rasa enak, harga terjangkau, porsi cukup/banyak"
+testing_apr_jun,5,3,15-21 Mei 2026,Mie Ayam Kamandaka,-7.409301,109.2174523,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,3,15-21 Mei 2026,Mie Ayam Pojok Lapang,-7.4356344,109.2732321,1,1,0,Positif,"rasa enak, harga terjangkau"
+testing_apr_jun,5,3,15-21 Mei 2026,Mie Ayam Rendang N3,-7.4167709,109.1995474,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,3,15-21 Mei 2026,Bakso & Mie Ayam NONI,-7.5364665,109.1215043,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,3,15-21 Mei 2026,Bakso & Mie Ayam SAHABAT 2,-7.536085,109.124302,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,3,15-21 Mei 2026,Mie Ayam Pak Narso,-7.4246043,109.2546241,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,3,15-21 Mei 2026,Bakso Pak Kusno,-7.4478657,109.2437942,1,1,0,Positif,rasa enak
+testing_apr_jun,5,3,15-21 Mei 2026,Mie ayam pak sutrisno UMKM UMP,-7.4304259,109.2193762,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,3,15-21 Mei 2026,Mie Ayam Bpk. Darno,-7.4006945,109.2364701,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,3,15-21 Mei 2026,Bakso dan Mie Ayam Pak Kisman,-7.4164,109.2293311,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,3,15-21 Mei 2026,Dapoer Prambanan,-7.4259542,109.2371769,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,3,15-21 Mei 2026,Bakmi Nyemek Bu Trimo,-7.4332135,109.2584942,1,1,0,Positif,porsi cukup/banyak
+testing_apr_jun,5,3,15-21 Mei 2026,Mie Jogja Pak Karso Purwokerto,-7.4168129,109.2420255,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,3,15-21 Mei 2026,Mie Ayam Bangka Oey,-7.413964,109.2376241,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,3,15-21 Mei 2026,Mie Ayam Enak Lor Kampus,-7.4083949,109.2310756,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,3,15-21 Mei 2026,Mie Ayam Lik Itis,-7.428543,109.2265822,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,4,22-31 Mei 2026,Bakso dan Mie Ayam Ceker Pak Sariman Purwokerto,-7.4335718,109.2402036,1,1,0,Positif,rasa enak
+testing_apr_jun,5,4,22-31 Mei 2026,Mie Ayam dan Bakso Tunggal Rasa,-7.4171956,109.2461375,2,2,0,Positif,"tempat nyaman & bersih, porsi kurang, rasa enak"
+testing_apr_jun,5,4,22-31 Mei 2026,Mie Ayam Lingkar Indah,-7.4191991,109.2279491,1,0,1,Negatif,rasa kurang cocok
+testing_apr_jun,5,4,22-31 Mei 2026,Mie Ayam Bruderan (Cito),-7.4202487,109.2330205,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,4,22-31 Mei 2026,Mie Ayam Mbak Kimun,-7.431097,109.2564693,2,2,0,Positif,"porsi kurang, rasa enak"
+testing_apr_jun,5,4,22-31 Mei 2026,Yamien Ajong / Mie Ayam Ajong,-7.4264498,109.2438204,1,1,0,Positif,"porsi kurang, rasa enak"
+testing_apr_jun,5,4,22-31 Mei 2026,Mie Ayam Kita (spesial Rendang),-7.3995374,109.240713,1,1,0,Positif,rasa enak
+testing_apr_jun,5,4,22-31 Mei 2026,Mie Ayam Kriuk Purwokerto,-7.4447847,109.2491317,1,1,0,Positif,"rasa enak, harga terjangkau, porsi cukup/banyak"
+testing_apr_jun,5,4,22-31 Mei 2026,Mie Ayam Lampung Khas Bangka Purwokerto,-7.4190533,109.2271083,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,4,22-31 Mei 2026,Mi Ayam Pak Wanto Purwokerto,-7.4291138,109.2445805,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,4,22-31 Mei 2026,Mie Ayam Nyak Dien,-7.4177608,109.2533294,13,12,1,Positif,"rasa enak, pelayanan ramah & cepat, porsi cukup/banyak"
+testing_apr_jun,5,4,22-31 Mei 2026,"Mie Ayam Racikan Ibu Purwokerto ( Enak, Bar-bar & Higienis )",-7.4194958,109.2290133,1,0,1,Negatif,rasa kurang cocok
+testing_apr_jun,5,4,22-31 Mei 2026,Mie Ayam Bumiayu Pak Tomo,-7.4224605,109.2394877,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,4,22-31 Mei 2026,Mie Ayam Pak Toro,-7.4223209,109.228104,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,4,22-31 Mei 2026,Mie ayam kaisar,-7.415882,109.2326629,2,2,0,Positif,"rasa enak, harga terjangkau, pelayanan ramah & cepat"
+testing_apr_jun,5,4,22-31 Mei 2026,Mie Ayam Pak Marso,-7.423968,109.236043,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,4,22-31 Mei 2026,Mie Ayam Pak Kumis Asli Bumiayu,-7.4002193,109.2445157,2,0,2,Negatif,"harga mahal, pelayanan lama/kurang, rasa enak"
+testing_apr_jun,5,4,22-31 Mei 2026,Mie Ayam Ijo Bpk. Sabar,-7.4235896,109.2391104,2,2,0,Positif,"porsi cukup/banyak, rasa enak, tempat nyaman & bersih"
+testing_apr_jun,5,4,22-31 Mei 2026,Mie Ayam Tanjlig,-7.4164092,109.2294025,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,4,22-31 Mei 2026,Mie Ayam Tipar,-7.427217,109.2351073,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,4,22-31 Mei 2026,Mie Ayam Deddy,-7.4301934,109.2559782,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,4,22-31 Mei 2026,Mie Ayam & Bakso WE-TAN,-7.4157893,109.2637874,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,4,22-31 Mei 2026,"Mie Ayam ""We-Tan""2",-7.4502034,109.2429061,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,4,22-31 Mei 2026,MieAgo,-7.4082968,109.2749709,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,4,22-31 Mei 2026,Mie Ayam Mame,-7.4228848,109.240767,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,4,22-31 Mei 2026,Mie Ayam Kamandaka,-7.409301,109.2174523,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,4,22-31 Mei 2026,Mie Ayam Pojok Lapang,-7.4356344,109.2732321,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,4,22-31 Mei 2026,Mie Ayam Rendang N3,-7.4167709,109.1995474,1,1,0,Positif,tema ulasan belum dominan
+testing_apr_jun,5,4,22-31 Mei 2026,Bakso & Mie Ayam NONI,-7.5364665,109.1215043,1,1,0,Positif,pelayanan lama/kurang
+testing_apr_jun,5,4,22-31 Mei 2026,Bakso & Mie Ayam SAHABAT 2,-7.536085,109.124302,1,1,0,Positif,rasa enak
+testing_apr_jun,5,4,22-31 Mei 2026,Mie Ayam Pak Narso,-7.4246043,109.2546241,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,4,22-31 Mei 2026,Bakso Pak Kusno,-7.4478657,109.2437942,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,4,22-31 Mei 2026,Mie ayam pak sutrisno UMKM UMP,-7.4304259,109.2193762,1,1,0,Positif,tema ulasan belum dominan
+testing_apr_jun,5,4,22-31 Mei 2026,Mie Ayam Bpk. Darno,-7.4006945,109.2364701,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,4,22-31 Mei 2026,Bakso dan Mie Ayam Pak Kisman,-7.4164,109.2293311,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,4,22-31 Mei 2026,Dapoer Prambanan,-7.4259542,109.2371769,1,1,0,Positif,"rasa enak, harga terjangkau, porsi cukup/banyak"
+testing_apr_jun,5,4,22-31 Mei 2026,Bakmi Nyemek Bu Trimo,-7.4332135,109.2584942,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,4,22-31 Mei 2026,Mie Jogja Pak Karso Purwokerto,-7.4168129,109.2420255,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,4,22-31 Mei 2026,Mie Ayam Bangka Oey,-7.413964,109.2376241,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,4,22-31 Mei 2026,Mie Ayam Enak Lor Kampus,-7.4083949,109.2310756,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,5,4,22-31 Mei 2026,Mie Ayam Lik Itis,-7.428543,109.2265822,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,1,01-07 Jun 2026,Bakso dan Mie Ayam Ceker Pak Sariman Purwokerto,-7.4335718,109.2402036,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,1,01-07 Jun 2026,Mie Ayam dan Bakso Tunggal Rasa,-7.4171956,109.2461375,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,1,01-07 Jun 2026,Mie Ayam Lingkar Indah,-7.4191991,109.2279491,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,1,01-07 Jun 2026,Mie Ayam Bruderan (Cito),-7.4202487,109.2330205,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,1,01-07 Jun 2026,Mie Ayam Mbak Kimun,-7.431097,109.2564693,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,1,01-07 Jun 2026,Yamien Ajong / Mie Ayam Ajong,-7.4264498,109.2438204,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,1,01-07 Jun 2026,Mie Ayam Kita (spesial Rendang),-7.3995374,109.240713,1,1,0,Positif,"tempat nyaman & bersih, porsi cukup/banyak, rasa enak"
+testing_apr_jun,6,1,01-07 Jun 2026,Mie Ayam Kriuk Purwokerto,-7.4447847,109.2491317,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,1,01-07 Jun 2026,Mie Ayam Lampung Khas Bangka Purwokerto,-7.4190533,109.2271083,1,1,0,Positif,"rasa enak, rasa kurang cocok"
+testing_apr_jun,6,1,01-07 Jun 2026,Mi Ayam Pak Wanto Purwokerto,-7.4291138,109.2445805,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,1,01-07 Jun 2026,Mie Ayam Nyak Dien,-7.4177608,109.2533294,25,25,0,Positif,"rasa enak, tempat nyaman & bersih, pelayanan ramah & cepat"
+testing_apr_jun,6,1,01-07 Jun 2026,"Mie Ayam Racikan Ibu Purwokerto ( Enak, Bar-bar & Higienis )",-7.4194958,109.2290133,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,1,01-07 Jun 2026,Mie Ayam Bumiayu Pak Tomo,-7.4224605,109.2394877,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,1,01-07 Jun 2026,Mie Ayam Pak Toro,-7.4223209,109.228104,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,1,01-07 Jun 2026,Mie ayam kaisar,-7.415882,109.2326629,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,1,01-07 Jun 2026,Mie Ayam Pak Marso,-7.423968,109.236043,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,1,01-07 Jun 2026,Mie Ayam Pak Kumis Asli Bumiayu,-7.4002193,109.2445157,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,1,01-07 Jun 2026,Mie Ayam Ijo Bpk. Sabar,-7.4235896,109.2391104,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,1,01-07 Jun 2026,Mie Ayam Tanjlig,-7.4164092,109.2294025,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,1,01-07 Jun 2026,Mie Ayam Tipar,-7.427217,109.2351073,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,1,01-07 Jun 2026,Mie Ayam Deddy,-7.4301934,109.2559782,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,1,01-07 Jun 2026,Mie Ayam & Bakso WE-TAN,-7.4157893,109.2637874,1,0,1,Negatif,"harga mahal, rasa enak"
+testing_apr_jun,6,1,01-07 Jun 2026,"Mie Ayam ""We-Tan""2",-7.4502034,109.2429061,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,1,01-07 Jun 2026,MieAgo,-7.4082968,109.2749709,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,1,01-07 Jun 2026,Mie Ayam Mame,-7.4228848,109.240767,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,1,01-07 Jun 2026,Mie Ayam Kamandaka,-7.409301,109.2174523,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,1,01-07 Jun 2026,Mie Ayam Pojok Lapang,-7.4356344,109.2732321,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,1,01-07 Jun 2026,Mie Ayam Rendang N3,-7.4167709,109.1995474,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,1,01-07 Jun 2026,Bakso & Mie Ayam NONI,-7.5364665,109.1215043,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,1,01-07 Jun 2026,Bakso & Mie Ayam SAHABAT 2,-7.536085,109.124302,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,1,01-07 Jun 2026,Mie Ayam Pak Narso,-7.4246043,109.2546241,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,1,01-07 Jun 2026,Bakso Pak Kusno,-7.4478657,109.2437942,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,1,01-07 Jun 2026,Mie ayam pak sutrisno UMKM UMP,-7.4304259,109.2193762,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,1,01-07 Jun 2026,Mie Ayam Bpk. Darno,-7.4006945,109.2364701,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,1,01-07 Jun 2026,Bakso dan Mie Ayam Pak Kisman,-7.4164,109.2293311,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,1,01-07 Jun 2026,Dapoer Prambanan,-7.4259542,109.2371769,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,1,01-07 Jun 2026,Bakmi Nyemek Bu Trimo,-7.4332135,109.2584942,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,1,01-07 Jun 2026,Mie Jogja Pak Karso Purwokerto,-7.4168129,109.2420255,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,1,01-07 Jun 2026,Mie Ayam Bangka Oey,-7.413964,109.2376241,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,1,01-07 Jun 2026,Mie Ayam Enak Lor Kampus,-7.4083949,109.2310756,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,1,01-07 Jun 2026,Mie Ayam Lik Itis,-7.428543,109.2265822,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,2,08-14 Jun 2026,Bakso dan Mie Ayam Ceker Pak Sariman Purwokerto,-7.4335718,109.2402036,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,2,08-14 Jun 2026,Mie Ayam dan Bakso Tunggal Rasa,-7.4171956,109.2461375,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,2,08-14 Jun 2026,Mie Ayam Lingkar Indah,-7.4191991,109.2279491,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,2,08-14 Jun 2026,Mie Ayam Bruderan (Cito),-7.4202487,109.2330205,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,2,08-14 Jun 2026,Mie Ayam Mbak Kimun,-7.431097,109.2564693,1,1,0,Positif,"harga terjangkau, pelayanan ramah & cepat, rasa enak"
+testing_apr_jun,6,2,08-14 Jun 2026,Yamien Ajong / Mie Ayam Ajong,-7.4264498,109.2438204,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,2,08-14 Jun 2026,Mie Ayam Kita (spesial Rendang),-7.3995374,109.240713,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,2,08-14 Jun 2026,Mie Ayam Kriuk Purwokerto,-7.4447847,109.2491317,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,2,08-14 Jun 2026,Mie Ayam Lampung Khas Bangka Purwokerto,-7.4190533,109.2271083,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,2,08-14 Jun 2026,Mi Ayam Pak Wanto Purwokerto,-7.4291138,109.2445805,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,2,08-14 Jun 2026,Mie Ayam Nyak Dien,-7.4177608,109.2533294,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,2,08-14 Jun 2026,"Mie Ayam Racikan Ibu Purwokerto ( Enak, Bar-bar & Higienis )",-7.4194958,109.2290133,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,2,08-14 Jun 2026,Mie Ayam Bumiayu Pak Tomo,-7.4224605,109.2394877,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,2,08-14 Jun 2026,Mie Ayam Pak Toro,-7.4223209,109.228104,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,2,08-14 Jun 2026,Mie ayam kaisar,-7.415882,109.2326629,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,2,08-14 Jun 2026,Mie Ayam Pak Marso,-7.423968,109.236043,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,2,08-14 Jun 2026,Mie Ayam Pak Kumis Asli Bumiayu,-7.4002193,109.2445157,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,2,08-14 Jun 2026,Mie Ayam Ijo Bpk. Sabar,-7.4235896,109.2391104,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,2,08-14 Jun 2026,Mie Ayam Tanjlig,-7.4164092,109.2294025,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,2,08-14 Jun 2026,Mie Ayam Tipar,-7.427217,109.2351073,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,2,08-14 Jun 2026,Mie Ayam Deddy,-7.4301934,109.2559782,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,2,08-14 Jun 2026,Mie Ayam & Bakso WE-TAN,-7.4157893,109.2637874,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,2,08-14 Jun 2026,"Mie Ayam ""We-Tan""2",-7.4502034,109.2429061,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,2,08-14 Jun 2026,MieAgo,-7.4082968,109.2749709,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,2,08-14 Jun 2026,Mie Ayam Mame,-7.4228848,109.240767,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,2,08-14 Jun 2026,Mie Ayam Kamandaka,-7.409301,109.2174523,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,2,08-14 Jun 2026,Mie Ayam Pojok Lapang,-7.4356344,109.2732321,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,2,08-14 Jun 2026,Mie Ayam Rendang N3,-7.4167709,109.1995474,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,2,08-14 Jun 2026,Bakso & Mie Ayam NONI,-7.5364665,109.1215043,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,2,08-14 Jun 2026,Bakso & Mie Ayam SAHABAT 2,-7.536085,109.124302,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,2,08-14 Jun 2026,Mie Ayam Pak Narso,-7.4246043,109.2546241,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,2,08-14 Jun 2026,Bakso Pak Kusno,-7.4478657,109.2437942,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,2,08-14 Jun 2026,Mie ayam pak sutrisno UMKM UMP,-7.4304259,109.2193762,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,2,08-14 Jun 2026,Mie Ayam Bpk. Darno,-7.4006945,109.2364701,1,1,0,Positif,"porsi cukup/banyak, pelayanan ramah & cepat"
+testing_apr_jun,6,2,08-14 Jun 2026,Bakso dan Mie Ayam Pak Kisman,-7.4164,109.2293311,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,2,08-14 Jun 2026,Dapoer Prambanan,-7.4259542,109.2371769,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,2,08-14 Jun 2026,Bakmi Nyemek Bu Trimo,-7.4332135,109.2584942,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,2,08-14 Jun 2026,Mie Jogja Pak Karso Purwokerto,-7.4168129,109.2420255,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,2,08-14 Jun 2026,Mie Ayam Bangka Oey,-7.413964,109.2376241,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,2,08-14 Jun 2026,Mie Ayam Enak Lor Kampus,-7.4083949,109.2310756,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,2,08-14 Jun 2026,Mie Ayam Lik Itis,-7.428543,109.2265822,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,3,15-21 Jun 2026,Bakso dan Mie Ayam Ceker Pak Sariman Purwokerto,-7.4335718,109.2402036,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,3,15-21 Jun 2026,Mie Ayam dan Bakso Tunggal Rasa,-7.4171956,109.2461375,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,3,15-21 Jun 2026,Mie Ayam Lingkar Indah,-7.4191991,109.2279491,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,3,15-21 Jun 2026,Mie Ayam Bruderan (Cito),-7.4202487,109.2330205,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,3,15-21 Jun 2026,Mie Ayam Mbak Kimun,-7.431097,109.2564693,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,3,15-21 Jun 2026,Yamien Ajong / Mie Ayam Ajong,-7.4264498,109.2438204,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,3,15-21 Jun 2026,Mie Ayam Kita (spesial Rendang),-7.3995374,109.240713,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,3,15-21 Jun 2026,Mie Ayam Kriuk Purwokerto,-7.4447847,109.2491317,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,3,15-21 Jun 2026,Mie Ayam Lampung Khas Bangka Purwokerto,-7.4190533,109.2271083,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,3,15-21 Jun 2026,Mi Ayam Pak Wanto Purwokerto,-7.4291138,109.2445805,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,3,15-21 Jun 2026,Mie Ayam Nyak Dien,-7.4177608,109.2533294,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,3,15-21 Jun 2026,"Mie Ayam Racikan Ibu Purwokerto ( Enak, Bar-bar & Higienis )",-7.4194958,109.2290133,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,3,15-21 Jun 2026,Mie Ayam Bumiayu Pak Tomo,-7.4224605,109.2394877,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,3,15-21 Jun 2026,Mie Ayam Pak Toro,-7.4223209,109.228104,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,3,15-21 Jun 2026,Mie ayam kaisar,-7.415882,109.2326629,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,3,15-21 Jun 2026,Mie Ayam Pak Marso,-7.423968,109.236043,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,3,15-21 Jun 2026,Mie Ayam Pak Kumis Asli Bumiayu,-7.4002193,109.2445157,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,3,15-21 Jun 2026,Mie Ayam Ijo Bpk. Sabar,-7.4235896,109.2391104,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,3,15-21 Jun 2026,Mie Ayam Tanjlig,-7.4164092,109.2294025,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,3,15-21 Jun 2026,Mie Ayam Tipar,-7.427217,109.2351073,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,3,15-21 Jun 2026,Mie Ayam Deddy,-7.4301934,109.2559782,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,3,15-21 Jun 2026,Mie Ayam & Bakso WE-TAN,-7.4157893,109.2637874,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,3,15-21 Jun 2026,"Mie Ayam ""We-Tan""2",-7.4502034,109.2429061,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,3,15-21 Jun 2026,MieAgo,-7.4082968,109.2749709,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,3,15-21 Jun 2026,Mie Ayam Mame,-7.4228848,109.240767,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,3,15-21 Jun 2026,Mie Ayam Kamandaka,-7.409301,109.2174523,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,3,15-21 Jun 2026,Mie Ayam Pojok Lapang,-7.4356344,109.2732321,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,3,15-21 Jun 2026,Mie Ayam Rendang N3,-7.4167709,109.1995474,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,3,15-21 Jun 2026,Bakso & Mie Ayam NONI,-7.5364665,109.1215043,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,3,15-21 Jun 2026,Bakso & Mie Ayam SAHABAT 2,-7.536085,109.124302,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,3,15-21 Jun 2026,Mie Ayam Pak Narso,-7.4246043,109.2546241,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,3,15-21 Jun 2026,Bakso Pak Kusno,-7.4478657,109.2437942,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,3,15-21 Jun 2026,Mie ayam pak sutrisno UMKM UMP,-7.4304259,109.2193762,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,3,15-21 Jun 2026,Mie Ayam Bpk. Darno,-7.4006945,109.2364701,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,3,15-21 Jun 2026,Bakso dan Mie Ayam Pak Kisman,-7.4164,109.2293311,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,3,15-21 Jun 2026,Dapoer Prambanan,-7.4259542,109.2371769,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,3,15-21 Jun 2026,Bakmi Nyemek Bu Trimo,-7.4332135,109.2584942,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,3,15-21 Jun 2026,Mie Jogja Pak Karso Purwokerto,-7.4168129,109.2420255,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,3,15-21 Jun 2026,Mie Ayam Bangka Oey,-7.413964,109.2376241,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,3,15-21 Jun 2026,Mie Ayam Enak Lor Kampus,-7.4083949,109.2310756,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,3,15-21 Jun 2026,Mie Ayam Lik Itis,-7.428543,109.2265822,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,4,22-30 Jun 2026,Bakso dan Mie Ayam Ceker Pak Sariman Purwokerto,-7.4335718,109.2402036,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,4,22-30 Jun 2026,Mie Ayam dan Bakso Tunggal Rasa,-7.4171956,109.2461375,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,4,22-30 Jun 2026,Mie Ayam Lingkar Indah,-7.4191991,109.2279491,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,4,22-30 Jun 2026,Mie Ayam Bruderan (Cito),-7.4202487,109.2330205,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,4,22-30 Jun 2026,Mie Ayam Mbak Kimun,-7.431097,109.2564693,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,4,22-30 Jun 2026,Yamien Ajong / Mie Ayam Ajong,-7.4264498,109.2438204,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,4,22-30 Jun 2026,Mie Ayam Kita (spesial Rendang),-7.3995374,109.240713,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,4,22-30 Jun 2026,Mie Ayam Kriuk Purwokerto,-7.4447847,109.2491317,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,4,22-30 Jun 2026,Mie Ayam Lampung Khas Bangka Purwokerto,-7.4190533,109.2271083,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,4,22-30 Jun 2026,Mi Ayam Pak Wanto Purwokerto,-7.4291138,109.2445805,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,4,22-30 Jun 2026,Mie Ayam Nyak Dien,-7.4177608,109.2533294,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,4,22-30 Jun 2026,"Mie Ayam Racikan Ibu Purwokerto ( Enak, Bar-bar & Higienis )",-7.4194958,109.2290133,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,4,22-30 Jun 2026,Mie Ayam Bumiayu Pak Tomo,-7.4224605,109.2394877,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,4,22-30 Jun 2026,Mie Ayam Pak Toro,-7.4223209,109.228104,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,4,22-30 Jun 2026,Mie ayam kaisar,-7.415882,109.2326629,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,4,22-30 Jun 2026,Mie Ayam Pak Marso,-7.423968,109.236043,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,4,22-30 Jun 2026,Mie Ayam Pak Kumis Asli Bumiayu,-7.4002193,109.2445157,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,4,22-30 Jun 2026,Mie Ayam Ijo Bpk. Sabar,-7.4235896,109.2391104,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,4,22-30 Jun 2026,Mie Ayam Tanjlig,-7.4164092,109.2294025,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,4,22-30 Jun 2026,Mie Ayam Tipar,-7.427217,109.2351073,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,4,22-30 Jun 2026,Mie Ayam Deddy,-7.4301934,109.2559782,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,4,22-30 Jun 2026,Mie Ayam & Bakso WE-TAN,-7.4157893,109.2637874,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,4,22-30 Jun 2026,"Mie Ayam ""We-Tan""2",-7.4502034,109.2429061,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,4,22-30 Jun 2026,MieAgo,-7.4082968,109.2749709,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,4,22-30 Jun 2026,Mie Ayam Mame,-7.4228848,109.240767,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,4,22-30 Jun 2026,Mie Ayam Kamandaka,-7.409301,109.2174523,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,4,22-30 Jun 2026,Mie Ayam Pojok Lapang,-7.4356344,109.2732321,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,4,22-30 Jun 2026,Mie Ayam Rendang N3,-7.4167709,109.1995474,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,4,22-30 Jun 2026,Bakso & Mie Ayam NONI,-7.5364665,109.1215043,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,4,22-30 Jun 2026,Bakso & Mie Ayam SAHABAT 2,-7.536085,109.124302,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,4,22-30 Jun 2026,Mie Ayam Pak Narso,-7.4246043,109.2546241,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,4,22-30 Jun 2026,Bakso Pak Kusno,-7.4478657,109.2437942,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,4,22-30 Jun 2026,Mie ayam pak sutrisno UMKM UMP,-7.4304259,109.2193762,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,4,22-30 Jun 2026,Mie Ayam Bpk. Darno,-7.4006945,109.2364701,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,4,22-30 Jun 2026,Bakso dan Mie Ayam Pak Kisman,-7.4164,109.2293311,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,4,22-30 Jun 2026,Dapoer Prambanan,-7.4259542,109.2371769,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,4,22-30 Jun 2026,Bakmi Nyemek Bu Trimo,-7.4332135,109.2584942,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,4,22-30 Jun 2026,Mie Jogja Pak Karso Purwokerto,-7.4168129,109.2420255,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,4,22-30 Jun 2026,Mie Ayam Bangka Oey,-7.413964,109.2376241,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,4,22-30 Jun 2026,Mie Ayam Enak Lor Kampus,-7.4083949,109.2310756,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini
+testing_apr_jun,6,4,22-30 Jun 2026,Mie Ayam Lik Itis,-7.428543,109.2265822,0,0,0,Tidak ada ulasan,tidak ada ulasan pada minggu ini

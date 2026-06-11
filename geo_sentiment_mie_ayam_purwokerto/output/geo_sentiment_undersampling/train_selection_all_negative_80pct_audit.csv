@@ -1,0 +1,3 @@
+﻿label,sentimen,pool_count,selected_train_count,selection_rule
+0,Negatif,428,428,all_negative_included
+1,Positif,3105,2398,sample_positive_to_fill_80_percent_train_quota

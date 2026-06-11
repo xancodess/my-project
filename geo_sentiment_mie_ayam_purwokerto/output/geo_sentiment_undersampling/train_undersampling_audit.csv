@@ -1,0 +1,3 @@
+﻿label,sentimen,count_before,count_after,removed,action
+0,Negatif,428,428,0,kept_all_minority
+1,Positif,2398,428,1970,undersampled
